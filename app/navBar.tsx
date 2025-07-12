@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./NavBarLogo.module.css";
 
 const NavBar = () => {
   return (
@@ -13,7 +14,7 @@ const NavBar = () => {
               alt="Sorien Logo"
               width={96}
               height={24}
-              className="w-40 h-auto"
+              className={`w-40 h-auto ${styles.logoGlow}`}
             />
           </Link>
         </div>

@@ -1,0 +1,18 @@
+.customShadowImg {
+  position: relative;
+  z-index: 1;
+}
+.customShadowImg::before {
+  content: '';
+  position: absolute;
+  left: 46%;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 560px;
+  height: 390px;
+  border-radius: 30%;
+  background: radial-gradient(circle at center, rgba(49, 16, 81, 0.646) 0%, rgba(96, 45, 146, 0.135) 60%, rgba(72, 43, 97, 0.075) 100%);
+  filter: blur(36px);
+  pointer-events: none;
+  z-index: -1;
+} 
