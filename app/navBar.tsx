@@ -6,7 +6,7 @@ import styles from "./NavBarLogo.module.css";
 const NavBar = () => {
   return (
     <nav>
-      <div className=" border-b-1 flex row justify-between items-center">
+      <div className=" flex row justify-between items-center">
         <div>
           <Link href="/">
             <Image
