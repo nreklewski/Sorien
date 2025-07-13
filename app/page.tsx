@@ -1,16 +1,19 @@
 import Image from "next/image";
-import NavBar from "./navBar";
 import Link from "next/link";
 import styles from "./ImageShadow.module.css";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#111111] text-white">
+    <div className=" text-white">
       {/* Hero Section */}
-      <section className="flex justify-between pt-24 px-30 pb-20 bg-gradient-to-b from-[#111111] via-[#111111] to-[#0d0d0d]">
+      <section className="flex justify-between pt-24 px-30 pb-20">
         <div className="content-center">
-          <h1 className="text-4xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-            Bespoke software for your <br /> innovative business
+          <h1 className="text-5xl md:text-5xl font-bold mb-6 text-white">
+            Bespoke software for your <br />{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+              innovative
+            </span>{" "}
+            business
           </h1>
           <h2 className="text-xl md:text-lg text-gray-300 leading-relaxed">
             We build custom websites or mobile apps for <br /> innovative
@@ -44,9 +47,9 @@ export default function Home() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-20 px-30 bg-gradient-to-b from-[#0d0d0d] to-[#151515]">
+      <section className="py-20 px-30 bg-gradient-to-b from-[#101015] to-[#151515]">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             What We Do
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -130,9 +133,17 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 px-30">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+      <section className="py-20 px-30 relative overflow-hidden">
+        {/* Background floating elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/25 to-purple-600/25 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-purple-500/25 to-pink-600/25 rounded-full blur-xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-gradient-to-r from-blue-500/20 to-cyan-600/20 rounded-full blur-xl animate-pulse delay-500"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-gradient-to-r from-purple-500/25 to-blue-600/25 rounded-full blur-xl animate-pulse delay-1500"></div>
+        </div>
+
+        <div className="text-center mb-16 relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Why Choose Us
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -141,53 +152,153 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <span className="text-2xl font-bold">10+</span>
+        <div className="relative z-10">
+          {/* First row - 2 items */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-24">
+            {/* Fully Customizable */}
+            <div className="group relative">
+              <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 hover:border-blue-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
+                <div className="flex items-start space-x-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-white">
+                      Fully Customizable
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Tailored solutions designed specifically for your business
+                      needs. We create unique designs and functionalities that
+                      perfectly align with your vision and requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Years Experience</h3>
-            <p className="text-gray-400 text-sm">
-              Decade of expertise in digital solutions
-            </p>
+
+            {/* Cutting-Edge Technologies */}
+            <div className="group relative">
+              <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:border-purple-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+                <div className="flex items-start space-x-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-white">
+                      Cutting-Edge Technologies
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Using Next.js for superior SEO and SSR performance. We
+                      leverage the latest technologies to ensure your project
+                      stands out with optimal performance and search engine
+                      visibility.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <span className="text-2xl font-bold">50+</span>
+          {/* Second row - 2 items */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Lightning Performance */}
+            <div className="group relative">
+              <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 backdrop-blur-sm border border-green-500/20 rounded-3xl p-8 hover:border-green-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20">
+                <div className="flex items-start space-x-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-white">
+                      Lightning Performance
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Blazing fast applications optimized for speed and
+                      efficiency. Our solutions deliver exceptional user
+                      experiences with minimal loading times and maximum
+                      responsiveness.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Projects Completed</h3>
-            <p className="text-gray-400 text-sm">
-              Successful deliveries across industries
-            </p>
-          </div>
 
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <span className="text-2xl font-bold">24/7</span>
+            {/* Full Post-Launch Support */}
+            <div className="group relative">
+              <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/20 rounded-3xl p-8 hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
+                <div className="flex items-start space-x-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-white">
+                      Full Post-Launch Support
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Complete flexibility and rapid technical support after
+                      deployment. Easy expansion and quick technical assistance
+                      ensure your solution grows with your business needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Support</h3>
-            <p className="text-gray-400 text-sm">
-              Round-the-clock technical assistance
-            </p>
-          </div>
-
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <span className="text-2xl font-bold">100%</span>
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Satisfaction</h3>
-            <p className="text-gray-400 text-sm">
-              Client satisfaction guaranteed
-            </p>
           </div>
         </div>
       </section>
 
       {/* Our Process Section */}
-      <section className="py-20 px-30 bg-gradient-to-b from-[#151515] to-[#0d0d0d]">
+      <section className="py-20 px-4 md:px-30 bg-gradient-to-b from-[#0d0c10] to-[#101010]">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Our Process
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -195,61 +306,202 @@ export default function Home() {
             within budget, and exceeds expectations.
           </p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="text-center relative">
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold">
-              1
+        <div className="relative max-w-4xl mx-auto">
+          {/* Vertical line with glow */}
+          <div className="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 transform -translate-x-1/2 z-0 shadow-[0_0_24px_8px_rgba(55,48,163,0.3)]"></div>
+          <div className="flex flex-col gap-20 relative z-10">
+            {/* Step 1 */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+              <div className="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1 flex justify-end">
+                <div className="inline-block bg-gradient-to-br from-blue-900/40 to-purple-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                  <div className="flex items-center justify-end mb-2">
+                    {/* Icon: Magnifying glass */}
+                    <svg
+                      className="w-7 h-7 text-blue-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle cx="11" cy="11" r="8" strokeWidth="2" />
+                      <line
+                        x1="21"
+                        y1="21"
+                        x2="16.65"
+                        y2="16.65"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                    <h3 className="text-lg font-semibold text-white">
+                      Discovery
+                    </h3>
+                  </div>
+                  <p className="text-gray-300 text-sm">
+                    We analyze your business needs, goals, and target audience
+                    to create a comprehensive strategy.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center md:w-1/12 justify-center order-1 md:order-2 relative">
+                {/* Timeline dot with pulse */}
+                <div className="relative z-10">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-30"></span>
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                    1
+                  </div>
+                </div>
+                {/* Connecting line */}
+                <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
+              </div>
+              <div className="md:w-1/2 order-3"></div>
             </div>
-            <h3 className="text-lg font-semibold mb-3">Discovery</h3>
-            <p className="text-gray-400 text-sm">
-              We analyze your business needs, goals, and target audience to
-              create a comprehensive strategy.
-            </p>
-            <div className="hidden md:block absolute top-10 left-full w-8 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transform translate-x-4"></div>
-          </div>
-
-          <div className="text-center relative">
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold">
-              2
+            {/* Step 2 */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+              <div className="md:w-1/2 order-1"></div>
+              <div className="flex flex-col items-center md:w-1/12 justify-center order-2 relative">
+                {/* Timeline dot with pulse */}
+                <div className="relative z-10">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-900 opacity-30"></span>
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                    2
+                  </div>
+                </div>
+                {/* Connecting line */}
+                <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
+              </div>
+              <div className="md:w-1/2 md:pl-8 md:text-left order-3 flex justify-start">
+                <div className="inline-block bg-gradient-to-br from-purple-900/40 to-pink-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                  <div className="flex items-center mb-2">
+                    {/* Icon: Pencil/ruler */}
+                    <svg
+                      className="w-7 h-7 text-pink-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.862 3.487a2.5 2.5 0 013.535 3.535L7.5 19.92l-4 1 1-4L16.862 3.487z"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <h3 className="text-lg font-semibold text-white">Design</h3>
+                  </div>
+                  <p className="text-gray-300 text-sm">
+                    Our designers create intuitive, beautiful interfaces that
+                    align with your brand and user expectations.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold mb-3">Design</h3>
-            <p className="text-gray-400 text-sm">
-              Our designers create intuitive, beautiful interfaces that align
-              with your brand and user expectations.
-            </p>
-            <div className="hidden md:block absolute top-10 left-full w-8 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transform translate-x-4"></div>
-          </div>
-
-          <div className="text-center relative">
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold">
-              3
+            {/* Step 3 */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+              <div className="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1 flex justify-end">
+                <div className="inline-block bg-gradient-to-br from-blue-900/40 to-green-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                  <div className="flex items-center justify-end mb-2">
+                    {/* Icon: Code */}
+                    <svg
+                      className="w-7 h-7 text-green-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline
+                        points="16 18 22 12 16 6"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <polyline
+                        points="8 6 2 12 8 18"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <h3 className="text-lg font-semibold text-white">
+                      Development
+                    </h3>
+                  </div>
+                  <p className="text-gray-300 text-sm">
+                    Expert developers bring your vision to life using
+                    cutting-edge technologies and best practices.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center md:w-1/12 justify-center order-1 md:order-2 relative">
+                {/* Timeline dot with pulse */}
+                <div className="relative z-10">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-30"></span>
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                    3
+                  </div>
+                </div>
+                {/* Connecting line */}
+                <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
+              </div>
+              <div className="md:w-1/2 order-3"></div>
             </div>
-            <h3 className="text-lg font-semibold mb-3">Development</h3>
-            <p className="text-gray-400 text-sm">
-              Expert developers bring your vision to life using cutting-edge
-              technologies and best practices.
-            </p>
-            <div className="hidden md:block absolute top-10 left-full w-8 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transform translate-x-4"></div>
-          </div>
-
-          <div className="text-center">
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold">
-              4
+            {/* Step 4 */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+              <div className="md:w-1/2 order-1"></div>
+              <div className="flex flex-col items-center md:w-1/12 justify-center order-2 relative">
+                {/* Timeline dot with pulse */}
+                <div className="relative z-10">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-900 opacity-30"></span>
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                    4
+                  </div>
+                </div>
+              </div>
+              <div className="md:w-1/2 md:pl-8 md:text-left order-3 flex justify-start">
+                <div className="inline-block bg-gradient-to-br from-cyan-900/40 to-blue-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                  <div className="flex items-center mb-2">
+                    {/* Icon: Rocket */}
+                    <svg
+                      className="w-7 h-7 text-cyan-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M15 7h4v4"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <h3 className="text-lg font-semibold text-white">Launch</h3>
+                  </div>
+                  <p className="text-gray-300 text-sm">
+                    We deploy your solution with comprehensive testing and
+                    provide ongoing support and maintenance.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold mb-3">Launch</h3>
-            <p className="text-gray-400 text-sm">
-              We deploy your solution with comprehensive testing and provide
-              ongoing support and maintenance.
-            </p>
           </div>
         </div>
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 px-30">
+      <section className="py-20 px-30 bg-gradient-to-b from-[#101011] to-[#0e0d12]">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Our Portfolio
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -347,7 +599,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 px-30 bg-gradient-to-r from-blue-900/10 to-purple-900/10">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
