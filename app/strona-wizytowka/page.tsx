@@ -8,13 +8,16 @@ export default function StronaWizytowka() {
       <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
         <div className="content-center w-full lg:w-1/2">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-4 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
-            Strony Wizytówki<br />
+            Strony Wizytówki
+            <br />
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
               Profesjonalny wizerunek online
             </span>
           </h1>
           <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-6">
-            Profesjonalne, responsywne strony będące Twoją cyfrową wizytówką i budujące trwałe wrażenie. Zyskaj zaufanie klientów i wyróżnij się w sieci.
+            Profesjonalne, responsywne strony będące Twoją cyfrową wizytówką i
+            budujące trwałe wrażenie. Zyskaj zaufanie klientów i wyróżnij się w
+            sieci.
           </h2>
           <Link
             href="/contact"
@@ -42,30 +45,77 @@ export default function StronaWizytowka() {
             Dlaczego warto mieć stronę wizytówkę?
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Strona wizytówka to Twoja cyfrowa tożsamość. Pozwala budować zaufanie, prezentować ofertę i ułatwia kontakt z klientami.
+            Strona wizytówka to Twoja cyfrowa tożsamość. Pozwala budować
+            zaufanie, prezentować ofertę i ułatwia kontakt z klientami.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
             </div>
             <h3 className="text-xl font-semibold mb-3">Pierwsze wrażenie</h3>
-            <p className="text-gray-400">Nowoczesny design, który przyciąga uwagę i buduje profesjonalny wizerunek Twojej marki.</p>
+            <p className="text-gray-400">
+              Nowoczesny design, który przyciąga uwagę i buduje profesjonalny
+              wizerunek Twojej marki.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h4v4" /></svg>
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" strokeWidth="2" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 12h4v4"
+                />
+              </svg>
             </div>
             <h3 className="text-xl font-semibold mb-3">Responsywność</h3>
-            <p className="text-gray-400">Twoja strona wygląda świetnie na każdym urządzeniu – od smartfona po komputer.</p>
+            <p className="text-gray-400">
+              Twoja strona wygląda świetnie na każdym urządzeniu – od smartfona
+              po komputer.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v4a1 1 0 001 1h3m10-5v4a1 1 0 01-1 1h-3m-4 4h6m-6 4h6" /></svg>
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 7v4a1 1 0 001 1h3m10-5v4a1 1 0 01-1 1h-3m-4 4h6m-6 4h6"
+                />
+              </svg>
             </div>
             <h3 className="text-xl font-semibold mb-3">Łatwy kontakt</h3>
-            <p className="text-gray-400">Formularz kontaktowy, mapka, linki do social mediów – wszystko pod ręką dla Twoich klientów.</p>
+            <p className="text-gray-400">
+              Formularz kontaktowy, mapka, linki do social mediów – wszystko pod
+              ręką dla Twoich klientów.
+            </p>
           </div>
         </div>
       </section>
@@ -86,20 +136,37 @@ export default function StronaWizytowka() {
         </div>
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">1. Konsultacja</h3>
-            <p className="text-gray-300 text-sm">Poznajemy Twoje potrzeby i oczekiwania, doradzamy najlepsze rozwiązania.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              1. Konsultacja
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Poznajemy Twoje potrzeby i oczekiwania, doradzamy najlepsze
+              rozwiązania.
+            </p>
           </div>
           <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">2. Projekt graficzny</h3>
-            <p className="text-gray-300 text-sm">Tworzymy unikalny, nowoczesny design dopasowany do Twojej branży.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              2. Projekt graficzny
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Tworzymy unikalny, nowoczesny design dopasowany do Twojej branży.
+            </p>
           </div>
           <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 backdrop-blur-sm border border-green-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">3. Realizacja</h3>
-            <p className="text-gray-300 text-sm">Programujemy stronę, dbając o wydajność, SEO i bezpieczeństwo.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              3. Realizacja
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Programujemy stronę, dbając o wydajność, SEO i bezpieczeństwo.
+            </p>
           </div>
           <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">4. Wdrożenie i wsparcie</h3>
-            <p className="text-gray-300 text-sm">Publikujemy stronę i zapewniamy wsparcie techniczne po wdrożeniu.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              4. Wdrożenie i wsparcie
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Publikujemy stronę i zapewniamy wsparcie techniczne po wdrożeniu.
+            </p>
           </div>
         </div>
       </section>
@@ -111,21 +178,33 @@ export default function StronaWizytowka() {
             Co zyskujesz?
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Strona wizytówka to inwestycja, która szybko się zwraca. Oto najważniejsze korzyści:
+            Strona wizytówka to inwestycja, która szybko się zwraca. Oto
+            najważniejsze korzyści:
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <h3 className="text-xl font-semibold mb-3">Większa wiarygodność</h3>
-            <p className="text-gray-400">Profesjonalna strona buduje zaufanie i ułatwia zdobywanie nowych klientów.</p>
+            <p className="text-gray-400">
+              Profesjonalna strona buduje zaufanie i ułatwia zdobywanie nowych
+              klientów.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-            <h3 className="text-xl font-semibold mb-3">Lepsza widoczność w sieci</h3>
-            <p className="text-gray-400">Optymalizacja SEO sprawia, że Twoja oferta jest łatwiej znajdowana przez potencjalnych klientów.</p>
+            <h3 className="text-xl font-semibold mb-3">
+              Lepsza widoczność w sieci
+            </h3>
+            <p className="text-gray-400">
+              Optymalizacja SEO sprawia, że Twoja oferta jest łatwiej znajdowana
+              przez potencjalnych klientów.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <h3 className="text-xl font-semibold mb-3">Łatwy kontakt</h3>
-            <p className="text-gray-400">Prosty formularz i szybki dostęp do danych kontaktowych zwiększają szanse na nawiązanie współpracy.</p>
+            <p className="text-gray-400">
+              Prosty formularz i szybki dostęp do danych kontaktowych zwiększają
+              szanse na nawiązanie współpracy.
+            </p>
           </div>
         </div>
       </section>
@@ -137,7 +216,8 @@ export default function StronaWizytowka() {
             Chcesz wyróżnić się w sieci?
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
-            Skontaktuj się z nami i zamów stronę wizytówkę, która otworzy przed Tobą nowe możliwości biznesowe.
+            Skontaktuj się z nami i zamów stronę wizytówkę, która otworzy przed
+            Tobą nowe możliwości biznesowe.
           </p>
           <div className="flex justify-center">
             <Link

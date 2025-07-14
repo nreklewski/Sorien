@@ -8,13 +8,16 @@ export default function SystemyFirmowe() {
       <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
         <div className="content-center w-full lg:w-1/2">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-4 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
-            Systemy Firmowe<br />
+            Systemy Firmowe
+            <br />
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
               Optymalizacja procesów biznesowych
             </span>
           </h1>
           <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-6">
-            Dedykowane systemy, które optymalizują procesy i zwiększają wydajność Twojej firmy. Od zarządzania projektami po kompleksowe ERP.
+            Dedykowane systemy, które optymalizują procesy i zwiększają
+            wydajność Twojej firmy. Od zarządzania projektami po kompleksowe
+            ERP.
           </h2>
           <Link
             href="/contact"
@@ -42,30 +45,80 @@ export default function SystemyFirmowe() {
             Dlaczego warto mieć system firmowy?
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Systemy firmowe to klucz do zwiększenia efektywności i automatyzacji procesów biznesowych. Oto najważniejsze korzyści:
+            Systemy firmowe to klucz do zwiększenia efektywności i automatyzacji
+            procesów biznesowych. Oto najważniejsze korzyści:
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-3">Zwiększenie wydajności</h3>
-            <p className="text-gray-400">Automatyzacja powtarzalnych zadań i optymalizacja procesów pozwalają zaoszczędzić czas i zasoby.</p>
+            <h3 className="text-xl font-semibold mb-3">
+              Zwiększenie wydajności
+            </h3>
+            <p className="text-gray-400">
+              Automatyzacja powtarzalnych zadań i optymalizacja procesów
+              pozwalają zaoszczędzić czas i zasoby.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
             </div>
             <h3 className="text-xl font-semibold mb-3">Lepsze zarządzanie</h3>
-            <p className="text-gray-400">Centralizacja danych i procesów zapewnia lepszą kontrolę nad operacjami biznesowymi.</p>
+            <p className="text-gray-400">
+              Centralizacja danych i procesów zapewnia lepszą kontrolę nad
+              operacjami biznesowymi.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                />
+              </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-3">Analiza i raportowanie</h3>
-            <p className="text-gray-400">Szczegółowe raporty i analizy pomagają w podejmowaniu lepszych decyzji biznesowych.</p>
+            <h3 className="text-xl font-semibold mb-3">
+              Analiza i raportowanie
+            </h3>
+            <p className="text-gray-400">
+              Szczegółowe raporty i analizy pomagają w podejmowaniu lepszych
+              decyzji biznesowych.
+            </p>
           </div>
         </div>
       </section>
@@ -86,20 +139,40 @@ export default function SystemyFirmowe() {
         </div>
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">1. Analiza procesów</h3>
-            <p className="text-gray-300 text-sm">Poznajemy Twoje procesy biznesowe, identyfikujemy problemy i możliwości optymalizacji.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              1. Analiza procesów
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Poznajemy Twoje procesy biznesowe, identyfikujemy problemy i
+              możliwości optymalizacji.
+            </p>
           </div>
           <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">2. Projektowanie rozwiązania</h3>
-            <p className="text-gray-300 text-sm">Tworzymy architekturę systemu i projektujemy interfejsy użytkownika.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              2. Projektowanie rozwiązania
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Tworzymy architekturę systemu i projektujemy interfejsy
+              użytkownika.
+            </p>
           </div>
           <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 backdrop-blur-sm border border-green-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">3. Rozwój i integracje</h3>
-            <p className="text-gray-300 text-sm">Programujemy system z integracją istniejących narzędzi i baz danych.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              3. Rozwój i integracje
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Programujemy system z integracją istniejących narzędzi i baz
+              danych.
+            </p>
           </div>
           <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/20 rounded-3xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-2">4. Wdrożenie i szkolenia</h3>
-            <p className="text-gray-300 text-sm">Wdrażamy system, szkolimy użytkowników i zapewniamy wsparcie techniczne.</p>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              4. Wdrożenie i szkolenia
+            </h3>
+            <p className="text-gray-300 text-sm">
+              Wdrażamy system, szkolimy użytkowników i zapewniamy wsparcie
+              techniczne.
+            </p>
           </div>
         </div>
       </section>
@@ -111,21 +184,35 @@ export default function SystemyFirmowe() {
             Co zawiera Twój system?
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Kompleksowe rozwiązanie biznesowe z wszystkimi niezbędnymi funkcjonalnościami:
+            Kompleksowe rozwiązanie biznesowe z wszystkimi niezbędnymi
+            funkcjonalnościami:
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-            <h3 className="text-xl font-semibold mb-3">Zarządzanie projektami</h3>
-            <p className="text-gray-400">Planowanie, śledzenie postępów, zarządzanie zasobami i komunikacja w zespole.</p>
+            <h3 className="text-xl font-semibold mb-3">
+              Zarządzanie projektami
+            </h3>
+            <p className="text-gray-400">
+              Planowanie, śledzenie postępów, zarządzanie zasobami i komunikacja
+              w zespole.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <h3 className="text-xl font-semibold mb-3">CRM i sprzedaż</h3>
-            <p className="text-gray-400">Zarządzanie klientami, śledzenie leadów, automatyzacja procesów sprzedażowych.</p>
+            <p className="text-gray-400">
+              Zarządzanie klientami, śledzenie leadów, automatyzacja procesów
+              sprzedażowych.
+            </p>
           </div>
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-            <h3 className="text-xl font-semibold mb-3">Raportowanie i analityka</h3>
-            <p className="text-gray-400">Szczegółowe raporty, dashboardy, analizy trendów i KPI w czasie rzeczywistym.</p>
+            <h3 className="text-xl font-semibold mb-3">
+              Raportowanie i analityka
+            </h3>
+            <p className="text-gray-400">
+              Szczegółowe raporty, dashboardy, analizy trendów i KPI w czasie
+              rzeczywistym.
+            </p>
           </div>
         </div>
       </section>
@@ -137,7 +224,8 @@ export default function SystemyFirmowe() {
             Gotowy na optymalizację?
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
-            Skontaktuj się z nami i stwórzmy razem system firmowy, który zwiększy efektywność Twojej organizacji.
+            Skontaktuj się z nami i stwórzmy razem system firmowy, który
+            zwiększy efektywność Twojej organizacji.
           </p>
           <div className="flex justify-center">
             <Link
