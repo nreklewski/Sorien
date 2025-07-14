@@ -6,59 +6,74 @@ export default function Home() {
   return (
     <div className=" text-white">
       {/* Hero Section */}
-      <section className="flex justify-between pt-24 px-30 pb-20">
-        <div className="content-center">
-          <h1 className="text-5xl md:text-5xl font-bold mb-6 text-white">
-            Bespoke software for your <br />{" "}
+      <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
+        <div className="content-center w-full lg:w-1/2">
+          <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-bold mb-4 md:mb-6 text-white">
+            Dedykowany software dla Twojego{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-              innovative
+              innowacyjnego
             </span>{" "}
-            business
+            biznesu
           </h1>
-          <h2 className="text-xl md:text-lg text-gray-300 leading-relaxed">
-            We build custom websites or mobile apps for <br /> innovative
-            businesses seeking a competitive edge.
+          <h2 className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed">
+            Tworzymy strony internetowe i aplikacje mobilne dla innowacyjnych
+            firm, które chcą zyskać przewagę nad konkurencją.
           </h2>
-          <div className="flex gap-4 mt-4">
-            <Link
-              href="/our-work"
-              className="border border-gray-300 rounded-full px-4 py-2 bg-gradient-to-r from-purple-900 to-purple-900/30 transition duration-300 hover:scale-105"
-            >
-              Our work
-            </Link>
-
+          <div className="flex flex-col sm:flex-row gap-4 mt-14 mb-10">
             <Link
               href="/contact"
-              className="border border-gray-300 rounded-full px-4 py-2 bg-transparent hover:bg-gray-800 transition duration-300"
+              className="bg-gradient-to-r from-gray-900 to-purple-950 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold border border-gray-800 hover:border-purple-700 hover:bg-gradient-to-r hover:from-gray-800 hover:to-purple-900 transition-all duration-300 text-base md:text-lg shadow-lg shadow-black/30 hover:shadow-purple-900/40 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50 text-center w-full sm:w-auto"
             >
-              Get in touch
+              Zrób pierwszy krok
             </Link>
           </div>
         </div>
-        <div className={`relative inline-block ${styles.customShadowImg}`}>
+        <div
+          className={`relative w-full hidden lg:w-auto lg:flex ${styles.customShadowImg}`}
+        >
           <Image
             src="/1.png"
             alt="sorien"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             quality={100}
+            className="w-64 h-64 sm:w-80 sm:h-80 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain"
           />
         </div>
       </section>
 
+      {/* Arrow Down for Learn More */}
+      <div className="flex justify-center -mt-6 md:-mt-10 mb-4">
+        <span className="animate-bounce text-blue-400">
+          <svg
+            className="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </span>
+      </div>
+
       {/* What We Do Section */}
-      <section className="py-20 px-30 bg-gradient-to-b from-[#101015] to-[#151515]">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            What We Do
+      <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#101015] to-[#151515]">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
+            Czym się zajmujemy
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            We specialize in creating comprehensive digital solutions that drive
-            business growth and enhance operational efficiency.
+          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+            Specjalizujemy się w kompleksowych rozwiązaniach cyfrowych, które
+            napędzają rozwój firm i zwiększają efektywność operacyjną.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
               <svg
@@ -75,13 +90,17 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-3">
-              Business Card Websites
-            </h3>
+            <h3 className="text-xl font-semibold mb-3">Strony Wizytówki</h3>
             <p className="text-gray-400">
-              Professional, responsive websites that serve as your digital
-              business card and create lasting impressions.
+              Profesjonalne, responsywne strony będące Twoją cyfrową wizytówką i
+              budujące trwałe wrażenie.
             </p>
+            <Link
+              href="/services"
+              className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
+            >
+              Dowiedz się więcej
+            </Link>
           </div>
 
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
@@ -92,19 +111,27 @@ export default function Home() {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
+                <circle cx="9" cy="21" r="1" strokeWidth="2" />
+                <circle cx="20" cy="21" r="1" strokeWidth="2" />
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  d="M1 1h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h12"
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-3">Mobile Applications</h3>
+            <h3 className="text-xl font-semibold mb-3">Sklepy Internetowe</h3>
             <p className="text-gray-400">
-              Native and cross-platform mobile apps that engage users and
-              streamline business processes.
+              Nowoczesne sklepy online, które zwiększają sprzedaż i zapewniają
+              klientom wygodne zakupy.
             </p>
+            <Link
+              href="/services"
+              className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
+            >
+              Dowiedz się więcej
+            </Link>
           </div>
 
           <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
@@ -123,17 +150,23 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-3">Internal Systems</h3>
+            <h3 className="text-xl font-semibold mb-3">Systemy Wewnętrzne</h3>
             <p className="text-gray-400">
-              Custom software solutions that optimize workflows and boost your
-              company's performance and productivity.
+              Dedykowane systemy, które optymalizują procesy i zwiększają
+              wydajność Twojej firmy.
             </p>
+            <Link
+              href="/services"
+              className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
+            >
+              Dowiedz się więcej
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 px-30 relative overflow-hidden">
+      <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 relative overflow-hidden">
         {/* Background floating elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/25 to-purple-600/25 rounded-full blur-xl animate-pulse"></div>
@@ -142,13 +175,13 @@ export default function Home() {
           <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-gradient-to-r from-purple-500/25 to-blue-600/25 rounded-full blur-xl animate-pulse delay-1500"></div>
         </div>
 
-        <div className="text-center mb-16 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Why Choose Us
+        <div className="text-center mb-10 md:mb-16 relative z-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
+            Dlaczego my?
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            We combine technical expertise with business acumen to deliver
-            solutions that truly make a difference.
+          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+            Łączymy wiedzę techniczną z biznesowym podejściem, by dostarczać
+            rozwiązania, które naprawdę robią różnicę.
           </p>
         </div>
 
@@ -176,12 +209,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-3 text-white">
-                      Fully Customizable
+                      W pełni personalizowane
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Tailored solutions designed specifically for your business
-                      needs. We create unique designs and functionalities that
-                      perfectly align with your vision and requirements.
+                      Rozwiązania szyte na miarę Twoich potrzeb. Tworzymy
+                      unikalne projekty i funkcjonalności idealnie dopasowane do
+                      Twojej wizji.
                     </p>
                   </div>
                 </div>
@@ -209,13 +242,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-3 text-white">
-                      Cutting-Edge Technologies
+                      Nowoczesne technologie
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Using Next.js for superior SEO and SSR performance. We
-                      leverage the latest technologies to ensure your project
-                      stands out with optimal performance and search engine
-                      visibility.
+                      Korzystamy z Next.js dla lepszego SEO i wydajności.
+                      Wdrażamy najnowsze technologie, by Twój projekt wyróżniał
+                      się w sieci.
                     </p>
                   </div>
                 </div>
@@ -246,13 +278,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-3 text-white">
-                      Lightning Performance
+                      Błyskawiczna wydajność
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Blazing fast applications optimized for speed and
-                      efficiency. Our solutions deliver exceptional user
-                      experiences with minimal loading times and maximum
-                      responsiveness.
+                      Ekspresowe aplikacje zoptymalizowane pod kątem szybkości i
+                      wydajności. Gwarantujemy świetne doświadczenia użytkownika
+                      i minimalny czas ładowania.
                     </p>
                   </div>
                 </div>
@@ -280,12 +311,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-3 text-white">
-                      Full Post-Launch Support
+                      Wsparcie po wdrożeniu
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Complete flexibility and rapid technical support after
-                      deployment. Easy expansion and quick technical assistance
-                      ensure your solution grows with your business needs.
+                      Pełna elastyczność i szybkie wsparcie techniczne po
+                      wdrożeniu. Łatwa rozbudowa i pomoc techniczna pozwalają
+                      Twojemu biznesowi rosnąć.
                     </p>
                   </div>
                 </div>
@@ -296,14 +327,14 @@ export default function Home() {
       </section>
 
       {/* Our Process Section */}
-      <section className="py-20 px-4 md:px-30 bg-gradient-to-b from-[#0d0c10] to-[#101010]">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Our Process
+      <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#0d0c10] to-[#101010]">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
+            Nasz proces
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            A proven methodology that ensures your project is delivered on time,
-            within budget, and exceeds expectations.
+          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+            Sprawdzona metodologia, która gwarantuje realizację projektu na
+            czas, w budżecie i powyżej oczekiwań.
           </p>
         </div>
         <div className="relative max-w-4xl mx-auto">
@@ -332,12 +363,12 @@ export default function Home() {
                       />
                     </svg>
                     <h3 className="text-lg font-semibold text-white">
-                      Discovery
+                      Analiza potrzeb
                     </h3>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    We analyze your business needs, goals, and target audience
-                    to create a comprehensive strategy.
+                    Analizujemy potrzeby, cele i grupę docelową, by opracować
+                    skuteczną strategię.
                   </p>
                 </div>
               </div>
@@ -389,11 +420,13 @@ export default function Home() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h3 className="text-lg font-semibold text-white">Design</h3>
+                    <h3 className="text-lg font-semibold text-white">
+                      Projektowanie
+                    </h3>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    Our designers create intuitive, beautiful interfaces that
-                    align with your brand and user expectations.
+                    Nasi projektanci tworzą intuicyjne, piękne interfejsy zgodne
+                    z Twoją marką i oczekiwaniami użytkowników.
                   </p>
                 </div>
               </div>
@@ -424,12 +457,12 @@ export default function Home() {
                       />
                     </svg>
                     <h3 className="text-lg font-semibold text-white">
-                      Development
+                      Programowanie
                     </h3>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    Expert developers bring your vision to life using
-                    cutting-edge technologies and best practices.
+                    Nasi programiści realizują Twoją wizję, korzystając z
+                    najnowszych technologii i dobrych praktyk.
                   </p>
                 </div>
               </div>
@@ -485,11 +518,13 @@ export default function Home() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h3 className="text-lg font-semibold text-white">Launch</h3>
+                    <h3 className="text-lg font-semibold text-white">
+                      Wdrożenie
+                    </h3>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    We deploy your solution with comprehensive testing and
-                    provide ongoing support and maintenance.
+                    Wdrażamy rozwiązanie z pełnym testowaniem i zapewniamy
+                    wsparcie oraz utrzymanie.
                   </p>
                 </div>
               </div>
@@ -499,125 +534,105 @@ export default function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 px-30 bg-gradient-to-b from-[#101011] to-[#0e0d12]">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Our Portfolio
+      <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#101011] to-[#0e0d12]">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
+            Nasze realizacje
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Explore some of our recent projects that showcase our expertise and
-            commitment to excellence.
+          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+            Poznaj nasze wybrane projekty, które pokazują nasze doświadczenie i
+            zaangażowanie.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300">
-            <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center">
-              <div className="text-center p-6">
-                <h3 className="text-xl font-semibold mb-2">
-                  E-Commerce Platform
-                </h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Modern online store with advanced features
-                </p>
-                <div className="flex gap-2 justify-center">
-                  <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">
-                    React
-                  </span>
-                  <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">
-                    Node.js
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300">
-            <div className="aspect-video bg-gradient-to-br from-green-500/20 to-blue-600/20 flex items-center justify-center">
-              <div className="text-center p-6">
-                <h3 className="text-xl font-semibold mb-2">
-                  Mobile Banking App
-                </h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Secure financial management solution
-                </p>
-                <div className="flex gap-2 justify-center">
-                  <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">
-                    Flutter
-                  </span>
-                  <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">
-                    Firebase
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300">
-            <div className="aspect-video bg-gradient-to-br from-purple-500/20 to-pink-600/20 flex items-center justify-center">
-              <div className="text-center p-6">
-                <h3 className="text-xl font-semibold mb-2">CRM System</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Internal business management platform
-                </p>
-                <div className="flex gap-2 justify-center">
-                  <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">
-                    Vue.js
-                  </span>
-                  <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs">
-                    Python
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <Link
-            href="/portfolio"
-            className="inline-flex items-center gap-2 border border-gray-300 rounded-full px-6 py-3 bg-transparent hover:bg-gray-800 transition duration-300"
-          >
-            View All Projects
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          {/* Business Card Website */}
+          <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
+            <div className="aspect-[5/4] flex items-center justify-center relative">
+              <Image
+                src="/wizytowka.png"
+                alt="Business Card Website"
+                fill
+                className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
+                style={{ zIndex: 1 }}
               />
-            </svg>
-          </Link>
+              <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+                <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                    Strona wizytówka
+                  </h3>
+                  <p className="text-gray-700 text-base font-medium">
+                    Profesjonalny wygląd
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Ecommerce Store */}
+          <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
+            <div className="aspect-[5/4] flex items-center justify-center relative">
+              <Image
+                src="/sklep.png"
+                alt="Ecommerce Store"
+                fill
+                className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
+                style={{ zIndex: 1 }}
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+                <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                    Sklep internetowy
+                  </h3>
+                  <p className="text-gray-700 text-base font-medium">
+                    Nowoczesne zakupy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Internal System */}
+          <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
+            <div className="aspect-[5/4] flex items-center justify-center relative">
+              <Image
+                src="/system.png"
+                alt="Internal System"
+                fill
+                className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
+                style={{ zIndex: 1 }}
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+                <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                    System wewnętrzny
+                  </h3>
+                  <p className="text-gray-700 text-base font-medium">
+                    Narzędzia biznesowe
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-30 bg-gradient-to-r from-blue-900/10 to-purple-900/10">
+      <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-r from-blue-900/10 to-purple-900/10">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            Ready to Transform Your Business?
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
+            Gotowy na rozwój swojego biznesu?
           </h2>
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Let's discuss how our custom software solutions can help you achieve
-            your business goals and stay ahead of the competition.
+          <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
+            Porozmawiajmy, jak nasze dedykowane oprogramowanie może pomóc Ci
+            osiągnąć cele biznesowe i wyprzedzić konkurencję.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition-all duration-300"
-            >
-              Start Your Project
-            </Link>
+          <div className="flex justify-center">
             <Link
               href="/consultation"
-              className="border border-gray-300 text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300"
+              className="border border-gray-300 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg hover:bg-gradient-to-r hover:from-purple-700 hover:to-transparent hover:scale-105 hover:shadow-lg transition-all duration-700"
             >
-              Free Consultation
+              Rozwiń swój biznes
             </Link>
           </div>
         </div>
