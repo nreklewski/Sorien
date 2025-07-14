@@ -8,14 +8,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
         <div className="content-center w-full lg:w-1/2">
-          <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-bold mb-4 md:mb-6 text-white">
-            Dedykowany software dla Twojego{" "}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-4 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
+            Dedykowany software dla <br />
+            Twojego{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
               innowacyjnego
             </span>{" "}
             biznesu
           </h1>
-          <h2 className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed">
+          <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed">
             Tworzymy strony internetowe i aplikacje mobilne dla innowacyjnych
             firm, które chcą zyskać przewagę nad konkurencją.
           </h2>
@@ -96,7 +97,7 @@ export default function Home() {
               budujące trwałe wrażenie.
             </p>
             <Link
-              href="/services"
+              href="/strona-wizytowka"
               className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
             >
               Dowiedz się więcej
@@ -127,7 +128,7 @@ export default function Home() {
               klientom wygodne zakupy.
             </p>
             <Link
-              href="/services"
+              href="/sklepy-internetowe"
               className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
             >
               Dowiedz się więcej
@@ -156,7 +157,7 @@ export default function Home() {
               wydajność Twojej firmy.
             </p>
             <Link
-              href="/services"
+              href="/systemy-firmowe"
               className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
             >
               Dowiedz się więcej

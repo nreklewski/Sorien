@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./NavBarLogo.module.css";
-import dynamic from "next/dynamic";
+import MenuOverlay from "./menuOverlay";
 
 const navLinks = [
   { href: "/", text: "Home" },
@@ -10,8 +10,6 @@ const navLinks = [
   { href: "/", text: "Our work" },
   { href: "/", text: "Contact Us" },
 ];
-
-const MenuOverlay = dynamic(() => import("./menuOverlay"), { ssr: false });
 
 const NavBar = () => {
   return (
