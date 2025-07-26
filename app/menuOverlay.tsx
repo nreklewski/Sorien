@@ -27,7 +27,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ navLinks }) => {
   return (
     <>
       {/* Hamburger for mobile */}
-      <div className="sm:hidden">
+      <div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-gray-300 focus:outline-none"
@@ -52,7 +52,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ navLinks }) => {
       {/* Mobile menu overlay */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex justify-end sm:hidden transition-opacity duration-300"
+          className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex justify-end transition-opacity duration-300"
           onClick={handleOverlayClick}
         >
           <div className="w-4/5 max-w-xs h-full bg-gray-950 shadow-2xl p-0 flex flex-col rounded-l-2xl transform translate-x-0 transition-transform duration-300 border-l border-white/20">

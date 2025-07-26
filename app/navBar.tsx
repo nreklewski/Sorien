@@ -5,10 +5,11 @@ import styles from "./NavBarLogo.module.css";
 import MenuOverlay from "./menuOverlay";
 
 const navLinks = [
-  { href: "/", text: "Home" },
-  { href: "/", text: "Story" },
-  { href: "/", text: "Our work" },
-  { href: "/", text: "Contact Us" },
+  { href: "/", text: "Strona Główna" },
+  { href: "/wycena", text: "Otrzymaj Wycenę" },
+  { href: "/strona-wizytowka", text: "Strony Wizytówki" },
+  { href: "/sklepy-internetowe", text: "Sklepy Internetowe" },
+  { href: "/systemy-firmowe", text: "Systemy Wewnętrzne" },
 ];
 
 const NavBar = () => {
@@ -28,19 +29,6 @@ const NavBar = () => {
         </div>
         {/* Hamburger and mobile menu overlay */}
         <MenuOverlay navLinks={navLinks} />
-        {/* Nav links */}
-        <ul className="hidden sm:flex space-x-8 md:space-x-10">
-          {navLinks.map((link) => (
-            <li key={link.text}>
-              <Link
-                href={link.href}
-                className="text-gray-300 hover:text-white transition-colors text-base md:text-lg font-medium hover:scale-105 transform duration-200"
-              >
-                {link.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
       </div>
     </nav>
   );

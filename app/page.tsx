@@ -22,8 +22,8 @@ export default function Home() {
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 mt-14 mb-10">
             <Link
-              href="/contact"
-              className="bg-gradient-to-r from-gray-900 to-purple-950 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold border border-gray-800 hover:border-purple-700 hover:bg-gradient-to-r hover:from-gray-800 hover:to-purple-900 transition-all duration-300 text-base md:text-lg shadow-lg shadow-black/30 hover:shadow-purple-900/40 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50 text-center w-full sm:w-auto"
+              href="/wycena"
+              className="bg-white/10 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold border border-white shadow-lg shadow-black/20 hover:bg-violet-900/80 hover:scale-105 transition-all duration-300 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-50 text-center w-full sm:w-auto"
             >
               Zrób pierwszy krok
             </Link>
