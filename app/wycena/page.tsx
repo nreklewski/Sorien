@@ -4,6 +4,7 @@ import React, { useState, useRef, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { FiXCircle } from "react-icons/fi";
 import Link from "next/link";
+import Script from "next/script";
 
 const services = [
   { key: "businessCard", label: "Strona wizytówka" },
@@ -58,6 +59,27 @@ const allowedFileTypes = [
 ];
 
 export default function Wycena() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Bezpłatna wycena projektu strony internetowej",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Sorien",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Łódź",
+        addressCountry: "PL",
+      },
+      telephone: "+48 880 924 444",
+      email: "hello@sorien.pl",
+      logo: "https://sorien.pl/android-chrome-512x512.png",
+      url: "https://sorien.pl",
+    },
+    description:
+      "Wypełnij formularz wyceny, aby szybko otrzymać darmową indywidualną ofertę stworzenia strony internetowej, sklepu lub systemu dla twojej firmy.",
+  };
+
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -762,20 +784,27 @@ export default function Wycena() {
 
   // Main content area (content is always overlayed, navbar/footer are outside)
   return (
-    <div className="w-full flex flex-col items-center">
-      {renderOverlay()}
+    <>
+      <Script
+        id="schema-wycena"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <div className="w-full flex flex-col items-center">
+        {renderOverlay()}
 
-      <section className="w-11/12 max-w-5xl mx-auto  text-center">
-        <p className="text-white text-base md:text-lg py-8">
-          Jeśli masz dodatkowe pytania, skontaktuj się z nami mailowo:
-          <a
-            href="mailto:hello@sorien.com"
-            className="text-violet-400 font-semibold hover:text-violet-200 transition-colors"
-          >
-            hello@sorien.com
-          </a>
-        </p>
-      </section>
-    </div>
+        <section className="w-11/12 max-w-5xl mx-auto  text-center">
+          <p className="text-white text-base md:text-lg py-8">
+            Jeśli masz dodatkowe pytania, skontaktuj się z nami mailowo:
+            <a
+              href="mailto:hello@sorien.com"
+              className="text-violet-400 font-semibold hover:text-violet-200 transition-colors"
+            >
+              hello@sorien.com
+            </a>
+          </p>
+        </section>
+      </div>
+    </>
   );
 }
