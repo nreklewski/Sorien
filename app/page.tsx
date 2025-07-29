@@ -76,8 +76,10 @@ export default function Home() {
               biznesu
             </h1>
             <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed">
-              Tworzymy strony internetowe i aplikacje mobilne dla innowacyjnych
-              firm, które chcą zyskać przewagę nad konkurencją.
+              Tworzymy nowoczesne strony internetowe i aplikacje mobilne dla
+              wszystkich, którzy chcą nie tylko nadążać, ale przede wszystkim
+              wyprzedzać konkurencję. Innowacyjne rozwiązania z przemyślanym
+              designem, aby dać Ci przewagę, która robi różnicę.
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 mt-14 mb-10">
               <Link
@@ -156,8 +158,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Strony Wizytówki</h3>
               <p className="text-gray-400">
-                Profesjonalne, responsywne strony będące Twoją cyfrową wizytówką
-                i budujące trwałe wrażenie.
+                Dobrze pozycjonujące się, responsywne strony. Twoja cyfrowa
+                wizytówka, która przyciąga klientów i zostawia trwałe wrażenie.
               </p>
               <Link
                 href="/strony-wizytowki"
@@ -189,8 +191,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Sklepy Internetowe</h3>
               <p className="text-gray-400">
-                Nowoczesne sklepy online, które zwiększają sprzedaż i zapewniają
-                klientom wygodne zakupy.
+                Nowoczesne sklepy online, które nie tylko zwiększają sprzedaż,
+                ale zamieniają klientów w entuzjastów Twojego sklepu.
               </p>
               <Link
                 href="/sklepy-internetowe"
@@ -220,8 +222,9 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Systemy Wewnętrzne</h3>
               <p className="text-gray-400">
-                Dedykowane systemy, które optymalizują procesy i zwiększają
-                wydajność Twojej firmy.
+                Dedykowane systemy, które rewolucjonizują Twoje procesy i
+                maksymalizują wydajność firmy. Pracuj mądrzej, szybciej,
+                skuteczniej.
               </p>
               <Link
                 href="/systemy-firmowe"
@@ -323,7 +326,7 @@ export default function Home() {
                         Nowoczesne technologie
                       </h3>
                       <p className="text-gray-300 leading-relaxed">
-                        Korzystamy z Next.js dla lepszego SEO i wydajności.
+                        Korzystamy z Next.js dla najlepszego SEO i wydajności.
                         Wdrażamy najnowsze technologie, by Twój projekt
                         wyróżniał się w sieci.
                       </p>
@@ -363,7 +366,7 @@ export default function Home() {
                       <p className="text-gray-300 leading-relaxed">
                         Ekspresowe aplikacje zoptymalizowane pod kątem szybkości
                         i wydajności. Gwarantujemy świetne doświadczenia i
-                        minimalny czas ładowania.
+                        minimalny czas ładowania poprawiający pozycjonowanie.
                       </p>
                     </div>
                   </div>
@@ -550,7 +553,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-300 text-sm">
                       Nasi programiści realizują Twoją wizję, korzystając z
-                      najnowszych technologii i dobrych praktyk.
+                      najnowszych technologii i skutecznych praktyk.
                     </p>
                   </div>
                 </div>
@@ -614,7 +617,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-300 text-sm">
                       Wdrażamy rozwiązanie z pełnym testowaniem i zapewniamy
-                      wsparcie oraz utrzymanie.
+                      wsparcie oraz pomoc w utrzymaniu.
                     </p>
                   </div>
                 </div>
@@ -711,11 +714,12 @@ export default function Home() {
         <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-r from-blue-900/10 to-purple-900/10">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
-              Gotowy na rozwój swojego biznesu?
+              Gotowy na rozwój?
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
-              Porozmawiajmy, jak nasze dedykowane oprogramowanie może pomóc Ci
-              osiągnąć cele biznesowe i wyprzedzić konkurencję.
+              W ciągu 24 godzin odkryj, jak nasze personalizowane oprogramowanie
+              może wynieść Twój biznes na wyższy poziom i zostawić konkurencję w
+              tyle — wraz z szybką, bezpłatną wyceną.
             </p>
             <div className="flex justify-center">
               <Link

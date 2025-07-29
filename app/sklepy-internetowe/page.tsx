@@ -77,7 +77,7 @@ export default function SklepyInternetowe() {
 
             <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-6">
               Przekształć swoją firmę w potęgę e-commerce. Nasze nowoczesne
-              sklepy internetowe zwiększają sprzedaż o nawet 400%, zapewniając
+              sklepy internetowe znacząco zwiększają sprzedaż, zapewniając
               klientom wyjątkowe doświadczenia zakupowe. Od małych firm po duże
               korporacje - każdy biznes zasługuje na sklep, który sprzedaje
               24/7.
@@ -276,7 +276,7 @@ export default function SklepyInternetowe() {
               W dzisiejszym świecie, firmy które nie mają sklepu internetowego,
               tracą ogromne możliwości sprzedaży. Nasze rozwiązania e-commerce
               to nie tylko oprogramowanie - to strategiczna inwestycja w
-              przyszłość Twojej sprzedaży.
+              przyszłość Twoich produktów.
             </p>
           </div>
 
@@ -305,8 +305,8 @@ export default function SklepyInternetowe() {
               <p className="text-gray-400 leading-relaxed mb-4">
                 Dostępność 24/7 i globalny zasięg pozwalają na sprzedaż o każdej
                 porze i dotarcie do nowych klientów. Nasze sklepy zwiększają
-                sprzedaż o średnio 400% w pierwszym roku. To jak otwarcie
-                dodatkowych oddziałów bez kosztów wynajmu i personelu.
+                sprzedaż już w pierwszym tygodniu. To jak otwarcie dodatkowych
+                oddziałów bez kosztów wynajmu i personelu.
               </p>
               <ul className="space-y-2 text-sm text-gray-500">
                 <li className="flex items-center">
@@ -463,8 +463,8 @@ export default function SklepyInternetowe() {
               <p className="text-gray-400 leading-relaxed mb-4">
                 Szczegółowe raporty sprzedaży i zachowań klientów pomagają w
                 podejmowaniu lepszych decyzji biznesowych. Śledź trendy,
-                analizuj konwersje i optymalizuj strategię sprzedaży w czasie
-                rzeczywistym.
+                analizuj konwersje i optymalizuj strategię sprzedaży bez kartki
+                papieru już dziś.
               </p>
               <ul className="space-y-2 text-sm text-gray-500">
                 <li className="flex items-center">
@@ -642,9 +642,9 @@ export default function SklepyInternetowe() {
                 System płatności
               </h3>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Integracja z popularnymi bramkami płatności (PayU, Stripe,
-                PayPal) oraz płatności online i za pobraniem. Bezpieczne i
-                szybkie transakcje.
+                Integracja z popularnymi bramkami płatności (PayU, PayPal) oraz
+                płatności online i za pobraniem. Bezpieczne i szybkie
+                transakcje.
               </p>
               <ul className="space-y-2 text-sm text-gray-500">
                 <li>• Wiele metod płatności</li>

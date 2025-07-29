@@ -75,11 +75,10 @@ export default function StronaWizytowka() {
             </h1>
 
             <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-6">
-              Przekształć swoją firmę w cyfrową potęgę wizerunkową. Nasze
-              profesjonalne strony wizytówki zwiększają zaufanie klientów o
-              300%, zapewniając pierwsze wrażenie, które sprzedaje. Od małych
-              firm po korporacje - każdy biznes zasługuje na wizytówkę, która
-              robi wrażenie 24/7.
+              Niech Twój wizerunek mówi za Ciebie – 24/7. Profesjonalne strony
+              wizytówki, które podkręcają zaufanie nawet o 300%. Dla firm,
+              freelancerów, artystów i wszystkich, którzy chcą błyszczeć w
+              sieci. Zbuduj markę, której nie da się zapomnieć.
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -113,7 +112,7 @@ export default function StronaWizytowka() {
                     clipRule="evenodd"
                   />
                 </svg>
-                ROI w 1 miesiąc
+                ROI w 3 miesiąc
               </div>
               <div className="flex items-center text-gray-400 text-sm">
                 <svg
@@ -302,9 +301,9 @@ export default function StronaWizytowka() {
               </h3>
               <p className="text-gray-400 leading-relaxed mb-4">
                 Profesjonalna strona wizytówka buduje zaufanie i wiarygodność w
-                oczach klientów. Nasze strony zwiększają zaufanie o średnio 300%
-                i poprawiają pierwsze wrażenie. To jak zatrudnienie najlepszego
-                PR-owca, ale w formie cyfrowej.
+                oczach klientów. Nasze strony znacznie zwiększają zaufanie
+                wszystkich i poprawiają pierwsze wrażenie. To jak zatrudnienie
+                najlepszego PR-owca, ale w formie cyfrowej.
               </p>
               <ul className="space-y-2 text-sm text-gray-500">
                 <li className="flex items-center">
@@ -778,7 +777,7 @@ export default function StronaWizytowka() {
             </div>
 
             <p className="text-gray-500 text-sm mt-6">
-              Bez zobowiązań • Darmowa konsultacja • Gwarancja satysfakcji
+              Bez zobowiązań • Darmowa • Gwarancja satysfakcji
             </p>
           </div>
         </section>

@@ -77,7 +77,7 @@ export default function SystemyFirmowe() {
             <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-6">
               Przekształć swoją firmę w dobrze naoliwioną maszynę biznesową.
               Nasze dedykowane systemy firmowe eliminują chaos, automatyzują
-              procesy i zwiększają zyski o nawet 300%. Od małych firm po
+              procesy i przede wszystkim zwiększają zyski. Od małych firm po
               korporacje - każda organizacja zasługuje na system, który pracuje
               dla niej, a nie przeciwko niej.
             </h2>
@@ -113,7 +113,7 @@ export default function SystemyFirmowe() {
                     clipRule="evenodd"
                   />
                 </svg>
-                ROI w 6 miesięcy
+                ROI w 4 miesiące
               </div>
               <div className="flex items-center text-gray-400 text-sm">
                 <svg
@@ -267,7 +267,7 @@ export default function SystemyFirmowe() {
               Dlaczego systemy firmowe to przyszłość biznesu?
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-              Przekształć chaos w przewagę konkurencyjną
+              Przekształć chaos w przewagę
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
               W dzisiejszym świecie biznesowym, firmy które nie inwestują w
@@ -302,9 +302,10 @@ export default function SystemyFirmowe() {
               <p className="text-gray-400 leading-relaxed mb-4">
                 Automatyzacja powtarzalnych zadań pozwala Twoim pracownikom
                 skupić się na tym, co naprawdę ważne - kreatywności i rozwoju
-                biznesu. Nasze systemy eliminują 80% pracy manualnej,
-                zwiększając produktywność o średnio 300%. To jak zatrudnienie
-                dodatkowego zespołu bez dodatkowych kosztów.
+                biznesu. Nasze systemy eliminują 80% powtarzalnej pracy
+                manualnej, znacząco zwiększając produktywność. To jak
+                zatrudnienie dodatkowych pięciu zespołów bez dodatkowych
+                kosztów.
               </p>
               <ul className="space-y-2 text-sm text-gray-500">
                 <li className="flex items-center">
@@ -321,7 +322,7 @@ export default function SystemyFirmowe() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Automatyzacja 80% procesów
+                  Automatyzacja procesów
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -337,7 +338,7 @@ export default function SystemyFirmowe() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Redukcja błędów o 95%
+                  Redukcja błędów
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -353,7 +354,7 @@ export default function SystemyFirmowe() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Oszczędność 20h tygodniowo
+                  Oszczędność czasu
                 </li>
               </ul>
             </div>
@@ -384,7 +385,7 @@ export default function SystemyFirmowe() {
                 kontrolę nad operacjami biznesowymi. Od zarządzania projektami
                 po finanse - wszystko w zasięgu jednego kliknięcia. Decyzje
                 podejmowane na podstawie danych w czasie rzeczywistym, a nie
-                przeczucia czy intuicji.
+                przeczucia intuicji czy wczorajszej kartki samoprzylepnej.
               </p>
               <ul className="space-y-2 text-sm text-gray-500">
                 <li className="flex items-center">
@@ -457,7 +458,7 @@ export default function SystemyFirmowe() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">
-                Inteligentne insights
+                Inteligentne analizy
               </h3>
               <p className="text-gray-400 leading-relaxed mb-4">
                 Przekształć surowe dane w konkretne działania. Nasze systemy
@@ -582,7 +583,7 @@ export default function SystemyFirmowe() {
               <p className="text-gray-300 text-sm leading-relaxed">
                 Programujemy system w iteracjach, testując każdą funkcjonalność
                 na bieżąco. Integrujemy z istniejącymi systemami i bazami
-                danych. Jakość kodu to nasz priorytet.
+                danych. Jakość usługi to nasz priorytet.
               </p>
             </div>
 
@@ -761,7 +762,7 @@ export default function SystemyFirmowe() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-blue-400 mb-2">
-                    6 miesięcy
+                    4 miesiące
                   </div>
                   <div className="text-gray-400 text-sm">Zwrot inwestycji</div>
                 </div>

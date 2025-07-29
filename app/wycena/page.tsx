@@ -721,13 +721,46 @@ export default function Wycena() {
                   >
                     ×
                   </button>
-                  <div className="text-gray-800 mb-2">
-                    Administratorem Twoich danych osobowych jest Sorien. Dane
-                    będą przetwarzane w celu kontaktu i realizacji wyceny,
-                    zgodnie z obowiązującymi przepisami RODO. Masz prawo dostępu
-                    do swoich danych, ich poprawiania, żądania usunięcia lub
-                    ograniczenia przetwarzania. Więcej informacji znajdziesz w
-                    naszej polityce prywatności.
+                  <div className="text-gray-800 mb-2 text-xs">
+                    Administratorem Państwa danych osobowych zebranych w trakcie
+                    korespondencji z wykorzystaniem formularza kontaktowego jest
+                    OVRO Sp. z o.o. z siedzibą w Łodzi, przy ul. Gen. Lucjana
+                    Żeligowskiego 32/34, 90-643, wpisana do rejestru
+                    przedsiębiorców Krajowego Rejestru Sądowego pod numerem
+                    0001126287. Dane osobowe mogą być przetwarzane w celach:
+                    realizacji czynności przed zawarciem umowy lub realizacji
+                    umowy, przedstawienia oferty handlowej, odpowiedzi na
+                    Państwa pytania – w zależności od treści Państwa wiadomości.
+                    Podstawą przetwarzania danych osobowych jest artykuł 6 ust.
+                    1 lit. b Rozporządzenia Parlamentu Europejskiego i Rady [UE]
+                    2016/679 z dnia 27 kwietnia 2016 roku w sprawie ochrony osób
+                    fizycznych w związku z przetwarzaniem danych osobowych i w
+                    sprawie swobodnego przepływu takich danych [RODO], tj.
+                    realizacja umowy lub podjęcie czynności przed zawarciem
+                    umowy, artykuł 6 ust. 1 lit. a RODO, tj. Państwa zgoda,
+                    artykuł 6 ust. 1 lit. f, tj. prawnie uzasadniony interes
+                    administratora – chęć odpowiedzi na Państwa pytania i
+                    wątpliwości. Dane osobowe będą przetwarzane przez okres
+                    niezbędny do realizacji celu przetwarzania określonego w
+                    ust. 3 powyżej, tj. do zawarcia umowy, przedstawienia oferty
+                    handlowej, udzielenia odpowiedzi na Państwa pytania lub
+                    wątpliwości i mogą być przechowywane do upływu okresu
+                    realizacji umowy i przedawnienia roszczeń z umowy. Osoba,
+                    której dane osobowe są przetwarzane ma prawo dostępu do
+                    danych, ich sprostowania, usunięcia, ograniczenia
+                    przetwarzania, wniesienia sprzeciwu wobec przetwarzania oraz
+                    prawo do przenoszenia danych osobowych, z zastrzeżeniem, że
+                    prawo do przenoszenia danych osobowych dotyczy wyłącznie
+                    danych przetwarzanych w sposób wyłącznie zautomatyzowany.
+                    Osoba, której dane osobowe są przetwarzane na podstawie
+                    zgody, ma prawo do jej odwołania w każdym czasie, bez
+                    uszczerbku dla przetwarzania danych osobowych przed
+                    odwołaniem zgody. Osoba, której dane osobowe są przetwarzane
+                    ma prawo wniesienia skargi do właściwego organu nadzorczego.
+                    Podanie danych osobowych jest dobrowolne, jednak brak ich
+                    podania spowoduje niemożność realizacji umowy, podjęcia
+                    czynności przed zawarciem umowy, przedstawienia oferty
+                    handlowej, odpowiedzi na pytania lub wątpliwości.
                   </div>
                 </div>
               </div>

@@ -110,12 +110,12 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ navLinks }) => {
               </ul>
             </nav>
             {/* Contact email for mobile */}
-            <div className="sm:hidden px-8 pb-6 mt-auto">
+            <div className="px-8 pb-6 mt-auto">
               <a
-                href="mailto:hello@sorien.com"
+                href="mailto:hello@sorien.pl"
                 className="block text-gray-400 text-sm text-center hover:text-blue-300 transition-colors"
               >
-                hello@sorien.com
+                hello@sorien.pl
               </a>
             </div>
           </div>
