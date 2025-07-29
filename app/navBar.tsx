@@ -7,7 +7,7 @@ import MenuOverlay from "./menuOverlay";
 const navLinks = [
   { href: "/", text: "Strona Główna" },
   { href: "/wycena", text: "Otrzymaj Wycenę" },
-  { href: "/strona-wizytowka", text: "Strony Wizytówki" },
+  { href: "/strony-wizytowki", text: "Strony Wizytówki" },
   { href: "/sklepy-internetowe", text: "Sklepy Internetowe" },
   { href: "/systemy-firmowe", text: "Systemy Wewnętrzne" },
 ];
@@ -19,8 +19,8 @@ const NavBar = () => {
         <div>
           <Link href="/">
             <Image
-              src="/sorien2.svg"
-              alt="Sorien Logo"
+              src="/logo-sorien-agencja-tworząca-strony-internetowe.svg"
+              alt="Sorien Logo - tworzenie stron internetowych"
               width={120}
               height={30}
               className={`w-40 sm:w-48 h-auto ${styles.logoGlow}`}

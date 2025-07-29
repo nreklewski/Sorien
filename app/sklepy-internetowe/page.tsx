@@ -1,5 +1,31 @@
-import Image from "next/image";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Sklepy Internetowe – Sorien | Profesjonalne Sklepy e-commerce",
+  description:
+    "Projektujemy nowoczesne i zoptymalizowane pod SEO sklepy internetowe, które zwiększają sprzedaż i rozwijają Twój biznes online.",
+  openGraph: {
+    title: "Sklepy Internetowe – Sorien",
+    description:
+      "Profesjonalne sklepy e-commerce z intuicyjnym designem i skutecznym SEO, które pomagają wyróżnić Twój biznes w sieci.",
+    url: "https://sorien.pl/sklepy-internetowe",
+    siteName: "Sorien",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe",
+        width: 1275,
+        height: 620,
+        alt: "Sklepy Internetowe – Sorien",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://sorien.pl/sklepy-internetowe",
+  },
+};
 
 export default function SklepyInternetowe() {
   return (
@@ -34,6 +60,8 @@ export default function SklepyInternetowe() {
                 className="w-5 h-5 text-green-400 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   fillRule="evenodd"
@@ -48,6 +76,8 @@ export default function SklepyInternetowe() {
                 className="w-5 h-5 text-green-400 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   fillRule="evenodd"
@@ -62,6 +92,8 @@ export default function SklepyInternetowe() {
                 className="w-5 h-5 text-green-400 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   fillRule="evenodd"
@@ -74,7 +106,7 @@ export default function SklepyInternetowe() {
           </div>
 
           <Link
-            href="/contact"
+            href="/wycena"
             className="bg-white/10 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold border border-white shadow-lg shadow-black/20 hover:bg-violet-900/80 hover:scale-105 transition-all duration-300 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-50 text-center w-full sm:w-auto"
           >
             Rozpocznij sprzedaż online
@@ -87,23 +119,112 @@ export default function SklepyInternetowe() {
           <div className="absolute -top-10 -left-10 w-60 h-60 bg-gradient-to-br from-blue-500/40 via-purple-500/30 to-pink-500/30 rounded-full blur-2xl animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tr from-pink-500/30 via-purple-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
           {/* SVG illustration (copied from web-card page) */}
-          <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
+          <svg
+            width="320"
+            height="320"
+            viewBox="0 0 320 320"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-labelledby="svgTitle svgDesc"
+            className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]"
+          >
+            <title id="svgTitle">
+              Tworzenie sklepów internetowych – profesjonalne projekty
+              e-commerce
+            </title>
+            <desc id="svgDesc">
+              Nowoczesna grafika symbolizująca sklepy internetowe i kompleksowe
+              rozwiązania e-commerce wspierające sprzedaż online i rozwój
+              biznesu.
+            </desc>
+
             <defs>
-              <linearGradient id="cardGradient" x1="0" y1="0" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="cardGradient"
+                x1="0"
+                y1="0"
+                x2="320"
+                y2="320"
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#6366F1" />
                 <stop offset="0.5" stopColor="#A21CAF" />
                 <stop offset="1" stopColor="#EC4899" />
               </linearGradient>
             </defs>
-            <rect x="40" y="60" width="240" height="160" rx="24" fill="url(#cardGradient)" />
-            <rect x="60" y="80" width="200" height="40" rx="10" fill="#fff" fillOpacity="0.15" />
-            <rect x="60" y="130" width="140" height="20" rx="8" fill="#fff" fillOpacity="0.10" />
-            <rect x="60" y="160" width="100" height="20" rx="8" fill="#fff" fillOpacity="0.10" />
+            <rect
+              x="40"
+              y="60"
+              width="240"
+              height="160"
+              rx="24"
+              fill="url(#cardGradient)"
+            />
+            <rect
+              x="60"
+              y="80"
+              width="200"
+              height="40"
+              rx="10"
+              fill="#fff"
+              fillOpacity="0.15"
+            />
+            <rect
+              x="60"
+              y="130"
+              width="140"
+              height="20"
+              rx="8"
+              fill="#fff"
+              fillOpacity="0.10"
+            />
+            <rect
+              x="60"
+              y="160"
+              width="100"
+              height="20"
+              rx="8"
+              fill="#fff"
+              fillOpacity="0.10"
+            />
             <circle cx="220" cy="170" r="18" fill="#fff" fillOpacity="0.18" />
-            <rect x="120" y="200" width="80" height="12" rx="6" fill="#fff" fillOpacity="0.08" />
-            <rect x="100" y="220" width="120" height="8" rx="4" fill="#fff" fillOpacity="0.06" />
-            <rect x="140" y="240" width="40" height="8" rx="4" fill="#fff" fillOpacity="0.06" />
-            <rect x="0" y="0" width="320" height="320" rx="40" fill="url(#cardGradient)" fillOpacity="0.05" />
+            <rect
+              x="120"
+              y="200"
+              width="80"
+              height="12"
+              rx="6"
+              fill="#fff"
+              fillOpacity="0.08"
+            />
+            <rect
+              x="100"
+              y="220"
+              width="120"
+              height="8"
+              rx="4"
+              fill="#fff"
+              fillOpacity="0.06"
+            />
+            <rect
+              x="140"
+              y="240"
+              width="40"
+              height="8"
+              rx="4"
+              fill="#fff"
+              fillOpacity="0.06"
+            />
+            <rect
+              x="0"
+              y="0"
+              width="320"
+              height="320"
+              rx="40"
+              fill="url(#cardGradient)"
+              fillOpacity="0.05"
+            />
           </svg>
         </div>
       </section>
@@ -138,6 +259,8 @@ export default function SklepyInternetowe() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -162,6 +285,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -176,6 +301,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -190,6 +317,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -209,6 +338,8 @@ export default function SklepyInternetowe() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -231,6 +362,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -245,6 +378,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -259,6 +394,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -278,6 +415,8 @@ export default function SklepyInternetowe() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -301,6 +440,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -315,6 +456,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -329,6 +472,8 @@ export default function SklepyInternetowe() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -448,6 +593,8 @@ export default function SklepyInternetowe() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -480,6 +627,8 @@ export default function SklepyInternetowe() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -511,6 +660,8 @@ export default function SklepyInternetowe() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"

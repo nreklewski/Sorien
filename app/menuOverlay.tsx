@@ -39,7 +39,10 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ navLinks }) => {
             stroke="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-labelledby="menuIconTitle"
           >
+            <title id="menuIconTitle">Menu nawigacyjne</title>
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -60,7 +63,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ navLinks }) => {
             <div className="flex items-center justify-between px-6 pt-6 pb-2">
               <Link href="/" onClick={() => setMenuOpen(false)}>
                 <Image
-                  src="/sorien2.svg"
+                  src="/logo-sorien-agencja-tworząca-strony-internetowe.svg"
                   alt="Sorien Logo"
                   width={90}
                   height={24}
@@ -78,7 +81,10 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ navLinks }) => {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-labelledby="closeIconTitle"
                 >
+                  <title id="closeIconTitle">Zamknij menu</title>
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

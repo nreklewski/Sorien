@@ -1,6 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./ImageShadow.module.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Sorien – Profesjonalne Strony Internetowe z SEO, Sklepy i Systemy Firmowe",
+  description:
+    "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, sklepy internetowe oraz dedykowane systemy firmowe. Kompleksowe usługi webowe dla Twojego biznesu.",
+  openGraph: {
+    title: "Sorien – Profesjonalne Strony Internetowe SEO i Systemy Webowe",
+    description:
+      "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, sklepy i systemy firmowe z naciskiem na jakość.",
+    url: "https://sorien.pl",
+    siteName: "Sorien",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
+        width: 1275,
+        height: 620,
+        alt: "Sorien – Profesjonalne Strony Internetowe",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://sorien.pl",
+  },
+};
 
 export default function Home() {
   return (
@@ -25,7 +53,7 @@ export default function Home() {
               href="/wycena"
               className="bg-white/10 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold border border-white shadow-lg shadow-black/20 hover:bg-violet-900/80 hover:scale-105 transition-all duration-300 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-50 text-center w-full sm:w-auto"
             >
-              Zrób pierwszy krok
+              Otrzymaj darmową wycenę
             </Link>
           </div>
         </div>
@@ -33,12 +61,12 @@ export default function Home() {
           className={`relative w-full hidden lg:w-auto lg:flex ${styles.customShadowImg}`}
         >
           <Image
-            src="/1.png"
-            alt="sorien"
+            src="/sorien-tworzenie-stron-internetowych.png"
+            alt="sorien tworzenie stron www"
             width={400}
             height={400}
-            quality={100}
-            className="w-64 h-64 sm:w-80 sm:h-80 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain"
+            quality={90}
+            className="w-64 h-64 sm:w-80 sm:h-80 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] object-contain"
           />
         </div>
       </section>
@@ -51,6 +79,8 @@ export default function Home() {
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               strokeLinecap="round"
@@ -82,6 +112,8 @@ export default function Home() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -97,7 +129,7 @@ export default function Home() {
               budujące trwałe wrażenie.
             </p>
             <Link
-              href="/strona-wizytowka"
+              href="/strony-wizytowki"
               className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
             >
               Dowiedz się więcej
@@ -111,6 +143,8 @@ export default function Home() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <circle cx="9" cy="21" r="1" strokeWidth="2" />
                 <circle cx="20" cy="21" r="1" strokeWidth="2" />
@@ -142,6 +176,8 @@ export default function Home() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -198,13 +234,15 @@ export default function Home() {
                       className="w-8 h-8 text-white"
                       fill="none"
                       stroke="currentColor"
-                      viewBox="0 0 24 24"
+                      viewBox="0 0 27 27"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"
+                        d="M3 8a2 2 0 012-2h3a1 1 0 001-1V3a2 2 0 114 0v2a1 1 0 001 1h3a2 2 0 012 2v3a1 1 0 001 1h2a2 2 0 110 4h-2a1 1 0 00-1 1v3a2 2 0 01-2 2h-3a1 1 0 00-1 1v2a2 2 0 11-4 0v-2a1 1 0 00-1-1H5a2 2 0 01-2-2v-3a1 1 0 011-1H6a2 2 0 100-4H4a1 1 0 01-1-1V8z"
                       />
                     </svg>
                   </div>
@@ -232,12 +270,20 @@ export default function Home() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                        d="M9 9h6v6H9V9z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 9h2m14 0h2M3 15h2m14 0h2M9 3v2m6-2v2M9 19v2m6-2v2M7 5h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2z"
                       />
                     </svg>
                   </div>
@@ -268,6 +314,8 @@ export default function Home() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <path
                         strokeLinecap="round"
@@ -283,8 +331,8 @@ export default function Home() {
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
                       Ekspresowe aplikacje zoptymalizowane pod kątem szybkości i
-                      wydajności. Gwarantujemy świetne doświadczenia użytkownika
-                      i minimalny czas ładowania.
+                      wydajności. Gwarantujemy świetne doświadczenia i minimalny
+                      czas ładowania.
                     </p>
                   </div>
                 </div>
@@ -301,12 +349,14 @@ export default function Home() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"
+                        d="M12 4v16m8-8H4"
                       />
                     </svg>
                   </div>
@@ -353,6 +403,8 @@ export default function Home() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <circle cx="11" cy="11" r="8" strokeWidth="2" />
                       <line
@@ -413,6 +465,8 @@ export default function Home() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <path
                         d="M16.862 3.487a2.5 2.5 0 013.535 3.535L7.5 19.92l-4 1 1-4L16.862 3.487z"
@@ -443,6 +497,8 @@ export default function Home() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <polyline
                         points="16 18 22 12 16 6"
@@ -505,6 +561,8 @@ export default function Home() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
                     >
                       <path
                         d="M5 13l4 4L19 7"
@@ -551,8 +609,8 @@ export default function Home() {
           <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
             <div className="aspect-[5/4] flex items-center justify-center relative">
               <Image
-                src="/wizytowka.png"
-                alt="Business Card Website"
+                src="/profesjonalna-wizytówka-tworzenie-stron-www.png"
+                alt="Strony internetowe wizytówki"
                 fill
                 className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
                 style={{ zIndex: 1 }}
@@ -574,8 +632,8 @@ export default function Home() {
           <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
             <div className="aspect-[5/4] flex items-center justify-center relative">
               <Image
-                src="/sklep.png"
-                alt="Ecommerce Store"
+                src="/sklepy-internetowe-profesjonalne-projekcty-e-commerce.png"
+                alt="Tworzenie sklepów internetowych"
                 fill
                 className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
                 style={{ zIndex: 1 }}
@@ -597,8 +655,8 @@ export default function Home() {
           <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
             <div className="aspect-[5/4] flex items-center justify-center relative">
               <Image
-                src="/system.png"
-                alt="Internal System"
+                src="/systemy-dla-firm-profesjonalna-agencja.png"
+                alt="Tworzenie systemów firmowych"
                 fill
                 className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
                 style={{ zIndex: 1 }}
@@ -630,7 +688,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center">
             <Link
-              href="/consultation"
+              href="/wycena"
               className="border border-gray-300 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg hover:bg-gradient-to-r hover:from-purple-700 hover:to-transparent hover:scale-105 hover:shadow-lg transition-all duration-700"
             >
               Rozwiń swój biznes

@@ -3,6 +3,34 @@
 import React, { useState, useRef, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { FiXCircle } from "react-icons/fi";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Formularz Wyceny – Sorien | Otrzymaj Darmową Wycenę Strony lub Systemu",
+  description:
+    "Skorzystaj z formularza wyceny i poznaj koszt stworzenia strony internetowej, sklepu czy systemu firmowego dopasowanego do Twoich potrzeb.",
+  openGraph: {
+    title: "Formularz Wyceny – Sorien",
+    description:
+      "Wypełnij formularz wyceny i otrzymaj profesjonalną ofertę na stworzenie strony, sklepu lub systemu webowego.",
+    url: "https://sorien.pl/wycena",
+    siteName: "Sorien",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe",
+        width: 1275,
+        height: 620,
+        alt: "Formularz Wyceny – Sorien",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://sorien.pl/wycena",
+  },
+};
 
 const services = [
   { key: "businessCard", label: "Strona wizytówka" },
@@ -152,55 +180,79 @@ export default function Wycena() {
       setErrors({});
       setStep(3);
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   const handleBack = () => {
     if (step > 1) setStep(step - 1);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  // Funkcja pomocnicza do walidacji e-maila
+  const validateEmail = (email: string): boolean => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // Validate contact info
+
+    // Walidacja pól formularza
     const newErrors: { [key: string]: string } = {};
-    if (!formData.fullName.trim())
+
+    if (!formData.fullName.trim()) {
       newErrors.fullName = "Imię i nazwisko jest wymagane";
-    if (!formData.email.trim()) newErrors.email = "Email jest wymagany";
-    else if (!validateEmail(formData.email))
-      newErrors.email = "Nieprawidłowy email";
-    if (!formData.phone.trim()) newErrors.phone = "Telefon jest wymagany";
-    if (!formData.privacyAccepted)
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email jest wymagany";
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email = "Nieprawidłowy adres email";
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Telefon jest wymagany";
+    }
+
+    if (!formData.privacyAccepted) {
       newErrors.privacyAccepted = "Musisz zaakceptować politykę prywatności";
+    }
+
+    // Zapisz błędy do stanu
     setErrors(newErrors);
-    if (Object.keys(newErrors).length === 0) {
-      setSubmitting(true);
-      setSubmitError(null);
-      try {
-        const data = new FormData();
-        data.append("selectedService", formData.selectedService);
-        formData.exampleUrls.forEach((url, idx) =>
-          data.append("exampleUrls", url)
-        );
-        data.append("description", formData.description);
-        formData.files.forEach((file) => data.append("files", file));
-        data.append("fullName", formData.fullName);
-        data.append("email", formData.email);
-        data.append("phone", formData.phone);
-        data.append("company", formData.company);
-        data.append("additionalInfo", formData.additionalInfo);
-        data.append(
-          "privacyAccepted",
-          formData.privacyAccepted ? "true" : "false"
-        );
-        await axios.post("/api/send-email", data);
-        setSuccess(true);
-        setFormData(initialFormData);
-        setStep(4); // Go to thank you step
-      } catch (err: any) {
-        setSubmitError(
-          err?.response?.data?.error ||
-            "Błąd wysyłania formularza. Spróbuj ponownie później."
-        );
-      } finally {
-        setSubmitting(false);
-      }
+
+    // Jeśli są błędy, nie wysyłaj formularza
+    if (Object.keys(newErrors).length > 0) return;
+
+    // Brak błędów, wyślij formularz
+    setSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const data = new FormData();
+      data.append("selectedService", formData.selectedService);
+      formData.exampleUrls.forEach((url) => data.append("exampleUrls", url));
+      data.append("description", formData.description);
+      formData.files.forEach((file) => data.append("files", file));
+      data.append("fullName", formData.fullName);
+      data.append("email", formData.email);
+      data.append("phone", formData.phone);
+      data.append("company", formData.company);
+      data.append("additionalInfo", formData.additionalInfo);
+      data.append(
+        "privacyAccepted",
+        formData.privacyAccepted ? "true" : "false"
+      );
+
+      await axios.post("/api/send-email", data);
+
+      setSuccess(true);
+      setFormData(initialFormData);
+      setStep(4); // Przejdź do strony z podziękowaniem
+    } catch (err: any) {
+      setSubmitError(
+        err?.response?.data?.error ||
+          "Błąd wysyłania formularza. Spróbuj ponownie później."
+      );
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -369,17 +421,17 @@ export default function Wycena() {
           <div className="w-full mb-4">
             <label
               className="block text-white font-semibold mb-1"
-              htmlFor="additionalInfo"
+              htmlFor="description"
             >
               Opis projektu
             </label>
             <div className="relative">
               <textarea
-                id="additionalInfo"
-                name="additionalInfo"
+                id="description"
+                name="description"
                 className="w-full bg-transparent px-3 py-2 border border-gray-400 focus:border-violet-500 focus:outline-none transition-all text-white placeholder-gray-400 rounded-md resize-none"
                 placeholder="Opisz w kilku słowach projekt twojej strony i jej funkcjonalności"
-                value={formData.additionalInfo}
+                value={formData.description}
                 onChange={handleInputChange}
                 rows={6}
                 autoComplete="off"
@@ -467,6 +519,8 @@ export default function Wycena() {
                 Podaj swoje dane, abyśmy mogli się z Tobą skontaktować.
               </p>
             </div>
+
+            {/* Imię i nazwisko */}
             <div className="w-full mb-4">
               <label
                 className="block text-white font-semibold mb-1"
@@ -480,11 +534,11 @@ export default function Wycena() {
                   type="text"
                   name="fullName"
                   className={`w-full bg-transparent px-0 py-2 border-0 border-b-2 focus:outline-none transition-all text-white placeholder-gray-400
-                    ${
-                      errors.fullName
-                        ? "border-b-[#e53935] focus:border-b-[#e53935]"
-                        : "border-b-gray-400 focus:border-b-violet-500"
-                    }`}
+              ${
+                errors.fullName
+                  ? "border-b-[#e53935] focus:border-b-[#e53935]"
+                  : "border-b-gray-400 focus:border-b-violet-500"
+              }`}
                   placeholder="Imię i nazwisko"
                   value={formData.fullName}
                   onChange={handleInputChange}
@@ -502,6 +556,8 @@ export default function Wycena() {
                 </div>
               )}
             </div>
+
+            {/* Email */}
             <div className="w-full mb-4">
               <label
                 className="block text-white font-semibold mb-1"
@@ -512,18 +568,18 @@ export default function Wycena() {
               <div className="relative">
                 <input
                   id="email"
-                  type="email"
+                  type="text" // ← zmiana tutaj
                   name="email"
                   className={`w-full bg-transparent px-0 py-2 border-0 border-b-2 focus:outline-none transition-all text-white placeholder-gray-400
-                    ${
-                      errors.email
-                        ? "border-b-[#e53935] focus:border-b-[#e53935]"
-                        : "border-b-gray-400 focus:border-b-violet-500"
-                    }`}
+              ${
+                errors.email
+                  ? "border-b-[#e53935] focus:border-b-[#e53935]"
+                  : "border-b-gray-400 focus:border-b-violet-500"
+              }`}
                   placeholder="Email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  autoComplete="off"
+                  autoComplete="email" // ← zmiana tutaj
                 />
                 {errors.email && (
                   <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[#e53935] text-xl">
@@ -537,6 +593,8 @@ export default function Wycena() {
                 </div>
               )}
             </div>
+
+            {/* Telefon */}
             <div className="w-full mb-4">
               <label
                 className="block text-white font-semibold mb-1"
@@ -550,15 +608,15 @@ export default function Wycena() {
                   type="tel"
                   name="phone"
                   className={`w-full bg-transparent px-0 py-2 border-0 border-b-2 focus:outline-none transition-all text-white placeholder-gray-400
-                    ${
-                      errors.phone
-                        ? "border-b-[#e53935] focus:border-b-[#e53935]"
-                        : "border-b-gray-400 focus:border-b-violet-500"
-                    }`}
+              ${
+                errors.phone
+                  ? "border-b-[#e53935] focus:border-b-[#e53935]"
+                  : "border-b-gray-400 focus:border-b-violet-500"
+              }`}
                   placeholder="Telefon"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  autoComplete="off"
+                  autoComplete="tel"
                 />
                 {errors.phone && (
                   <span className="absolute right-2 top-1/2 -translate-y-1/2 text-[#e53935] text-xl">
@@ -572,6 +630,8 @@ export default function Wycena() {
                 </div>
               )}
             </div>
+
+            {/* Firma */}
             <div className="w-full mb-4">
               <label
                 className="block text-white font-semibold mb-1"
@@ -588,10 +648,12 @@ export default function Wycena() {
                   placeholder="Nazwa firmy"
                   value={formData.company}
                   onChange={handleInputChange}
-                  autoComplete="off"
+                  autoComplete="organization"
                 />
               </div>
             </div>
+
+            {/* Dodatkowe informacje */}
             <div className="w-full mb-4">
               <label
                 className="block text-white font-semibold mb-1"
@@ -612,38 +674,41 @@ export default function Wycena() {
                 />
               </div>
             </div>
-            <div className="w-full mb-4 flex items-center">
+
+            {/* Checkbox */}
+            <div className="w-full mb-4 flex items-start gap-3">
               <input
                 type="checkbox"
                 name="privacyAccepted"
                 checked={formData.privacyAccepted}
                 onChange={handleInputChange}
-                className={`mr-3 w-6 h-6 accent-violet-700 rounded-full transition-all
-                  ${
-                    errors.privacyAccepted
-                      ? "border-4 border-red-700 bg-red-200 ring-2 ring-red-600 focus:border-red-700 focus-visible:border-red-700"
-                      : "border-2 border-violet-700 focus:border-violet-500 focus-visible:border-violet-500"
-                  }`}
+                className={`w-5 h-5 mt-1 accent-violet-700 rounded transition-all shrink-0
+      ${
+        errors.privacyAccepted
+          ? "border-4 border-red-700 bg-red-200 ring-2 ring-red-600"
+          : "border-2 border-violet-700"
+      }`}
               />
-              <label className="text-white text-base select-none">
-                Zapoznałam/em się z{" "}
+              <p className="text-sm text-white leading-snug">
+                Zapoznałam/em się z informacją o
+                <br className="block sm:hidden" />
                 <button
                   type="button"
                   onClick={() => setShowRodoModal(true)}
-                  className="underline text-violet-300 hover:text-violet-400 font-semibold focus:outline-none focus:ring-2 focus:ring-violet-400 rounded transition-all"
+                  className="underline text-violet-300 hover:text-violet-400 font-semibold focus:outline-none focus:ring-2 focus:ring-violet-400 rounded transition-all inline"
                   style={{
-                    display: "inline",
                     padding: 0,
                     background: "none",
                     border: "none",
                   }}
                 >
-                  informacją o administratorze i przetwarzaniu danych
+                  administratorze i przetwarzaniu danych
                 </button>
                 . <span className="text-red-400">*</span>
-              </label>
+              </p>
             </div>
-            {/* RODO Modal */}
+
+            {/* Modal */}
             {showRodoModal && (
               <div
                 className="fixed inset-0 z-50 flex items-center justify-center pointer-events-auto"
@@ -678,7 +743,7 @@ export default function Wycena() {
                 </div>
               </div>
             )}
-            {/* No error text for privacy checkbox, only red border */}
+
             {submitting && (
               <div className="text-violet-400 mb-2">Wysyłanie...</div>
             )}
@@ -707,13 +772,13 @@ export default function Wycena() {
     }
     if (step === 4) {
       return (
-        <div className="w-full max-w-2xl mx-auto p-8 my-16 bg-gradient-to-br from-violet-900 via-black to-violet-950 rounded-2xl shadow-lg flex flex-col items-center justify-center">
+        <div className="w-full max-w-2xl mx-auto p-8 my-16 bg-gradient-to-br from-[#210235] via-black to-[#210235] rounded-2xl shadow-lg flex flex-col items-center justify-center">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Dziękujemy za wysłanie formularza!
             </h1>
             <p className="text-lg text-gray-200 mb-6">
-              Skontaktujemy się z Tobą najszybciej jak to możliwe.
+              Otrzymasz mailowo swoją wycenę w ciągu 24 godzin.
             </p>
             <a
               href="/"

@@ -1,5 +1,31 @@
-import Image from "next/image";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Strony Wizytówki SEO – Sorien | Profesjonalne Strony Internetowe",
+  description:
+    "Tworzymy nowoczesne, responsywne i zoptymalizowane pod SEO strony wizytówki, które skutecznie promują Twój biznes w sieci.",
+  openGraph: {
+    title: "Strony Wizytówki z SEO – Sorien",
+    description:
+      "Profesjonalne strony wizytówki z idealnym SEO, zaprojektowane, by wyróżnić Twoją firmę online.",
+    url: "https://sorien.pl/strony-wizytowki",
+    siteName: "Sorien",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe",
+        width: 1275,
+        height: 620,
+        alt: "Strony Wizytówki – Sorien",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://sorien.pl/strony-wizytowki",
+  },
+};
 
 export default function StronaWizytowka() {
   return (
@@ -16,7 +42,7 @@ export default function StronaWizytowka() {
             Strony Wizytówki
             <br />
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Rewolucja
+              Rewolucja &nbsp;
             </span>
             w wizerunku online
           </h1>
@@ -35,6 +61,8 @@ export default function StronaWizytowka() {
                 className="w-5 h-5 text-green-400 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   fillRule="evenodd"
@@ -49,6 +77,8 @@ export default function StronaWizytowka() {
                 className="w-5 h-5 text-green-400 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   fillRule="evenodd"
@@ -63,6 +93,8 @@ export default function StronaWizytowka() {
                 className="w-5 h-5 text-green-400 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   fillRule="evenodd"
@@ -75,7 +107,7 @@ export default function StronaWizytowka() {
           </div>
 
           <Link
-            href="/contact"
+            href="/wycena"
             className="bg-white/10 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold border border-white shadow-lg shadow-black/20 hover:bg-violet-900/80 hover:scale-105 transition-all duration-300 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-opacity-50 text-center w-full sm:w-auto"
           >
             Rozpocznij transformację wizerunku
@@ -88,23 +120,110 @@ export default function StronaWizytowka() {
           <div className="absolute -top-10 -left-10 w-60 h-60 bg-gradient-to-br from-blue-500/40 via-purple-500/30 to-pink-500/30 rounded-full blur-2xl animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tr from-pink-500/30 via-purple-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
           {/* SVG illustration */}
-          <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
+          <svg
+            width="320"
+            height="320"
+            viewBox="0 0 320 320"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-labelledby="svgTitle svgDesc"
+            className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]"
+          >
+            <title id="svgTitle">
+              Profesjonalna strona www wizytówka – tworzenie stron internetowych
+            </title>
+            <desc id="svgDesc">
+              Nowoczesna, kolorowa grafika wizytówki symbolizująca ofertę
+              projektowania i tworzenia responsywnych stron internetowych dla
+              firm i freelancerów.
+            </desc>
             <defs>
-              <linearGradient id="cardGradient" x1="0" y1="0" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="cardGradient"
+                x1="0"
+                y1="0"
+                x2="320"
+                y2="320"
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#6366F1" />
                 <stop offset="0.5" stopColor="#A21CAF" />
                 <stop offset="1" stopColor="#EC4899" />
               </linearGradient>
             </defs>
-            <rect x="40" y="60" width="240" height="160" rx="24" fill="url(#cardGradient)" />
-            <rect x="60" y="80" width="200" height="40" rx="10" fill="#fff" fillOpacity="0.15" />
-            <rect x="60" y="130" width="140" height="20" rx="8" fill="#fff" fillOpacity="0.10" />
-            <rect x="60" y="160" width="100" height="20" rx="8" fill="#fff" fillOpacity="0.10" />
+            <rect
+              x="40"
+              y="60"
+              width="240"
+              height="160"
+              rx="24"
+              fill="url(#cardGradient)"
+            />
+            <rect
+              x="60"
+              y="80"
+              width="200"
+              height="40"
+              rx="10"
+              fill="#fff"
+              fillOpacity="0.15"
+            />
+            <rect
+              x="60"
+              y="130"
+              width="140"
+              height="20"
+              rx="8"
+              fill="#fff"
+              fillOpacity="0.10"
+            />
+            <rect
+              x="60"
+              y="160"
+              width="100"
+              height="20"
+              rx="8"
+              fill="#fff"
+              fillOpacity="0.10"
+            />
             <circle cx="220" cy="170" r="18" fill="#fff" fillOpacity="0.18" />
-            <rect x="120" y="200" width="80" height="12" rx="6" fill="#fff" fillOpacity="0.08" />
-            <rect x="100" y="220" width="120" height="8" rx="4" fill="#fff" fillOpacity="0.06" />
-            <rect x="140" y="240" width="40" height="8" rx="4" fill="#fff" fillOpacity="0.06" />
-            <rect x="0" y="0" width="320" height="320" rx="40" fill="url(#cardGradient)" fillOpacity="0.05" />
+            <rect
+              x="120"
+              y="200"
+              width="80"
+              height="12"
+              rx="6"
+              fill="#fff"
+              fillOpacity="0.08"
+            />
+            <rect
+              x="100"
+              y="220"
+              width="120"
+              height="8"
+              rx="4"
+              fill="#fff"
+              fillOpacity="0.06"
+            />
+            <rect
+              x="140"
+              y="240"
+              width="40"
+              height="8"
+              rx="4"
+              fill="#fff"
+              fillOpacity="0.06"
+            />
+            <rect
+              x="0"
+              y="0"
+              width="320"
+              height="320"
+              rx="40"
+              fill="url(#cardGradient)"
+              fillOpacity="0.05"
+            />
           </svg>
         </div>
       </section>
@@ -139,6 +258,8 @@ export default function StronaWizytowka() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -163,6 +284,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -177,6 +300,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -191,6 +316,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -210,17 +337,25 @@ export default function StronaWizytowka() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
               </svg>
             </div>
             <h3 className="text-2xl font-bold mb-4 text-white">
               Doskonałe pozycjonowanie
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Wykorzystujemy najnowsze technologie Next.js, które zapewniają doskonałe SEO. 
-              Server-side rendering, automatyczna optymalizacja obrazów i błyskawiczne ładowanie 
-              sprawiają, że Twoja strona dominuje w wynikach wyszukiwania.
+              Wykorzystujemy najnowsze technologie Next.js, które zapewniają
+              doskonałe SEO. Server-side rendering, automatyczna optymalizacja
+              obrazów i błyskawiczne ładowanie sprawiają, że Twoja strona
+              dominuje w wynikach wyszukiwania.
             </p>
             <ul className="space-y-2 text-sm text-gray-500">
               <li className="flex items-center">
@@ -228,6 +363,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -242,6 +379,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -256,6 +395,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -275,17 +416,26 @@ export default function StronaWizytowka() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                />
               </svg>
             </div>
             <h3 className="text-2xl font-bold mb-4 text-white">
               Inteligentny kontakt
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Zaawansowane formularze kontaktowe, integracja z social media i automatyczne powiadomienia 
-              sprawiają, że każdy klient może łatwo nawiązać kontakt. Wykorzystujemy najnowsze technologie 
-              komunikacji, aby maksymalizować szanse na nawiązanie współpracy i zwiększyć konwersję.
+              Zaawansowane formularze kontaktowe, integracja z social media i
+              automatyczne powiadomienia sprawiają, że każdy klient może łatwo
+              nawiązać kontakt. Wykorzystujemy najnowsze technologie
+              komunikacji, aby maksymalizować szanse na nawiązanie współpracy i
+              zwiększyć konwersję.
             </p>
             <ul className="space-y-2 text-sm text-gray-500">
               <li className="flex items-center">
@@ -293,6 +443,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -307,6 +459,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -321,6 +475,8 @@ export default function StronaWizytowka() {
                   className="w-4 h-4 text-green-400 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path
                     fillRule="evenodd"
@@ -348,7 +504,7 @@ export default function StronaWizytowka() {
             Proces tworzenia strony
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-            Od pomysłu do uruchomienia w 14 dni
+            Od pomysłu do uruchomienia
           </h2>
           <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
             Nasz sprawdzony proces gwarantuje szybkie i bezproblemowe
@@ -440,6 +596,8 @@ export default function StronaWizytowka() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -471,6 +629,8 @@ export default function StronaWizytowka() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
@@ -502,6 +662,8 @@ export default function StronaWizytowka() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
               >
                 <path
                   strokeLinecap="round"
