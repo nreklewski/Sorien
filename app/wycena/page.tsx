@@ -380,7 +380,7 @@ export default function Wycena() {
             {formData.exampleUrls.map((url, idx) => (
               <div key={idx} className="flex gap-2 mb-2">
                 <input
-                  type="url"
+                  type="text"
                   className="flex-1 bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:ring-2 focus:ring-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
                   placeholder="https://przyklad.pl"
                   value={url}
