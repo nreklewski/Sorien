@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe",
+        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
         width: 1275,
         height: 620,
         alt: "Strony Wizytówki – Sorien",

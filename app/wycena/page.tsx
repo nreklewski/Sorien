@@ -3,34 +3,7 @@
 import React, { useState, useRef, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { FiXCircle } from "react-icons/fi";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title:
-    "Formularz Wyceny – Sorien | Otrzymaj Darmową Wycenę Strony lub Systemu",
-  description:
-    "Skorzystaj z formularza wyceny i poznaj koszt stworzenia strony internetowej, sklepu czy systemu firmowego dopasowanego do Twoich potrzeb.",
-  openGraph: {
-    title: "Formularz Wyceny – Sorien",
-    description:
-      "Wypełnij formularz wyceny i otrzymaj profesjonalną ofertę na stworzenie strony, sklepu lub systemu webowego.",
-    url: "https://sorien.pl/wycena",
-    siteName: "Sorien",
-    locale: "pl_PL",
-    type: "website",
-    images: [
-      {
-        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe",
-        width: 1275,
-        height: 620,
-        alt: "Formularz Wyceny – Sorien",
-      },
-    ],
-  },
-  alternates: {
-    canonical: "https://sorien.pl/wycena",
-  },
-};
+import Link from "next/link";
 
 const services = [
   { key: "businessCard", label: "Strona wizytówka" },
@@ -84,14 +57,9 @@ const allowedFileTypes = [
   "application/x-rar-compressed",
 ];
 
-function validateEmail(email: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
 export default function Wycena() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>(initialFormData);
-  const [success, setSuccess] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -125,9 +93,6 @@ export default function Wycena() {
           : prev.exampleUrls;
       return { ...prev, exampleUrls: urls };
     });
-  };
-  const handleDescriptionChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setFormData((prev) => ({ ...prev, description: e.target.value }));
   };
   const handleFilesChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files) return;
@@ -243,14 +208,16 @@ export default function Wycena() {
 
       await axios.post("/api/send-email", data);
 
-      setSuccess(true);
       setFormData(initialFormData);
       setStep(4); // Przejdź do strony z podziękowaniem
-    } catch (err: any) {
-      setSubmitError(
-        err?.response?.data?.error ||
-          "Błąd wysyłania formularza. Spróbuj ponownie później."
-      );
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err)) {
+        setSubmitError(err.response?.data?.error || err.message);
+      } else if (err instanceof Error) {
+        setSubmitError(err.message);
+      } else {
+        setSubmitError("Błąd wysyłania formularza. Spróbuj ponownie później.");
+      }
     } finally {
       setSubmitting(false);
     }
@@ -780,12 +747,12 @@ export default function Wycena() {
             <p className="text-lg text-gray-200 mb-6">
               Otrzymasz mailowo swoją wycenę w ciągu 24 godzin.
             </p>
-            <a
+            <Link
               href="/"
               className="mt-4 inline-block px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md transition-all"
             >
               Wróć do strony głównej
-            </a>
+            </Link>
           </div>
         </div>
       );
