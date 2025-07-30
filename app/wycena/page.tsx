@@ -679,7 +679,7 @@ export default function Wycena() {
       }`}
               />
               <p className="text-sm text-white leading-snug">
-                Zapoznałam/em się z informacją o
+                Zapoznałam/em się z informacją o &nbsp;
                 <br className="block sm:hidden" />
                 <button
                   type="button"
@@ -705,7 +705,7 @@ export default function Wycena() {
                 style={{ cursor: "pointer" }}
               >
                 <div
-                  className="bg-white rounded-xl shadow-lg max-w-lg w-full p-8 relative"
+                  className="bg-white rounded-xl shadow-lg max-w-lg w-full p-4 pt-9 relative"
                   onClick={(e) => e.stopPropagation()}
                   style={{
                     cursor: "default",
@@ -721,7 +721,7 @@ export default function Wycena() {
                   >
                     ×
                   </button>
-                  <div className="text-gray-800 mb-2 text-xs">
+                  <div className="text-[8px] md:text-xs text-gray">
                     Administratorem Państwa danych osobowych zebranych w trakcie
                     korespondencji z wykorzystaniem formularza kontaktowego jest
                     OVRO Sp. z o.o. z siedzibą w Łodzi, przy ul. Gen. Lucjana

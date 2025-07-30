@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="absolute top-1/2 left-1/3 w-1/3 h-px bg-gradient-to-r from-transparent via-purple-700/25 to-transparent"></div>
       </div>
 
-      <div className="relative z-10 px-30 py-16">
+      <div className="relative z-10 px-8 py-10 md:px-30 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -56,7 +56,10 @@ const Footer = () => {
                     d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a href="mailto:hello@sorien.pl" className="hover:underline">
+                <a
+                  href="mailto:hello@sorien.pl"
+                  className="hover:underline whitespace-nowrap"
+                >
                   hello@sorien.pl
                 </a>
               </p>
@@ -76,7 +79,10 @@ const Footer = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <a href="tel:+15551234567" className="hover:underline">
+                <a
+                  href="tel:+48 880 924 444"
+                  className="hover:underline whitespace-nowrap"
+                >
                   +48 880 924 444
                 </a>
               </p>
