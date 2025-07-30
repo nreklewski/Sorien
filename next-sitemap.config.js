@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://sorien.pl',
+  siteUrl: 'https://www.sorien.pl',
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
