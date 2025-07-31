@@ -3,11 +3,11 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sklepy Internetowe – Sorien | Profesjonalne Sklepy e-commerce",
+  title: "Sorien - Tworzenie sklepów Internetowych i e-commerce",
   description:
     "Projektujemy nowoczesne i zoptymalizowane pod SEO sklepy internetowe, które zwiększają sprzedaż i rozwijają Twój biznes online.",
   openGraph: {
-    title: "Sklepy Internetowe – Sorien",
+    title: "Tworzenie sklepów Internetowych i e-commerce – Sorien",
     description:
       "Profesjonalne sklepy e-commerce z intuicyjnym designem i skutecznym SEO, które pomagają wyróżnić Twój biznes w sieci.",
     url: "https://sorien.pl/sklepy-internetowe",

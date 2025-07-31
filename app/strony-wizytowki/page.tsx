@@ -3,11 +3,11 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony Wizytówki SEO – Sorien | Profesjonalne Strony Internetowe",
+  title: "Sorien - Profesjonalne strony wizytówki z SEO",
   description:
     "Tworzymy nowoczesne, responsywne i zoptymalizowane pod SEO strony wizytówki, które skutecznie promują Twój biznes w sieci.",
   openGraph: {
-    title: "Strony Wizytówki z SEO – Sorien",
+    title: "Profesjonalne strony wizytówki z SEO - Sorien",
     description:
       "Profesjonalne strony wizytówki z idealnym SEO, zaprojektowane, by wyróżnić Twoją firmę online.",
     url: "https://sorien.pl/strony-wizytowki",

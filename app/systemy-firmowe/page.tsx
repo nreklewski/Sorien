@@ -3,11 +3,11 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Systemy Firmowe – Sorien | Dedykowane Systemy Wewnętrzne dla Firm",
+  title: "Sorien - Spersonalizowane systemy Firmowe",
   description:
-    "Tworzymy nowoczesne, dedykowane systemy firmowe i aplikacje webowe z inteligentnymi analizami danych, które usprawniają działalność Twojej firmy.",
+    "Tworzymy nowoczesne, dedykowane systemy firmowe i aplikacje webowe z analizami danych AI, które usprawniają działanie Twojej firmy",
   openGraph: {
-    title: "Systemy Firmowe – Sorien",
+    title: "Spersonalizowane systemy Firmowe - Sorien",
     description:
       "Profesjonalne systemy firmowe i aplikacje webowe, które automatyzują procesy i wspierają rozwój biznesu.",
     url: "https://sorien.pl/systemy-firmowe",

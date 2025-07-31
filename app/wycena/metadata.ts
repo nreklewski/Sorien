@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Formularz Wyceny – Sorien | Otrzymaj Darmową Wycenę Strony lub Systemu",
+    "Darmowa wycena strony internetowej - Sorien",
   description:
     "Skorzystaj z formularza wyceny i poznaj koszt stworzenia strony internetowej, sklepu czy systemu firmowego dopasowanego do Twoich potrzeb.",
   openGraph: {

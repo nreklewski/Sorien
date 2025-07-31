@@ -5,12 +5,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title:
-    "Sorien – Profesjonalne Strony Internetowe z SEO, Sklepy i Systemy Firmowe",
+  title: "Sorien – Nowoczesne strony Internetowe i SEO",
   description:
     "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, sklepy internetowe oraz dedykowane systemy firmowe. Kompleksowe usługi webowe dla Twojego biznesu.",
   openGraph: {
-    title: "Sorien – Profesjonalne Strony Internetowe SEO i Systemy Webowe",
+    title: "Sorien – Profesjonalne Strony Internetowe z SEO i Systemy Webowe",
     description:
       "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, sklepy i systemy firmowe z naciskiem na jakość.",
     url: "https://sorien.pl",
