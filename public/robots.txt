@@ -1,9 +1,4 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://sorien.pl
-
-# Sitemaps
-Sitemap: https://sorien.pl/sitemap.xml
+Sitemap: https://www.sorien.pl/sitemap.xml
