@@ -54,6 +54,7 @@ export default function RootLayout({
         <NavBar />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
