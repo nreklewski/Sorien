@@ -833,7 +833,7 @@ export default function Wycena() {
               href="mailto:hello@sorien.com"
               className="text-violet-400 font-semibold hover:text-violet-200 transition-colors"
             >
-              hello@sorien.com
+              hello@sorien.pl
             </a>
           </p>
         </section>
