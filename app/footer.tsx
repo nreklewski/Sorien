@@ -163,7 +163,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-4">
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/sorien/"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Link do LinkedIn"
               >
