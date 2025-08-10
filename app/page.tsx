@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     title: "Sorien – Profesjonalne Strony Internetowe z SEO i Systemy Webowe",
     description:
       "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, sklepy i systemy firmowe z naciskiem na jakość.",
-    url: "https://sorien.pl",
+    url: "https://www.sorien.pl",
     siteName: "Sorien",
     locale: "pl_PL",
     type: "website",
     images: [
       {
-        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
+        url: "https://www.sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
         width: 1275,
         height: 620,
         alt: "Sorien – Profesjonalne Strony Internetowe",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://sorien.pl",
+    canonical: "https://www.sorien.pl",
   },
 };
 
@@ -36,16 +36,16 @@ export default function Home() {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Sorien – Tworzenie stron internetowych z SEO",
-      url: "https://sorien.pl",
+      url: "https://www.sorien.pl",
     },
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       name: "Sorien",
-      url: "https://sorien.pl",
+      url: "https://www.sorien.pl",
       telephone: "+48 880 924 444",
       email: "hello@sorien.pl",
-      logo: "https://sorien.pl/android-chrome-512x512.png",
+      logo: "https://www.sorien.pl/android-chrome-512x512.png",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Łódź",

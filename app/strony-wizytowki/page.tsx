@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Profesjonalne strony wizytówki z SEO - Sorien",
     description:
       "Profesjonalne strony wizytówki z idealnym SEO, zaprojektowane, by wyróżnić Twoją firmę online.",
-    url: "https://sorien.pl/strony-wizytowki",
+    url: "https://www.sorien.pl/strony-wizytowki",
     siteName: "Sorien",
     locale: "pl_PL",
     type: "website",
     images: [
       {
-        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
+        url: "https://www.sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
         width: 1275,
         height: 620,
         alt: "Strony Wizytówki – Sorien",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://sorien.pl/strony-wizytowki",
+    canonical: "https://www.sorien.pl/strony-wizytowki",
   },
 };
 
@@ -43,8 +43,8 @@ export default function StronaWizytowka() {
       },
       telephone: "+48 880 924 444",
       email: "hello@sorien.pl",
-      logo: "https://sorien.pl/android-chrome-512x512.png",
-      url: "https://sorien.pl",
+      logo: "https://www.sorien.pl/android-chrome-512x512.png",
+      url: "https://www.sorien.pl",
     },
     description:
       "Tworzymy estetyczne, dobrze pozycjonujące z SEO i responsywne strony-wizytówki dla firm, biznesów i specjalistów z różnych branż.",

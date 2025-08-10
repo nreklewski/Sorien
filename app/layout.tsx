@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sorien.pl"),
+  metadataBase: new URL("https://www.sorien.pl"),
   robots: {
     index: true,
     follow: true,
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
   other: {
     "theme-color": "#000000",
   },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Spersonalizowane systemy Firmowe - Sorien",
     description:
       "Profesjonalne systemy firmowe i aplikacje webowe, które automatyzują procesy i wspierają rozwój biznesu.",
-    url: "https://sorien.pl/systemy-firmowe",
+    url: "https://www.sorien.pl/systemy-firmowe",
     siteName: "Sorien",
     locale: "pl_PL",
     type: "website",
     images: [
       {
-        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
+        url: "https://www.sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
         width: 1275,
         height: 620,
         alt: "Systemy Firmowe – Sorien",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://sorien.pl/systemy-firmowe",
+    canonical: "https://www.sorien.pl/systemy-firmowe",
   },
 };
 
@@ -43,8 +43,8 @@ export default function SystemyFirmowe() {
       },
       telephone: "+48 880 924 444",
       email: "hello@sorien.pl",
-      logo: "https://sorien.pl/android-chrome-512x512.png",
-      url: "https://sorien.pl",
+      logo: "https://www.sorien.pl/android-chrome-512x512.png",
+      url: "https://www.sorien.pl",
     },
     description:
       "Tworzymy systemy znacząco poprawiające wydajność twojej firmy, platformy rezerwacyjne i inne aplikacje webowe dopasowane i w pełni personalizowane do potrzeb Twojej firmy.",

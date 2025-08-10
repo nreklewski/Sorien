@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Tworzenie sklepów Internetowych i e-commerce – Sorien",
     description:
       "Profesjonalne sklepy e-commerce z intuicyjnym designem i skutecznym SEO, które pomagają wyróżnić Twój biznes w sieci.",
-    url: "https://sorien.pl/sklepy-internetowe",
+    url: "https://www.sorien.pl/sklepy-internetowe",
     siteName: "Sorien",
     locale: "pl_PL",
     type: "website",
     images: [
       {
-        url: "https://sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
+        url: "https://www.sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
         width: 1275,
         height: 620,
         alt: "Sklepy Internetowe – Sorien",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://sorien.pl/sklepy-internetowe",
+    canonical: "https://www.sorien.pl/sklepy-internetowe",
   },
 };
 
@@ -43,8 +43,8 @@ export default function SklepyInternetowe() {
       },
       telephone: "+48 880 924 444",
       email: "hello@sorien.pl",
-      logo: "https://sorien.pl/android-chrome-512x512.png",
-      url: "https://sorien.pl",
+      logo: "https://www.sorien.pl/android-chrome-512x512.png",
+      url: "https://www.sorien.pl",
     },
     description:
       "Budujemy profesjonalne sklepy internetowe z integracją płatności, magazynów i systemów ERP.",
