@@ -66,19 +66,18 @@ export default function Home() {
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
           <div className="content-center w-full lg:w-1/2">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-4 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
-              Dedykowany software dla <br />
-              Twojego{" "}
+            <h1 className=" text-center sm:text-left text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
+              Dedykowane strony internetowe <br className="hidden sm:flex" />
+              dla Twojej{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                innowacyjnego
+                innowacyjnej
               </span>{" "}
-              biznesu
+              firmy
             </h1>
-            <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed">
-              Tworzymy nowoczesne strony internetowe i aplikacje mobilne dla
-              wszystkich, którzy chcą nie tylko nadążać, ale przede wszystkim
-              wyprzedzać konkurencję. Innowacyjne rozwiązania z przemyślanym
-              designem, aby dać Ci przewagę, która robi różnicę.
+            <h2 className="text-center sm:text-left text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed">
+              Projektujemy nowoczesne strony www, sklepy internetowe i systemy
+              firmowe, łącząc przemyślany design, dopracowane UI/UX i najnowszą
+              technologię. Pomóż swojej firmie zabłysnąć w sieci!
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 mt-14 mb-10">
               <Link
