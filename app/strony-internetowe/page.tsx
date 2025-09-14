@@ -3,14 +3,14 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sorien - Profesjonalne strony wizytówki z SEO",
+  title: "Sorien - Profesjonalne strony internetowe z SEO",
   description:
-    "Tworzymy nowoczesne, responsywne i zoptymalizowane pod SEO strony wizytówki, które skutecznie promują Twój biznes w sieci.",
+    "Tworzymy nowoczesne, responsywne i zoptymalizowane pod SEO strony internetowe, które skutecznie promują Twój biznes w sieci.",
   openGraph: {
-    title: "Profesjonalne strony wizytówki z SEO - Sorien",
+    title: "Profesjonalne strony internetowe z SEO - Sorien",
     description:
-      "Profesjonalne strony wizytówki z idealnym SEO, zaprojektowane, by wyróżnić Twoją firmę online.",
-    url: "https://www.sorien.pl/strony-wizytowki",
+      "Profesjonalne strony internetowe z idealnym SEO, zaprojektowane, by wyróżnić Twoją firmę online.",
+    url: "https://www.sorien.pl/strony-internetowe",
     siteName: "Sorien",
     locale: "pl_PL",
     type: "website",
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
         url: "https://www.sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
         width: 1275,
         height: 620,
-        alt: "Strony Wizytówki – Sorien",
+        alt: "Strony internetowe – Sorien",
       },
     ],
   },
   alternates: {
-    canonical: "https://www.sorien.pl/strony-wizytowki",
+    canonical: "https://www.sorien.pl/strony-internetowe",
   },
 };
 
@@ -32,7 +32,7 @@ export default function StronaWizytowka() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "Tworzenie stron wizytówek z pozycjonowaniem SEO",
+    serviceType: "Tworzenie stron internetowych z pozycjonowaniem SEO",
     provider: {
       "@type": "LocalBusiness",
       name: "Sorien",
@@ -47,7 +47,7 @@ export default function StronaWizytowka() {
       url: "https://www.sorien.pl",
     },
     description:
-      "Tworzymy estetyczne, dobrze pozycjonujące z SEO i responsywne strony-wizytówki dla firm, biznesów i specjalistów z różnych branż.",
+      "Tworzymy estetyczne, dobrze pozycjonujące z SEO i responsywne strony-internetowe dla firm, biznesów i specjalistów z różnych branż.",
   };
   return (
     <>
@@ -66,7 +66,7 @@ export default function StronaWizytowka() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-4 md:mb-6 lg:mb-8 text-white lg:whitespace-nowrap">
-              Strony Wizytówki
+              Strony Internetowe
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Rewolucja &nbsp;
@@ -76,7 +76,7 @@ export default function StronaWizytowka() {
 
             <h2 className="text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed mb-6">
               Niech Twój wizerunek mówi za Ciebie – 24/7. Profesjonalne strony
-              wizytówki, które podkręcają zaufanie nawet o 300%. Dla firm,
+              www, które podkręcają zaufanie nawet o 300%. Dla firm,
               freelancerów, artystów i wszystkich, którzy chcą błyszczeć w
               sieci. Zbuduj markę, której nie da się zapomnieć.
             </h2>
@@ -112,7 +112,7 @@ export default function StronaWizytowka() {
                     clipRule="evenodd"
                   />
                 </svg>
-                ROI w 3 miesiąc
+                ROI w 3 miesiące
               </div>
               <div className="flex items-center text-gray-400 text-sm">
                 <svg
@@ -157,11 +157,11 @@ export default function StronaWizytowka() {
               className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]"
             >
               <title id="svgTitle">
-                Profesjonalna strona www wizytówka – tworzenie stron
+                Profesjonalna strona www – tworzenie stron
                 internetowych
               </title>
               <desc id="svgDesc">
-                Nowoczesna, kolorowa grafika wizytówki symbolizująca ofertę
+                Nowoczesna, kolorowa grafika strony internetowej symbolizująca ofertę
                 projektowania i tworzenia responsywnych stron internetowych dla
                 firm i freelancerów.
               </desc>
@@ -264,14 +264,14 @@ export default function StronaWizytowka() {
 
           <div className="text-center mb-16 relative z-10">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-500/20 to-blue-600/20 border border-green-500/30 rounded-full text-sm font-medium text-green-300 mb-6">
-              Dlaczego strony wizytówki to klucz do sukcesu?
+              Dlaczego strony internetowe to klucz do sukcesu?
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
               Przekształć pierwsze wrażenie w przewagę konkurencyjną
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
               W dzisiejszym świecie, firmy które nie mają profesjonalnej strony
-              wizytówki, tracą ogromne możliwości biznesowe. Nasze rozwiązania
+              internetowe, tracą ogromne możliwości biznesowe. Nasze rozwiązania
               to nie tylko strony - to strategiczna inwestycja w wizerunek i
               zaufanie klientów.
             </p>
@@ -300,7 +300,7 @@ export default function StronaWizytowka() {
                 Eksplozja zaufania
               </h3>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Profesjonalna strona wizytówka buduje zaufanie i wiarygodność w
+                Profesjonalna strona internetowa buduje zaufanie i wiarygodność w
                 oczach klientów. Nasze strony znacznie zwiększają zaufanie
                 wszystkich i poprawiają pierwsze wrażenie. To jak zatrudnienie
                 najlepszego PR-owca, ale w formie cyfrowej.
@@ -535,7 +535,7 @@ export default function StronaWizytowka() {
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
               Nasz sprawdzony proces gwarantuje szybkie i bezproblemowe
-              uruchomienie strony wizytówki. Każdy krok jest precyzyjnie
+              uruchomienie strony internetowej. Każdy krok jest precyzyjnie
               zaplanowany i wykonany przez ekspertów designu i marketingu.
             </p>
           </div>
@@ -737,7 +737,7 @@ export default function StronaWizytowka() {
 
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
               Nie czekaj, aż konkurencja przejmie rynek wizerunkowy. Strony
-              wizytówki to nie luksus - to konieczność w dzisiejszym świecie
+              internetowe to nie luksus - to konieczność w dzisiejszym świecie
               biznesowym. Skontaktuj się z nami i stwórzmy razem wizytówkę,
               która przekształci Twój biznes w cyfrową potęgę wizerunkową.
             </p>

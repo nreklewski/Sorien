@@ -67,7 +67,7 @@ export default function Home() {
         <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
           <div className="content-center w-full lg:w-1/2">
             <h1 className=" text-center sm:text-left text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
-              Dedykowane strony internetowe <br className="hidden sm:flex" />
+              Dedykowane oprogramowanie <br className="hidden sm:flex" />
               dla Twojej{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
                 innowacyjnej
@@ -75,8 +75,8 @@ export default function Home() {
               firmy
             </h1>
             <h2 className="text-center sm:text-left text-lg sm:text-xl md:text-xl text-gray-300 leading-relaxed">
-              Projektujemy nowoczesne strony www, sklepy internetowe i systemy
-              firmowe, łącząc przemyślany design, dopracowane UI/UX i najnowszą
+              Projektujemy nowoczesne systemy dla firm, strony www i rozwiązania
+              AI, łącząc przemyślany design, dopracowane UI/UX i najnowszą
               technologię. Pomóż swojej firmie zabłysnąć w sieci!
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 mt-14 mb-10">
@@ -150,70 +150,6 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Strony Wizytówki</h3>
-              <p className="text-gray-400">
-                Dobrze pozycjonujące się, responsywne strony. Twoja cyfrowa
-                wizytówka, która przyciąga klientów i zostawia trwałe wrażenie.
-              </p>
-              <Link
-                href="/strony-wizytowki"
-                className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
-              >
-                Dowiedz się więcej
-              </Link>
-            </div>
-
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <circle cx="9" cy="21" r="1" strokeWidth="2" />
-                  <circle cx="20" cy="21" r="1" strokeWidth="2" />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M1 1h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h12"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Sklepy Internetowe</h3>
-              <p className="text-gray-400">
-                Nowoczesne sklepy online, które nie tylko zwiększają sprzedaż,
-                ale zamieniają klientów w entuzjastów Twojego sklepu.
-              </p>
-              <Link
-                href="/sklepy-internetowe"
-                className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
-              >
-                Dowiedz się więcej
-              </Link>
-            </div>
-
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
                     d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                   />
                 </svg>
@@ -222,10 +158,105 @@ export default function Home() {
               <p className="text-gray-400">
                 Dedykowane systemy, które rewolucjonizują Twoje procesy i
                 maksymalizują wydajność firmy. Pracuj mądrzej, szybciej,
-                skuteczniej.
+                skuteczniej. Wszystko w jednym miejscu.
               </p>
               <Link
                 href="/systemy-firmowe"
+                className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
+              >
+                Dowiedz się więcej
+              </Link>
+            </div>
+
+            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Strony Internetowe</h3>
+              <p className="text-gray-400">
+                Dobrze pozycjonujące się, responsywne strony. Twoja cyfrowa
+                wizytówka, która przyciąga klientów i zostawia trwałe wrażenie
+                dzięki przemyślanemu designowi.
+              </p>
+              <Link
+                href="/strony-internetowe"
+                className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
+              >
+                Dowiedz się więcej
+              </Link>
+            </div>
+
+            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect
+                    x="5"
+                    y="7"
+                    width="14"
+                    height="15"
+                    rx="2"
+                    strokeWidth="2"
+                  />
+                  <circle cx="8" cy="11" r="1" fill="currentColor" />
+                  <circle cx="16" cy="11" r="1" fill="currentColor" />
+                  <rect
+                    x="7"
+                    y="17"
+                    width="10"
+                    height="1"
+                    rx="0.5"
+                    fill="currentColor"
+                  />
+
+                  <path d="M12 3v4" strokeWidth="2" strokeLinecap="round" />
+                  <circle cx="12" cy="2" r="1.5" fill="currentColor" />
+                  <rect
+                    x="1"
+                    y="12"
+                    width="2"
+                    height="2"
+                    rx="1"
+                    fill="currentColor"
+                  />
+                  <rect
+                    x="21"
+                    y="12"
+                    width="2"
+                    height="2"
+                    rx="1"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Rozwiązania AI</h3>
+              <p className="text-gray-400">
+                Inteligentne, dopasowane do Twojego biznesu rozwiązania AI.
+                Automatyzują procesy, wspierają decyzje i wyróżniają Twoją firmę
+                na tle konkurencji.
+              </p>
+              <Link
+                href="/rozwiazania-ai-dla-firm"
                 className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
               >
                 Dowiedz się więcej
@@ -651,7 +682,7 @@ export default function Home() {
                   <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
                     <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
                       <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                        Strona wizytówka
+                        Strony wizytówki
                       </h3>
                       <p className="text-gray-700 text-base font-medium">
                         Profesjonalny wygląd
@@ -676,7 +707,7 @@ export default function Home() {
                   <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
                     <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
                       <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                        Sklep internetowy
+                        Sklepy internetowe
                       </h3>
                       <p className="text-gray-700 text-base font-medium">
                         Nowoczesne zakupy
@@ -701,7 +732,7 @@ export default function Home() {
                   <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
                     <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
                       <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                        System wewnętrzny
+                        Systemy wewnętrzne
                       </h3>
                       <p className="text-gray-700 text-base font-medium">
                         Narzędzia biznesowe

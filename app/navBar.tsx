@@ -7,9 +7,9 @@ import MenuOverlay from "./menuOverlay";
 const navLinks = [
   { href: "/", text: "Strona Główna" },
   { href: "/wycena", text: "Otrzymaj Wycenę" },
-  { href: "/strony-wizytowki", text: "Strony Wizytówki" },
-  { href: "/sklepy-internetowe", text: "Sklepy Internetowe" },
   { href: "/systemy-firmowe", text: "Systemy Wewnętrzne" },
+  { href: "/strony-internetow", text: "Strony Internetowe" },
+  { href: "/rozwiazania-ai-dla-firm", text: "Rozwiązania AI" },
 ];
 
 const NavBar = () => {
