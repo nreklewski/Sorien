@@ -13,3 +13,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
+.font-sora {
+  font-family: var(--font-sora), sans-serif;
+}

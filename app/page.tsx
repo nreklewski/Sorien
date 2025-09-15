@@ -66,7 +66,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
           <div className="content-center w-full lg:w-1/2">
-            <h1 className=" text-center sm:text-left text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
+            <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-5xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white lg:whitespace-nowrap">
               Dedykowane oprogramowanie <br className="hidden sm:flex" />
               dla Twojej{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
@@ -287,7 +287,7 @@ export default function Home() {
 
           <div className="relative z-10">
             {/* First row - 2 items */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 lg:mb-24 ">
               {/* Fully Customizable */}
               <div className="group relative">
                 <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 hover:border-blue-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
@@ -393,8 +393,8 @@ export default function Home() {
                         Błyskawiczna wydajność
                       </h3>
                       <p className="text-gray-300 leading-relaxed">
-                        Ekspresowe aplikacje zoptymalizowane pod kątem szybkości
-                        i wydajności. Gwarantujemy świetne doświadczenia i
+                        Aplikacje zoptymalizowane pod kątem szybkości
+                        i wydajności. Gwarantujemy świetną jakość i
                         minimalny czas ładowania poprawiający pozycjonowanie.
                       </p>
                     </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import NavBar from "./navBar";
@@ -14,6 +14,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  preload: true,
+});
+
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
+  weight: ["400"], // pełny zakres wag
   preload: true,
 });
 
@@ -50,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} antialiased`}
       >
         <NavBar />
         <main>{children}</main>
