@@ -33,7 +33,7 @@ const NavBar = () => {
             `transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ` +
             `px-4 sm:px-8 ` +
             (isScrolled
-              ? "py-3 rounded-full backdrop-blur-xl backdrop-saturate-150 bg-white/30 dark:bg-neutral-900/30 border border-white/50 dark:border-white/20 shadow-lg ring-1 ring-white/60/50 dark:ring-white/10"
+              ? "py-0 rounded-full backdrop-blur-xl backdrop-saturate-150 bg-white/30 dark:bg-neutral-900/30 border border-white/50 dark:border-white/20 shadow-lg ring-1 ring-white/60/50 dark:ring-white/10"
               : "py-6 rounded-none backdrop-blur-0 bg-transparent border-transparent ring-0 shadow-none")
           }
         >
