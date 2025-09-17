@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/", text: "Strona Główna" },
   { href: "/wycena", text: "Otrzymaj Wycenę" },
   { href: "/systemy-firmowe", text: "Systemy Wewnętrzne" },
-  { href: "/strony-internetow", text: "Strony Internetowe" },
+  { href: "/strony-internetowe", text: "Strony Internetowe" },
   { href: "/rozwiazania-ai-dla-firm", text: "Rozwiązania AI" },
 ];
 
