@@ -688,7 +688,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {/* Business Card Website */}
-              <Link href="/strony-wizytowki">
+              <Link href="/strony-internetowe">
                 <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
                   <div className="aspect-[5/4] flex items-center justify-center relative">
                     <Image
@@ -713,7 +713,7 @@ export default function Home() {
               </Link>
 
               {/* Ecommerce Store */}
-              <Link href="/sklepy-internetowe">
+              <Link href="/strony internetowe">
                 <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
                   <div className="aspect-[5/4] flex items-center justify-center relative">
                     <Image
