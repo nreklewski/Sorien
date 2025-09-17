@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import Reveal from "../components/Reveal";
+import RevealGroup from "../components/RevealGroup";
 
 export const metadata: Metadata = {
   title: "Sorien - Spersonalizowane systemy Firmowe",
@@ -58,6 +60,7 @@ export default function SystemyFirmowe() {
       />
       <div className="text-white">
         {/* Hero Section */}
+        <Reveal>
         <section className="flex flex-col md:flex-row justify-between pt-16 md:pt-20 px-4 sm:px-8 lg:px-5 pb-10 md:pb-20 gap-10 md:gap-0 max-w-7xl mx-auto w-full">
           <div className="content-center w-full lg:w-1/2">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-600/20 border border-blue-500/30 rounded-full text-sm font-medium text-blue-300 mb-6">
@@ -254,8 +257,10 @@ export default function SystemyFirmowe() {
             </svg>
           </div>
         </section>
+        </Reveal>
 
         {/* Features Section */}
+        <Reveal>
         <section className="py-20 md:py-28 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#101015] to-[#151515] relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-full blur-3xl"></div>
@@ -278,6 +283,7 @@ export default function SystemyFirmowe() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+            <RevealGroup intervalMs={120}>
             <div className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-3xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 hover:scale-105 backdrop-blur-sm">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <svg
@@ -517,10 +523,13 @@ export default function SystemyFirmowe() {
                 </li>
               </ul>
             </div>
+            </RevealGroup>
           </div>
         </section>
+        </Reveal>
 
         {/* Process Section */}
+        <Reveal>
         <section className="py-20 md:py-28 px-4 sm:px-8 lg:px-30 relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/25 to-purple-600/25 rounded-full blur-xl animate-pulse"></div>
@@ -544,6 +553,7 @@ export default function SystemyFirmowe() {
           </div>
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <RevealGroup intervalMs={120}>
             <div className="group bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm border border-blue-500/30 rounded-3xl p-8 hover:border-blue-400/50 transition-all duration-500 hover:scale-105">
               <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-6 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <span className="text-white font-bold text-lg">1</span>
@@ -600,10 +610,13 @@ export default function SystemyFirmowe() {
                 na każdym etapie.
               </p>
             </div>
+            </RevealGroup>
           </div>
         </section>
+        </Reveal>
 
         {/* Benefits Section */}
+        <Reveal>
         <section className="py-20 md:py-28 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#101011] to-[#0e0d12] relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-pink-600/10 rounded-full blur-3xl"></div>
@@ -625,6 +638,7 @@ export default function SystemyFirmowe() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+            <RevealGroup intervalMs={120}>
             <div className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-3xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 hover:scale-105 backdrop-blur-sm">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <svg
@@ -726,10 +740,13 @@ export default function SystemyFirmowe() {
                 <li>• Eksport raportów</li>
               </ul>
             </div>
+            </RevealGroup>
           </div>
         </section>
+        </Reveal>
 
         {/* CTA Section */}
+        <Reveal>
         <section className="py-20 md:py-28 px-4 sm:px-8 lg:px-30 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-pink-900/20 relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-full blur-3xl animate-pulse"></div>
@@ -791,6 +808,7 @@ export default function SystemyFirmowe() {
             </p>
           </div>
         </section>
+        </Reveal>
       </div>
     </>
   );
