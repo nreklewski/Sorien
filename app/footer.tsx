@@ -130,24 +130,32 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Branże</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <p className="hover:text-white transition-colors">
-                  Strony internetowe dla prawników
-                </p>
+                <Link href="strony-www-dla-gabinetu-stomatologicznego">
+                  <p className="hover:text-white transition-colors">
+                    Strony internetowe dla stomatologów
+                  </p>
+                </Link>
               </li>
               <li>
-                <p className="hover:text-white transition-colors">
-                  Strony internetowe dla branży beauty
-                </p>
+                <Link href="strony-www-dla-branzy-beauty">
+                  <p className="hover:text-white transition-colors">
+                    Strony internetowe dla branży beauty
+                  </p>
+                </Link>
               </li>
               <li>
-                <p className="hover:text-white transition-colors">
-                  Strony internetowe dla restauracji
-                </p>
+                <Link href="strony-www-dla-restauracji">
+                  <p className="hover:text-white transition-colors">
+                    Strony internetowe dla restauracji
+                  </p>
+                </Link>
               </li>
               <li>
-                <p className="hover:text-white transition-colors">
-                  Strony internetowe dla psychologów
-                </p>
+                <Link href="strony-www-dla-prawnikow">
+                  <p className="hover:text-white transition-colors">
+                    Strony internetowe dla prawników
+                  </p>
+                </Link>
               </li>
             </ul>
           </div>

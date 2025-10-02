@@ -9,11 +9,11 @@ import RevealGroup from "./components/RevealGroup";
 export const metadata: Metadata = {
   title: "Sorien – Nowoczesne strony Internetowe i SEO",
   description:
-    "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, sklepy internetowe oraz dedykowane systemy firmowe. Kompleksowe usługi webowe dla Twojego biznesu.",
+    "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, AI oraz dedykowane systemy firmowe. Kompleksowe usługi webowe dla Twojego biznesu.",
   openGraph: {
     title: "Sorien – Profesjonalne Strony Internetowe z SEO i Systemy Webowe",
     description:
-      "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, sklepy i systemy firmowe z naciskiem na jakość.",
+      "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, automatyzacje i systemy firmowe z naciskiem na jakość.",
     url: "https://www.sorien.pl",
     siteName: "Sorien",
     locale: "pl_PL",
@@ -54,7 +54,7 @@ export default function Home() {
         addressCountry: "PL",
       },
       description:
-        "Tworzymy nowoczesne strony internetowe z optymalnym SEO, sklepy i systemy firmowe dla biznesów w całej Polsce.",
+        "Tworzymy nowoczesne strony internetowe z optymalnym SEO, AI i systemy firmowe dla biznesów w całej Polsce.",
     },
   ];
   return (
@@ -681,8 +681,7 @@ export default function Home() {
                 Nasze realizacje
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-                Poznaj nasze wybrane projekty, które pokazują nasze
-                doświadczenie i zaangażowanie.
+                Realizację wspierające rozwój firm naszych klientów.
               </p>
             </div>
 
@@ -713,7 +712,7 @@ export default function Home() {
               </Link>
 
               {/* Ecommerce Store */}
-              <Link href="/strony internetowe">
+              <Link href="/strony-internetowe">
                 <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
                   <div className="aspect-[5/4] flex items-center justify-center relative">
                     <Image
@@ -767,23 +766,95 @@ export default function Home() {
 
         {/* CTA Section */}
         <Reveal>
-          <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-r from-blue-900/10 to-purple-900/10">
-            <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
-                Gotowy na rozwój?
-              </h2>
-              <p className="text-sm md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
-                W ciągu 24 godzin odkryj, jak nasze personalizowane
-                oprogramowanie może wynieść Twój biznes na wyższy poziom i
-                zostawić konkurencję w tyle — wraz z szybką, bezpłatną wyceną.
-              </p>
-              <div className="flex justify-center">
-                <Link
-                  href="/wycena"
-                  className="border border-gray-300 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg hover:bg-gradient-to-r hover:from-purple-700 hover:to-transparent hover:scale-105 hover:shadow-lg transition-all duration-700"
-                >
-                  Rozwiń swój biznes
-                </Link>
+          <section className="py-16 md:py-24 bg-[#0f0d0d]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex flex-col lg:flex-row items-center gap-12 relative">
+                {/* Left Column - Content */}
+                <div className="flex-1 max-w-2xl">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white text-center md:text-left">
+                    Rozwijaj swoją firmę z pomocą Sorien
+                  </h2>
+                  <p className="text-base md:text-xl text-gray-300 mb-8 leading-relaxed text-center md:text-left">
+                    W ciągu 24 godzin odkryj, jak nasze personalizowane
+                    oprogramowanie może wynieść Twój biznes na wyższy poziom i
+                    zostawić konkurencję w tyle — wraz z szybką, bezpłatną
+                    wyceną.
+                  </p>
+
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center text-gray-300">
+                      <svg
+                        className="w-6 h-6 mr-3 text-[#4a37f5]"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-base md:text-lg">
+                        Bezpłatna konsultacja i analiza potrzeb
+                      </span>
+                    </div>
+                    <div className="flex items-center text-gray-300">
+                      <svg
+                        className="w-6 h-6 mr-3 text-[#4a37f5]"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-base md:text-lg">
+                        Indywidualne podejście do każdego biznesu
+                      </span>
+                    </div>
+                    <div className="flex items-center text-gray-300">
+                      <svg
+                        className="w-6 h-6 mr-3 text-[#4a37f5]"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-base md:text-lg">
+                        Pełne wsparcie techniczne i szkolenia
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      href="/wycena"
+                      className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+                    >
+                      Skontaktuj się z nami
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Right Column - Image */}
+                <div className="hidden sm:block sm:absolute sm:right-3 sm:bottom-3 sm:w-28 md:w-40 z-0 pointer-events-none lg:static lg:w-auto lg:z-auto lg:pointer-events-auto lg:flex-1 lg:flex lg:justify-center">
+                  <div className="w-full max-w-xl lg:w-full">
+                    <Image
+                      src="/Sorien-Rozwiazania-IT-dla-firm.png"
+                      alt="Rozwiązania IT dla firm - Sorien"
+                      width={1600}
+                      height={900}
+                      quality={90}
+                      className="w-full h-auto rounded-2xl "
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </section>

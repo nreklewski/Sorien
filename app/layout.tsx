@@ -60,9 +60,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} antialiased`}
       >
         <noscript>
-          <style dangerouslySetInnerHTML={{ __html: `
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
             .reveal{opacity:1 !important;transform:none !important;filter:none !important;}
-          ` }} />
+          `,
+            }}
+          />
         </noscript>
         <NavBar />
         <main>{children}</main>

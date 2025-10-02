@@ -31,7 +31,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ navLinks }) => {
       <div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-gray-300 focus:outline-none"
+          className="text-gray-300 focus:outline-none cursor-pointer"
           aria-label="Toggle menu"
         >
           <svg
