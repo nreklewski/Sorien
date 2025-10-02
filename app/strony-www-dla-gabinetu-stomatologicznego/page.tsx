@@ -89,7 +89,7 @@ export default function Home() {
 
               {/* Right: Interactive Photo */}
               <InteractivePhoto
-                src="/strona-www-gabinet-dentystyczny.png"
+                src="/strona-www-dla-gabinetu-dentystycznyego.png"
                 alt="Nowoczesna strona internetowa dla gabinetu stomatologicznego"
                 width={1280}
                 height={853}
@@ -214,7 +214,8 @@ export default function Home() {
                       narzędziem marketingowym, które realnie zwiększa liczbę
                       pacjentów. Dzięki odpowiedniemu SEO Twoja strona pojawia
                       się wysoko w wynikach wyszukiwania na frazy takie jak
-                      &quot;dentysta [miasto]&quot; czy „stomatolog [miasto]&quot;.
+                      &quot;dentysta [miasto]&quot; czy „stomatolog
+                      [miasto]&quot;.
                     </p>
                   </div>
                 </div>
