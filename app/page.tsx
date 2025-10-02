@@ -7,11 +7,11 @@ import Reveal from "./components/Reveal";
 import RevealGroup from "./components/RevealGroup";
 
 export const metadata: Metadata = {
-  title: "Sorien – Nowoczesne strony Internetowe i SEO",
+  title: "Sorien – Nowoczesne rozwiązania IT dla firm",
   description:
-    "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, AI oraz dedykowane systemy firmowe. Kompleksowe usługi webowe dla Twojego biznesu.",
+    "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, rozwiązania AI oraz systemy firmowe. Kompleksowe usługi webowe dla Twojego biznesu.",
   openGraph: {
-    title: "Sorien – Profesjonalne Strony Internetowe z SEO i Systemy Webowe",
+    title: "Sorien – Profesjonalne rozwiązania IT dla firm",
     description:
       "Sorien tworzy nowoczesne strony wizytówki z optymalnym SEO, automatyzacje i systemy firmowe z naciskiem na jakość.",
     url: "https://www.sorien.pl",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "https://www.sorien.pl/logo2-sorien-agencja-tworząca-strony-internetowe.png",
         width: 1275,
         height: 620,
-        alt: "Sorien – Profesjonalne Strony Internetowe",
+        alt: "Sorien – Profesjonalne rozwiązania IT dla firm",
       },
     ],
   },
@@ -37,7 +37,7 @@ export default function Home() {
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "Sorien – Tworzenie stron internetowych z SEO",
+      name: "Sorien – Nowoczesne rozwiązania IT dla firm",
       url: "https://www.sorien.pl",
     },
     {
