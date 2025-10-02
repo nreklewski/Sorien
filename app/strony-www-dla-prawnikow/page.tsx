@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import InteractivePhoto from "../components/InteractivePhoto";
 import Reveal from "../components/Reveal";
-import RevealGroup from "../components/RevealGroup";
 import VerticalTabLayout from "./tablayout";
 import { Metadata } from "next";
 import Script from "next/script";
@@ -162,8 +161,8 @@ export default function Home() {
                       pod SEO. W Sorien tworzymy projekty, które prezentują
                       ofertę kancelarii, zespół prawników oraz ułatwiają
                       klientom umówienie konsultacji. Dodatkowo dbamy o to, by
-                      strona była widoczna w Google na frazy typu „prawnik
-                      [miasto]" czy „adwokat [specjalizacja]".
+                      strona była widoczna w Google na frazy typu &quot;prawnik
+                      [miasto]&quot; czy &quot;adwokat [specjalizacja]&quot;.
                     </p>
                   </div>
                 </div>
@@ -213,8 +212,8 @@ export default function Home() {
                       narzędziem marketingowym, które realnie zwiększa liczbę
                       klientów. Dzięki odpowiedniemu SEO Twoja strona pojawia
                       się wysoko w wynikach wyszukiwania na frazy takie jak
-                      „prawnik [miasto]", „adwokat [specjalizacja]" czy
-                      „kancelaria prawna [miasto]".
+                      &quot;prawnik [miasto]&quot;, &quot;adwokat [specjalizacja]&quot; czy
+                      &quot;kancelaria prawna [miasto]&quot;.
                     </p>
                   </div>
                 </div>

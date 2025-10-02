@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import InteractivePhoto from "../components/InteractivePhoto";
 import Reveal from "../components/Reveal";
-import RevealGroup from "../components/RevealGroup";
 import VerticalTabLayout from "./tablayout";
 import { Metadata } from "next";
 import Script from "next/script";
@@ -163,7 +162,7 @@ export default function Home() {
                       projekty, które prezentują ofertę gabinetu, zespół lekarzy
                       oraz ułatwiają pacjentom zapis na wizytę. Dodatkowo dbamy
                       o to, by strona była widoczna w Google na frazy typu
-                      „dentysta [miasto]".
+                      &quot;dentysta [miasto]&quot;.
                     </p>
                   </div>
                 </div>
@@ -214,7 +213,7 @@ export default function Home() {
                       narzędziem marketingowym, które realnie zwiększa liczbę
                       pacjentów. Dzięki odpowiedniemu SEO Twoja strona pojawia
                       się wysoko w wynikach wyszukiwania na frazy takie jak
-                      „dentysta [miasto]" czy „stomatolog [miasto]".
+                      &quot;dentysta [miasto]&quot; czy &quot;stomatolog [miasto]&quot;.
                     </p>
                   </div>
                 </div>

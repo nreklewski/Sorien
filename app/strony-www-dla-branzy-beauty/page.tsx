@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import InteractivePhoto from "../components/InteractivePhoto";
 import Reveal from "../components/Reveal";
-import RevealGroup from "../components/RevealGroup";
 import VerticalTabLayout from "./tablayout";
 import { Metadata } from "next";
 import Script from "next/script";
