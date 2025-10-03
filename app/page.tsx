@@ -91,7 +91,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className={`relative w-full hidden lg:w-auto lg:flex ${styles.customShadowImg}`}
+            className={`relative w-full hidden lg:w-auto lg:flex group ${styles.customShadowImg}`}
           >
             <Image
               src="/sorien-tworzenie-stron-internetowych.png"
@@ -100,6 +100,15 @@ export default function Home() {
               height={400}
               quality={90}
               className="w-64 h-64 sm:w-80 sm:h-80 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] object-contain"
+            />
+            <Image
+              src="/Rozwiązania-IT-dla-firm.png"
+              alt="sorien tworzenie stron www – ekran włączony"
+              width={400}
+              height={400}
+              quality={90}
+              className="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 group-hover:opacity-100"
+              priority={false}
             />
           </div>
         </section>
