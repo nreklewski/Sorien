@@ -127,7 +127,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Branże</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Na skróty</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <Link href="strony-www-dla-gabinetu-stomatologicznego">
@@ -154,6 +154,13 @@ const Footer = () => {
                 <Link href="strony-www-dla-prawnikow">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla prawników
+                  </p>
+                </Link>
+              </li>
+              <li>
+                <Link href="strony-www-dla-architektow">
+                  <p className="hover:text-white transition-colors">
+                    Strony internetowe dla architektów
                   </p>
                 </Link>
               </li>

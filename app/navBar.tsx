@@ -26,7 +26,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 sm:top-4 z-50">
+    <nav className="sticky top-1.5 sm:top-4 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div
           className={

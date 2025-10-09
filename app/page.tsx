@@ -147,139 +147,147 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <RevealGroup intervalMs={120}>
-                <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      focusable="false"
+            <div className="max-w-7xl mx-auto px-2 sm:px-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-3 lg:gap-6">
+                <RevealGroup intervalMs={120}>
+                  <div className="group bg-gray-800/50 p-3 sm:p-4 lg:p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-500 hover:scale-105 hover:rotate-1 hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-black/30">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-2 sm:mb-3 lg:mb-4 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+                      <svg
+                        className="w-6 h-6 sm:w-7 sm:h-7 lg:w-7 lg:h-7 text-white group-hover:scale-125 transition-transform duration-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                      Systemy Wewnętrzne
+                    </h3>
+                    <p className="text-gray-400 text-base group-hover:translate-x-1 transition-transform duration-500 delay-100">
+                      Dedykowane systemy, które rewolucjonizują Twoje procesy i
+                      maksymalizują wydajność firmy. Pracuj mądrzej, szybciej,
+                      skuteczniej. Wszystko w jednym miejscu.
+                    </p>
+                    <Link
+                      href="/systemy-firmowe"
+                      className="mt-4 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white text-base font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 focus:ring-purple-700 focus:ring-opacity-50 group-hover:translate-y-[-4px] group-hover:scale-105 transition-all duration-500 delay-200"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                      />
-                    </svg>
+                      Dowiedz się więcej
+                    </Link>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">
-                    Systemy Wewnętrzne
-                  </h3>
-                  <p className="text-gray-400">
-                    Dedykowane systemy, które rewolucjonizują Twoje procesy i
-                    maksymalizują wydajność firmy. Pracuj mądrzej, szybciej,
-                    skuteczniej. Wszystko w jednym miejscu.
-                  </p>
-                  <Link
-                    href="/systemy-firmowe"
-                    className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
-                  >
-                    Dowiedz się więcej
-                  </Link>
-                </div>
 
-                <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      focusable="false"
+                  <div className="group bg-gray-800/50 p-3 sm:p-4 lg:p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-500 hover:scale-105 hover:rotate-[-1deg] hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-black/30">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-2 sm:mb-3 lg:mb-4 flex items-center justify-center group-hover:scale-110 group-hover:rotate-[-12deg] transition-all duration-500">
+                      <svg
+                        className="w-6 h-6 sm:w-7 sm:h-7 lg:w-7 lg:h-7 text-white group-hover:scale-125 transition-transform duration-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 group-hover:translate-x-[-2px] transition-transform duration-500">
+                      Strony Internetowe
+                    </h3>
+                    <p className="text-gray-400 text-base group-hover:translate-x-[-1px] transition-transform duration-500 delay-100">
+                      Dobrze pozycjonujące się, responsywne strony. Twoja
+                      cyfrowa wizytówka, która przyciąga klientów i zostawia
+                      trwałe wrażenie dzięki przemyślanemu designowi.
+                    </p>
+                    <Link
+                      href="/systemy-firmowe"
+                      className="mt-4 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white text-base font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 focus:ring-purple-700 focus:ring-opacity-50 group-hover:translate-y-[-4px] group-hover:scale-105 transition-all duration-500 delay-200"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
+                      Dowiedz się więcej
+                    </Link>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">
-                    Strony Internetowe
-                  </h3>
-                  <p className="text-gray-400">
-                    Dobrze pozycjonujące się, responsywne strony. Twoja cyfrowa
-                    wizytówka, która przyciąga klientów i zostawia trwałe
-                    wrażenie dzięki przemyślanemu designowi.
-                  </p>
-                  <Link
-                    href="/strony-internetowe"
-                    className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
-                  >
-                    Dowiedz się więcej
-                  </Link>
-                </div>
 
-                <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      focusable="false"
+                  <div className="group bg-gray-800/50 p-3 sm:p-4 lg:p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition-all duration-500 hover:scale-105 hover:rotate-1 hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-black/30">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-2 sm:mb-3 lg:mb-4 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+                      <svg
+                        className="w-6 h-6 sm:w-7 sm:h-7 lg:w-7 lg:h-7 text-white group-hover:scale-125 transition-transform duration-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <rect
+                          x="5"
+                          y="7"
+                          width="14"
+                          height="15"
+                          rx="2"
+                          strokeWidth="2"
+                        />
+                        <circle cx="8" cy="11" r="1" fill="currentColor" />
+                        <circle cx="16" cy="11" r="1" fill="currentColor" />
+                        <rect
+                          x="7"
+                          y="17"
+                          width="10"
+                          height="1"
+                          rx="0.5"
+                          fill="currentColor"
+                        />
+
+                        <path
+                          d="M12 3v4"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                        <circle cx="12" cy="2" r="1.5" fill="currentColor" />
+                        <rect
+                          x="1"
+                          y="12"
+                          width="2"
+                          height="2"
+                          rx="1"
+                          fill="currentColor"
+                        />
+                        <rect
+                          x="21"
+                          y="12"
+                          width="2"
+                          height="2"
+                          rx="1"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                      Implementacja AI
+                    </h3>
+                    <p className="text-gray-400 text-base group-hover:translate-x-1 transition-transform duration-500 delay-100">
+                      Inteligentne, dopasowane do Twojego biznesu rozwiązania
+                      AI. Automatyzują procesy, wspierają decyzje i wyróżniają
+                      Twoją firmę na tle konkurencji.
+                    </p>
+                    <Link
+                      href="/systemy-firmowe"
+                      className="mt-4 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white text-base font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 focus:ring-purple-700 focus:ring-opacity-50 group-hover:translate-y-[-4px] group-hover:scale-105 transition-all duration-500 delay-200"
                     >
-                      <rect
-                        x="5"
-                        y="7"
-                        width="14"
-                        height="15"
-                        rx="2"
-                        strokeWidth="2"
-                      />
-                      <circle cx="8" cy="11" r="1" fill="currentColor" />
-                      <circle cx="16" cy="11" r="1" fill="currentColor" />
-                      <rect
-                        x="7"
-                        y="17"
-                        width="10"
-                        height="1"
-                        rx="0.5"
-                        fill="currentColor"
-                      />
-
-                      <path d="M12 3v4" strokeWidth="2" strokeLinecap="round" />
-                      <circle cx="12" cy="2" r="1.5" fill="currentColor" />
-                      <rect
-                        x="1"
-                        y="12"
-                        width="2"
-                        height="2"
-                        rx="1"
-                        fill="currentColor"
-                      />
-                      <rect
-                        x="21"
-                        y="12"
-                        width="2"
-                        height="2"
-                        rx="1"
-                        fill="currentColor"
-                      />
-                    </svg>
+                      Dowiedz się więcej
+                    </Link>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">Rozwiązania AI</h3>
-                  <p className="text-gray-400">
-                    Inteligentne, dopasowane do Twojego biznesu rozwiązania AI.
-                    Automatyzują procesy, wspierają decyzje i wyróżniają Twoją
-                    firmę na tle konkurencji.
-                  </p>
-                  <Link
-                    href="/rozwiazania-ai-dla-firm"
-                    className="mt-6 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50"
-                  >
-                    Dowiedz się więcej
-                  </Link>
-                </div>
-              </RevealGroup>
+                </RevealGroup>
+              </div>
             </div>
           </section>
         </Reveal>
@@ -287,179 +295,182 @@ export default function Home() {
         {/* Why Choose Us Section */}
         <Reveal>
           <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 relative overflow-hidden">
-            {/* Background floating elements */}
-            <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/40 to-purple-600/25 rounded-full blur-xl animate-pulse"></div>
-              <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-purple-500/40 to-pink-600/25 rounded-full blur-xl animate-pulse delay-1000"></div>
-              <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-gradient-to-r from-blue-500/40 to-cyan-600/20 rounded-full blur-xl animate-pulse delay-500"></div>
-              <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-gradient-to-r from-purple-500/40 to-blue-600/25 rounded-full blur-xl animate-pulse delay-1500"></div>
-            </div>
-
-            <div className="text-center mb-10 md:mb-16 relative z-10">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
-                Dlaczego my?
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-                Łączymy wiedzę techniczną z biznesowym podejściem, by dostarczać
-                rozwiązania, które naprawdę robią różnicę.
-              </p>
-            </div>
-
-            <div className="relative z-10">
-              {/* First row - 2 items */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 lg:mb-24 ">
-                {/* Fully Customizable */}
-                <RevealGroup intervalMs={140}>
-                  <div className="group relative">
-                    <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 hover:border-blue-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-120 transition-transform duration-300 flex-shrink-0">
-                          <svg
-                            className="w-8 h-8 text-white"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 27 27"
-                            aria-hidden="true"
-                            focusable="false"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M3 8a2 2 0 012-2h3a1 1 0 001-1V3a2 2 0 114 0v2a1 1 0 001 1h3a2 2 0 012 2v3a1 1 0 001 1h2a2 2 0 110 4h-2a1 1 0 00-1 1v3a2 2 0 01-2 2h-3a1 1 0 00-1 1v2a2 2 0 11-4 0v-2a1 1 0 00-1-1H5a2 2 0 01-2-2v-3a1 1 0 011-1H6a2 2 0 100-4H4a1 1 0 01-1-1V8z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-semibold mb-3 text-white">
-                            W pełni personalizowane
-                          </h3>
-                          <p className="text-gray-300 leading-relaxed">
-                            Rozwiązania szyte na miarę Twoich potrzeb. Tworzymy
-                            unikalne projekty i funkcjonalności idealnie
-                            dopasowane do Twojej wizji.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Cutting-Edge Technologies */}
-                  <div className="group relative">
-                    <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:border-purple-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
-                          <svg
-                            className="w-8 h-8 text-white"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            focusable="false"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9 9h6v6H9V9z"
-                            />
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M3 9h2m14 0h2M3 15h2m14 0h2M9 3v2m6-2v2M9 19v2m6-2v2M7 5h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-semibold mb-3 text-white">
-                            Nowoczesne technologie
-                          </h3>
-                          <p className="text-gray-300 leading-relaxed">
-                            Korzystamy z Next.js dla najlepszego SEO i
-                            wydajności. Wdrażamy najnowsze technologie, by Twój
-                            projekt wyróżniał się w sieci.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </RevealGroup>
+            <div className="max-w-7xl mx-auto">
+              {/* Background floating elements */}
+              <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/40 to-purple-600/25 rounded-full blur-xl animate-pulse"></div>
+                <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-purple-500/40 to-pink-600/25 rounded-full blur-xl animate-pulse delay-1000"></div>
+                <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-gradient-to-r from-blue-500/40 to-cyan-600/20 rounded-full blur-xl animate-pulse delay-500"></div>
+                <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-gradient-to-r from-purple-500/40 to-blue-600/25 rounded-full blur-xl animate-pulse delay-1500"></div>
               </div>
 
-              {/* Second row - 2 items */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Lightning Performance */}
-                <RevealGroup intervalMs={140}>
-                  <div className="group relative">
-                    <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 backdrop-blur-sm border border-green-500/20 rounded-3xl p-8 hover:border-green-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
-                          <svg
-                            className="w-8 h-8 text-white"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            focusable="false"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M13 10V3L4 14h7v7l9-11h-7z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-semibold mb-3 text-white">
-                            Błyskawiczna wydajność
-                          </h3>
-                          <p className="text-gray-300 leading-relaxed">
-                            Aplikacje zoptymalizowane pod kątem szybkości i
-                            wydajności. Gwarantujemy świetną jakość i minimalny
-                            czas ładowania poprawiający pozycjonowanie.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="text-center mb-10 md:mb-16 relative z-10">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
+                  Dlaczego my?
+                </h2>
+                <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+                  Łączymy wiedzę techniczną z biznesowym podejściem, by
+                  dostarczać rozwiązania, które naprawdę robią różnicę.
+                </p>
+              </div>
 
-                  {/* Full Post-Launch Support */}
-                  <div className="group relative">
-                    <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/20 rounded-3xl p-8 hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
-                          <svg
-                            className="w-8 h-8 text-white"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            focusable="false"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 4v16m8-8H4"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-semibold mb-3 text-white">
-                            Wsparcie po wdrożeniu
-                          </h3>
-                          <p className="text-gray-300 leading-relaxed">
-                            Pełna elastyczność i szybkie wsparcie techniczne po
-                            wdrożeniu. Łatwa rozbudowa i pomoc techniczna
-                            pozwalają Twojemu biznesowi rosnąć.
-                          </p>
+              <div className="relative z-10">
+                {/* First row - 2 items */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 lg:mb-24 ">
+                  {/* Fully Customizable */}
+                  <RevealGroup intervalMs={140}>
+                    <div className="group relative">
+                      <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 hover:border-blue-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-120 transition-transform duration-300 flex-shrink-0">
+                            <svg
+                              className="w-8 h-8 text-white"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 27 27"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M3 8a2 2 0 012-2h3a1 1 0 001-1V3a2 2 0 114 0v2a1 1 0 001 1h3a2 2 0 012 2v3a1 1 0 001 1h2a2 2 0 110 4h-2a1 1 0 00-1 1v3a2 2 0 01-2 2h-3a1 1 0 00-1 1v2a2 2 0 11-4 0v-2a1 1 0 00-1-1H5a2 2 0 01-2-2v-3a1 1 0 011-1H6a2 2 0 100-4H4a1 1 0 01-1-1V8z"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold mb-3 text-white">
+                              W pełni personalizowane
+                            </h3>
+                            <p className="text-gray-300 leading-relaxed">
+                              Rozwiązania szyte na miarę Twoich potrzeb.
+                              Tworzymy unikalne projekty i funkcjonalności
+                              idealnie dopasowane do Twojej wizji.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </RevealGroup>
+
+                    {/* Cutting-Edge Technologies */}
+                    <div className="group relative">
+                      <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:border-purple-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                            <svg
+                              className="w-8 h-8 text-white"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 9h6v6H9V9z"
+                              />
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M3 9h2m14 0h2M3 15h2m14 0h2M9 3v2m6-2v2M9 19v2m6-2v2M7 5h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2z"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold mb-3 text-white">
+                              Nowoczesne technologie
+                            </h3>
+                            <p className="text-gray-300 leading-relaxed">
+                              Korzystamy z Next.js dla najlepszego SEO i
+                              wydajności. Wdrażamy najnowsze technologie, by
+                              Twój projekt wyróżniał się w sieci.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </RevealGroup>
+                </div>
+
+                {/* Second row - 2 items */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {/* Lightning Performance */}
+                  <RevealGroup intervalMs={140}>
+                    <div className="group relative">
+                      <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 backdrop-blur-sm border border-green-500/20 rounded-3xl p-8 hover:border-green-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                            <svg
+                              className="w-8 h-8 text-white"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M13 10V3L4 14h7v7l9-11h-7z"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold mb-3 text-white">
+                              Błyskawiczna wydajność
+                            </h3>
+                            <p className="text-gray-300 leading-relaxed">
+                              Aplikacje zoptymalizowane pod kątem szybkości i
+                              wydajności. Gwarantujemy świetną jakość i
+                              minimalny czas ładowania poprawiający
+                              pozycjonowanie.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Full Post-Launch Support */}
+                    <div className="group relative">
+                      <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/20 rounded-3xl p-8 hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                            <svg
+                              className="w-8 h-8 text-white"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M12 4v16m8-8H4"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold mb-3 text-white">
+                              Wsparcie po wdrożeniu
+                            </h3>
+                            <p className="text-gray-300 leading-relaxed">
+                              Pełna elastyczność i szybkie wsparcie techniczne
+                              po wdrożeniu. Łatwa rozbudowa i pomoc techniczna
+                              pozwalają Twojemu biznesowi rosnąć.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </RevealGroup>
+                </div>
               </div>
             </div>
           </section>
@@ -685,90 +696,92 @@ export default function Home() {
         {/* Portfolio Section */}
         <Reveal>
           <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#101011] to-[#0e0d12]">
-            <div className="text-center mb-10 md:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
-                Nasze realizacje
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-                Realizację wspierające rozwój firm naszych klientów.
-              </p>
-            </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-0">
+              <div className="text-center mb-10 md:mb-16">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
+                  Nasze realizacje
+                </h2>
+                <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+                  Realizację wspierające rozwój firm naszych klientów.
+                </p>
+              </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-              {/* Business Card Website */}
-              <Link href="/strony-internetowe">
-                <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
-                  <div className="aspect-[5/4] flex items-center justify-center relative">
-                    <Image
-                      src="/profesjonalna-wizytówka-tworzenie-stron-www.png"
-                      alt="Strony internetowe wizytówki"
-                      fill
-                      className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
-                      style={{ zIndex: 1 }}
-                    />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                      <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                          Strony wizytówki
-                        </h3>
-                        <p className="text-gray-700 text-base font-medium">
-                          Profesjonalny wygląd
-                        </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                {/* Business Card Website */}
+                <Link href="/strony-internetowe">
+                  <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
+                    <div className="aspect-[5/4] flex items-center justify-center relative">
+                      <Image
+                        src="/profesjonalna-wizytówka-tworzenie-stron-www.png"
+                        alt="Strony internetowe wizytówki"
+                        fill
+                        className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
+                        style={{ zIndex: 1 }}
+                      />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+                        <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
+                          <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                            Strony wizytówki
+                          </h3>
+                          <p className="text-gray-700 text-base font-medium">
+                            Profesjonalny wygląd
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
 
-              {/* Ecommerce Store */}
-              <Link href="/strony-internetowe">
-                <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
-                  <div className="aspect-[5/4] flex items-center justify-center relative">
-                    <Image
-                      src="/sklepy-internetowe-profesjonalne-projekcty-e-commerce.png"
-                      alt="Tworzenie sklepów internetowych"
-                      fill
-                      className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
-                      style={{ zIndex: 1 }}
-                    />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                      <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                          Sklepy internetowe
-                        </h3>
-                        <p className="text-gray-700 text-base font-medium">
-                          Nowoczesne zakupy
-                        </p>
+                {/* Ecommerce Store */}
+                <Link href="/strony-internetowe">
+                  <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
+                    <div className="aspect-[5/4] flex items-center justify-center relative">
+                      <Image
+                        src="/sklepy-internetowe-profesjonalne-projekcty-e-commerce.png"
+                        alt="Tworzenie sklepów internetowych"
+                        fill
+                        className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
+                        style={{ zIndex: 1 }}
+                      />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+                        <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
+                          <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                            Sklepy internetowe
+                          </h3>
+                          <p className="text-gray-700 text-base font-medium">
+                            Nowoczesne zakupy
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
 
-              {/* Internal System */}
-              <Link href="/systemy-firmowe">
-                <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
-                  <div className="aspect-[5/4] flex items-center justify-center relative">
-                    <Image
-                      src="/systemy-dla-firm-profesjonalna-agencja.png"
-                      alt="Tworzenie systemów firmowych"
-                      fill
-                      className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
-                      style={{ zIndex: 1 }}
-                    />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                      <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                          Systemy wewnętrzne
-                        </h3>
-                        <p className="text-gray-700 text-base font-medium">
-                          Narzędzia biznesowe
-                        </p>
+                {/* Internal System */}
+                <Link href="/systemy-firmowe">
+                  <div className="group relative overflow-hidden rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition-all duration-300 mb-4 sm:mb-0 p-1 sm:p-2">
+                    <div className="aspect-[5/4] flex items-center justify-center relative">
+                      <Image
+                        src="/systemy-dla-firm-profesjonalna-agencja.png"
+                        alt="Tworzenie systemów firmowych"
+                        fill
+                        className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
+                        style={{ zIndex: 1 }}
+                      />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+                        <div className="bg-white/70 rounded-xl px-4 py-2 flex flex-col items-center">
+                          <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                            Systemy wewnętrzne
+                          </h3>
+                          <p className="text-gray-700 text-base font-medium">
+                            Narzędzia biznesowe
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           </section>
         </Reveal>
