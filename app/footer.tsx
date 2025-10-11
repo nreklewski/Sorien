@@ -164,6 +164,20 @@ const Footer = () => {
                   </p>
                 </Link>
               </li>
+              <li>
+                <Link href="strony-www-dla-trenerow-personalnych">
+                  <p className="hover:text-white transition-colors">
+                    Strony internetowe dla trenerów
+                  </p>
+                </Link>
+              </li>
+              <li>
+                <Link href="strony-www-dla-fizjoterapeutow">
+                  <p className="hover:text-white transition-colors">
+                    Strony internetowe dla fizjoterapeutów
+                  </p>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

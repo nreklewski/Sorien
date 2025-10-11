@@ -10,16 +10,28 @@ const services = [
   { key: "businessCard", label: "Strona wizytówka" },
   { key: "onlineStore", label: "Sklep internetowy" },
   { key: "webSystem", label: "System wewnętrzny" },
+  { key: "aiSolutions", label: "Rozwiązania AI" },
 ];
 
-type ServiceKey = "onlineStore" | "webSystem" | "businessCard" | "";
+type ServiceKey = "onlineStore" | "webSystem" | "businessCard" | "aiSolutions" | "";
 
 type FormData = {
   selectedService: ServiceKey;
-  // Step 2
-  exampleUrls: string[];
+  // Step 2 - Common fields
   description: string;
   files: File[];
+  // Step 2 - Business Card specific
+  exampleUrls: string[];
+  // Step 2 - Online Store specific
+  storeExampleUrls: string[];
+  productCount: string;
+  integrations: string;
+  // Step 2 - Web System specific
+  systemPurpose: string;
+  userCount: string;
+  // Step 2 - AI Solutions specific
+  aiUseCase: string;
+  integrationRequirements: string;
   // Step 3
   fullName: string;
   email: string;
@@ -31,9 +43,16 @@ type FormData = {
 
 const initialFormData: FormData = {
   selectedService: "",
-  exampleUrls: [""],
   description: "",
   files: [],
+  exampleUrls: [""],
+  storeExampleUrls: [""],
+  productCount: "",
+  integrations: "",
+  systemPurpose: "",
+  userCount: "",
+  aiUseCase: "",
+  integrationRequirements: "",
   fullName: "",
   email: "",
   phone: "",
@@ -114,6 +133,30 @@ export default function WycenaForm() {
           ? prev.exampleUrls.filter((_, i) => i !== idx)
           : prev.exampleUrls;
       return { ...prev, exampleUrls: urls };
+    });
+  };
+
+  // Online Store specific handlers
+  const handleStoreExampleUrlChange = (idx: number, value: string) => {
+    setFormData((prev) => {
+      const urls = [...prev.storeExampleUrls];
+      urls[idx] = value;
+      return { ...prev, storeExampleUrls: urls };
+    });
+  };
+  const handleAddStoreExampleUrl = () => {
+    setFormData((prev) => ({
+      ...prev,
+      storeExampleUrls: [...prev.storeExampleUrls, ""],
+    }));
+  };
+  const handleRemoveStoreExampleUrl = (idx: number) => {
+    setFormData((prev) => {
+      const urls =
+        prev.storeExampleUrls.length > 1
+          ? prev.storeExampleUrls.filter((_, i) => i !== idx)
+          : prev.storeExampleUrls;
+      return { ...prev, storeExampleUrls: urls };
     });
   };
   const handleFilesChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -215,9 +258,24 @@ export default function WycenaForm() {
     try {
       const data = new FormData();
       data.append("selectedService", formData.selectedService);
-      formData.exampleUrls.forEach((url) => data.append("exampleUrls", url));
       data.append("description", formData.description);
       formData.files.forEach((file) => data.append("files", file));
+      
+      // Add service-specific fields
+      if (formData.selectedService === "businessCard") {
+        formData.exampleUrls.forEach((url) => data.append("exampleUrls", url));
+      } else if (formData.selectedService === "onlineStore") {
+        formData.storeExampleUrls.forEach((url) => data.append("exampleUrls", url));
+        data.append("productCount", formData.productCount);
+        data.append("integrations", formData.integrations);
+      } else if (formData.selectedService === "webSystem") {
+        data.append("systemPurpose", formData.systemPurpose);
+        data.append("userCount", formData.userCount);
+      } else if (formData.selectedService === "aiSolutions") {
+        data.append("aiUseCase", formData.aiUseCase);
+        data.append("integrationRequirements", formData.integrationRequirements);
+      }
+      
       data.append("fullName", formData.fullName);
       data.append("email", formData.email);
       data.append("phone", formData.phone);
@@ -250,28 +308,33 @@ export default function WycenaForm() {
     if (step === 1) {
       return (
         <div className="w-full max-w-7xl mx-auto p-4 sm:p-6 flex flex-col items-center">
-          <div className="mb-8 text-center">
-            <div className="text-sm text-gray-400 mb-2">Krok 1/3</div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <div className="mb-8 text-center" style={{ animation: 'fadeInUp 0.8s ease-out' }}>
+            <div className="text-sm text-gray-400 mb-2 transition-all duration-300">Krok 1/3</div>
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 transition-all duration-500 hover:scale-105">
               Wybierz usługę
             </h1>
-            <p className="text-gray-300">
+            <p className="text-gray-300 transition-all duration-300">
               Wybierz, czym jesteś zainteresowany, aby przejść dalej.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-6 w-full mb-8">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <button
                 key={service.key}
                 type="button"
                 onClick={() => handleServiceSelect(service.key as ServiceKey)}
-                className={`flex-1 px-4 pt-5 pb-10 rounded-2xl border-2 transition-all duration-300 text-xl font-semibold shadow-lg focus:outline-none
+                className={`service-card flex-1 px-4 pt-5 pb-10 rounded-2xl border-2 text-xl font-semibold shadow-lg focus:outline-none relative overflow-hidden
                   ${
                     formData.selectedService === service.key
-                      ? "border-violet-500 bg-violet-800/80 text-white scale-105 shadow-violet-700/30"
-                      : "border-white/30 bg-white/10 text-white hover:border-violet-400 hover:bg-violet-900/40"
+                      ? "border-violet-500 bg-violet-800/80 text-white scale-105 shadow-violet-700/30 shadow-2xl"
+                      : "border-white/30 bg-white/10 text-white hover:border-violet-400 hover:bg-violet-900/40 hover:shadow-xl hover:shadow-violet-500/20"
                   }
                 `}
+                style={{
+                  animationDelay: `${index * 150}ms`,
+                  animation: formData.selectedService === service.key ? 'bounceIn 0.6s ease-out' : 'fadeInUp 0.8s ease-out forwards',
+                  opacity: formData.selectedService === service.key ? 1 : 0
+                }}
               >
                 <div className="mb-3 mt-0 text-2xl md:text-2xl lg:text-3xl font-bold text-white">
                   {service.label}
@@ -282,18 +345,18 @@ export default function WycenaForm() {
                       Zoptymalizowana pod SEO strona, która przyciągnie
                       klientów.
                     </div>
-                    <ul className="text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Nowoczesny wygląd
+                    <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Nowoczesny wygląd
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Idealna pod SEO
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Idealna pod SEO
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> W pełni responsywna
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> W pełni responsywna
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Integracja z social media
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Integracja z social media
                       </li>
                     </ul>
                   </>
@@ -304,18 +367,18 @@ export default function WycenaForm() {
                       Sklep online z wygodnymi zakupami i prostą obsługą
                       zamówień.
                     </div>
-                    <ul className="text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Intuicyjny koszyk
+                    <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Intuicyjny koszyk
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Bezpieczne płatności
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Bezpieczne płatności
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Zarządzanie produktami
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Zarządzanie produktami
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Integracje z dostawami
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Integracje z dostawami
                       </li>
                     </ul>
                   </>
@@ -325,18 +388,39 @@ export default function WycenaForm() {
                     <div className="text-xs sm:text-sm md:text-md lg:text-base text-gray-300 mb-8">
                       System do automatyzacji i zarządzania procesami w firmie.
                     </div>
-                    <ul className="text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Automatyzacja zadań
+                    <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Automatyzacja zadań
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Dopasowane do firmy
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Dopasowane do firmy
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Bezpieczny dostęp
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Bezpieczny dostęp
                       </li>
-                      <li className="flex items-center gap-2">
-                        <span>✔</span> Raporty i analizy
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Raporty i analizy
+                      </li>
+                    </ul>
+                  </>
+                )}
+                {service.key === "aiSolutions" && (
+                  <>
+                    <div className="text-xs sm:text-sm md:text-md lg:text-base text-gray-300 mb-8">
+                      Inteligentne rozwiązania AI dostosowane do potrzeb Twojej firmy.
+                    </div>
+                    <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Automatyzacja procesów
+                      </li>
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Analiza danych
+                      </li>
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Chatboty i asystenci
+                      </li>
+                      <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
+                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Integracja z systemami
                       </li>
                     </ul>
                   </>
@@ -345,11 +429,15 @@ export default function WycenaForm() {
             ))}
           </div>
           <button
-            className="mt-4 px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+            className="mt-4 px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-violet-500/50 relative overflow-hidden group"
             disabled={!formData.selectedService}
             onClick={handleNext}
+            style={{
+              animation: formData.selectedService ? 'slideInFromLeft 0.6s ease-out 0.3s both' : 'none'
+            }}
           >
-            Dalej
+            <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">Dalej</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </div>
       );
@@ -370,43 +458,211 @@ export default function WycenaForm() {
                 ?.label || "Projekt"}
             </h1>
             <p className="text-gray-300">
-              Opisz swój projekt i podaj przykłady inspiracji.
+              Opisz swój projekt i podaj szczegóły.
             </p>
           </div>
-          <div className="w-full mb-4">
-            <label className="block text-white font-semibold mb-2">
-              Przykładowe adresy stron które Ci się podobają
-            </label>
-            {formData.exampleUrls.map((url, idx) => (
-              <div key={idx} className="flex gap-2 mb-2">
-                <input
-                  type="text"
-                  className="flex-1 bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:ring-2 focus:ring-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
-                  placeholder="https://przyklad.pl"
-                  value={url}
-                  onChange={(e) => handleExampleUrlChange(idx, e.target.value)}
-                  // no longer required
-                />
-                {formData.exampleUrls.length > 1 && (
-                  <button
-                    type="button"
-                    className="px-3 py-2 rounded bg-red-600 text-white"
-                    onClick={() => handleRemoveExampleUrl(idx)}
-                  >
-                    Usuń
-                  </button>
-                )}
+
+          {/* Business Card Form */}
+          {formData.selectedService === "businessCard" && (
+            <>
+              <div className="w-full mb-4">
+                <label className="block text-white font-semibold mb-2">
+                  Przykładowe adresy stron które Ci się podobają
+                </label>
+                {formData.exampleUrls.map((url, idx) => (
+                  <div key={idx} className="flex gap-2 mb-2">
+                    <input
+                      type="text"
+                      className="flex-1 bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:ring-2 focus:ring-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                      placeholder="https://przyklad.pl"
+                      value={url}
+                      onChange={(e) => handleExampleUrlChange(idx, e.target.value)}
+                    />
+                    {formData.exampleUrls.length > 1 && (
+                      <button
+                        type="button"
+                        className="px-3 py-2 rounded bg-red-600 text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30 hover:bg-red-500 active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-500/50 relative overflow-hidden group"
+                        onClick={() => handleRemoveExampleUrl(idx)}
+                      >
+                        <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Usuń</span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </button>
+                    )}
+                  </div>
+                ))}
+                <button
+                  type="button"
+                  className="mt-1 px-4 py-2 rounded bg-violet-700 text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-2 focus:ring-violet-500/50 relative overflow-hidden group"
+                  onClick={handleAddExampleUrl}
+                >
+                  <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Dodaj kolejny przykład</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
               </div>
-            ))}
-            <button
-              type="button"
-              className="mt-1 px-4 py-2 rounded bg-violet-700 text-white font-semibold"
-              onClick={handleAddExampleUrl}
-            >
-              Dodaj kolejny przykład
-            </button>
-            {/* No error for exampleUrls since it's optional now */}
-          </div>
+            </>
+          )}
+
+          {/* Online Store Form */}
+          {formData.selectedService === "onlineStore" && (
+            <>
+              <div className="w-full mb-4">
+                <label className="block text-white font-semibold mb-2">
+                  Przykładowe adresy sklepów które Ci się podobają
+                </label>
+                {formData.storeExampleUrls.map((url, idx) => (
+                  <div key={idx} className="flex gap-2 mb-2">
+                    <input
+                      type="text"
+                      className="flex-1 bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:ring-2 focus:ring-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                      placeholder="https://sklep-przyklad.pl"
+                      value={url}
+                      onChange={(e) => handleStoreExampleUrlChange(idx, e.target.value)}
+                    />
+                    {formData.storeExampleUrls.length > 1 && (
+                      <button
+                        type="button"
+                        className="px-3 py-2 rounded bg-red-600 text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30 hover:bg-red-500 active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-500/50 relative overflow-hidden group"
+                        onClick={() => handleRemoveStoreExampleUrl(idx)}
+                      >
+                        <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Usuń</span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </button>
+                    )}
+                  </div>
+                ))}
+                <button
+                  type="button"
+                  className="mt-1 px-4 py-2 rounded bg-violet-700 text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-2 focus:ring-violet-500/50 relative overflow-hidden group"
+                  onClick={handleAddStoreExampleUrl}
+                >
+                  <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Dodaj kolejny przykład</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
+              </div>
+              <div className="w-full mb-4">
+                <label
+                  className="block text-white font-semibold mb-1"
+                  htmlFor="productCount"
+                >
+                  Ilość produktów w sklepie
+                </label>
+                <input
+                  id="productCount"
+                  type="number"
+                  name="productCount"
+                  className="w-full bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                  placeholder="np. 50, 100, 500"
+                  value={formData.productCount}
+                  onChange={handleInputChange}
+                  autoComplete="off"
+                />
+              </div>
+              <div className="w-full mb-4">
+                <label
+                  className="block text-white font-semibold mb-1"
+                  htmlFor="integrations"
+                >
+                  Integracje
+                </label>
+                <input
+                  id="integrations"
+                  type="text"
+                  name="integrations"
+                  className="w-full bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                  placeholder="np. PayPal, Stripe, Poczta Polska, InPost"
+                  value={formData.integrations}
+                  onChange={handleInputChange}
+                  autoComplete="off"
+                />
+              </div>
+            </>
+          )}
+
+          {/* Web System Form */}
+          {formData.selectedService === "webSystem" && (
+            <>
+              <div className="w-full mb-4">
+                <label
+                  className="block text-white font-semibold mb-1"
+                  htmlFor="systemPurpose"
+                >
+                  Cel systemu
+                </label>
+                <input
+                  id="systemPurpose"
+                  type="text"
+                  name="systemPurpose"
+                  className="w-full bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                  placeholder="np. zarządzanie zamówieniami, CRM, system kadrowy"
+                  value={formData.systemPurpose}
+                  onChange={handleInputChange}
+                  autoComplete="off"
+                />
+              </div>
+              <div className="w-full mb-4">
+                <label
+                  className="block text-white font-semibold mb-1"
+                  htmlFor="userCount"
+                >
+                  Ilość użytkowników
+                </label>
+                <input
+                  id="userCount"
+                  type="number"
+                  name="userCount"
+                  className="w-full bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                  placeholder="np. 5, 20, 100"
+                  value={formData.userCount}
+                  onChange={handleInputChange}
+                  autoComplete="off"
+                />
+              </div>
+            </>
+          )}
+
+          {/* AI Solutions Form */}
+          {formData.selectedService === "aiSolutions" && (
+            <>
+              <div className="w-full mb-4">
+                <label
+                  className="block text-white font-semibold mb-1"
+                  htmlFor="aiUseCase"
+                >
+                  Zastosowanie AI
+                </label>
+                <input
+                  id="aiUseCase"
+                  type="text"
+                  name="aiUseCase"
+                  className="w-full bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                  placeholder="np. chatbot, analiza danych, automatyzacja procesów, rozpoznawanie obrazów"
+                  value={formData.aiUseCase}
+                  onChange={handleInputChange}
+                  autoComplete="off"
+                />
+              </div>
+              <div className="w-full mb-4">
+                <label
+                  className="block text-white font-semibold mb-1"
+                  htmlFor="integrationRequirements"
+                >
+                  Wymagania integracyjne
+                </label>
+                <input
+                  id="integrationRequirements"
+                  type="text"
+                  name="integrationRequirements"
+                  className="w-full bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
+                  placeholder="np. API, bazy danych, systemy CRM, platformy e-commerce"
+                  value={formData.integrationRequirements}
+                  onChange={handleInputChange}
+                  autoComplete="off"
+                />
+              </div>
+            </>
+          )}
+
+          {/* Common fields for all services */}
           <div className="w-full mb-4">
             <label
               className="block text-white font-semibold mb-1"
@@ -419,7 +675,7 @@ export default function WycenaForm() {
                 id="description"
                 name="description"
                 className="w-full bg-transparent px-3 py-2 border border-gray-400 focus:border-violet-500 focus:outline-none transition-all text-white placeholder-gray-400 rounded-md resize-none"
-                placeholder="Opisz w kilku słowach projekt twojej strony i jej funkcjonalności"
+                placeholder="Opisz w kilku słowach projekt i jego funkcjonalności"
                 value={formData.description}
                 onChange={handleInputChange}
                 rows={6}
@@ -444,9 +700,10 @@ export default function WycenaForm() {
               />
               <label
                 htmlFor="file-upload"
-                className="px-4 py-2 rounded bg-violet-700 text-white font-semibold cursor-pointer shadow hover:bg-violet-800 transition"
+                className="px-4 py-2 rounded bg-violet-700 text-white font-semibold cursor-pointer shadow transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-2 focus:ring-violet-500/50 relative overflow-hidden group"
               >
-                Wybierz pliki
+                <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Wybierz pliki</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </label>
               <span className="text-gray-300 text-sm">
                 {formData.files.length > 0
@@ -465,7 +722,7 @@ export default function WycenaForm() {
                   </span>
                   <button
                     type="button"
-                    className="text-red-400 ml-1"
+                    className="text-red-400 ml-1 transition-all duration-300 transform hover:scale-125 hover:text-red-300 active:scale-100 focus:outline-none focus:ring-2 focus:ring-red-500/50 rounded"
                     onClick={() => handleRemoveFile(idx)}
                   >
                     ✕
@@ -477,16 +734,18 @@ export default function WycenaForm() {
           <div className="flex w-full justify-between mt-8">
             <button
               type="button"
-              className="px-8 py-3 rounded-full bg-gray-700 text-white font-bold text-lg shadow-md"
+              className="px-8 py-3 rounded-full bg-gray-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-gray-500/30 hover:bg-gray-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-500/50 relative overflow-hidden group"
               onClick={handleBack}
             >
-              Wróć
+              <span className="relative z-10 transition-all duration-300 group-hover:-translate-x-1">Wróć</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             <button
               type="submit"
-              className="px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md"
+              className="px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-violet-500/50 relative overflow-hidden group"
             >
-              Dalej
+              <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">Dalej</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </div>
         </form>
@@ -775,17 +1034,21 @@ export default function WycenaForm() {
             <div className="flex w-full justify-between mt-8">
               <button
                 type="button"
-                className="px-8 py-3 rounded-full bg-gray-700 text-white font-bold text-lg shadow-md"
+                className="px-8 py-3 rounded-full bg-gray-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-gray-500/30 hover:bg-gray-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-500/50 relative overflow-hidden group"
                 onClick={handleBack}
               >
-                Wróć
+                <span className="relative z-10 transition-all duration-300 group-hover:-translate-x-1">Wróć</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <button
                 type="submit"
-                className="px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md"
+                className="px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-violet-500/50 relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-md"
                 disabled={submitting}
               >
-                Wyślij
+                <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">
+                  {submitting ? 'Wysyłanie...' : 'Wyślij'}
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
             </div>
           </form>
@@ -804,9 +1067,10 @@ export default function WycenaForm() {
             </p>
             <Link
               href="/"
-              className="mt-4 inline-block px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md transition-all"
+              className="mt-4 inline-block px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-violet-500/50 relative overflow-hidden group"
             >
-              Wróć do strony głównej
+              <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">Wróć do strony głównej</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
           </div>
         </div>
@@ -818,6 +1082,67 @@ export default function WycenaForm() {
   // Main content area (content is always overlayed, navbar/footer are outside)
   return (
     <>
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes slideInFromLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        @keyframes bounceIn {
+          0% {
+            opacity: 0;
+            transform: scale(0.3);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.05);
+          }
+          70% {
+            transform: scale(0.9);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        .service-card {
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+          transform: translateY(-8px) scale(1.02);
+        }
+        
+        .service-card:active {
+          transform: translateY(-4px) scale(0.98);
+        }
+        
+        .feature-list {
+          transition: all 0.3s ease-in-out;
+        }
+        
+        .service-card:hover .feature-list {
+          transform: translateY(-2px);
+        }
+      `}</style>
       <Script
         id="schema-wycena"
         type="application/ld+json"

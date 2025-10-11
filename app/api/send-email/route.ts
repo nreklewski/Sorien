@@ -131,6 +131,14 @@ export async function POST(req: NextRequest) {
     const additionalInfo = sanitizeInput(formData.get('additionalInfo') as string, 1000);
     const privacyAccepted = formData.get('privacyAccepted') as string;
 
+    // Extract service-specific fields
+    const productCount = sanitizeInput(formData.get('productCount') as string, 50);
+    const integrations = sanitizeInput(formData.get('integrations') as string, 500);
+    const systemPurpose = sanitizeInput(formData.get('systemPurpose') as string, 500);
+    const userCount = sanitizeInput(formData.get('userCount') as string, 50);
+    const aiUseCase = sanitizeInput(formData.get('aiUseCase') as string, 500);
+    const integrationRequirements = sanitizeInput(formData.get('integrationRequirements') as string, 500);
+
     // Validate required fields
     if (!selectedService || !description || !fullName || !email || !phone) {
       return NextResponse.json(
@@ -206,11 +214,27 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    // Prepare service-specific content
+    let serviceSpecificInfo = '';
+    if (selectedService === 'businessCard') {
+      serviceSpecificInfo = `Przykładowe adresy stron: ${validUrls.join(', ') || 'Brak'}`;
+    } else if (selectedService === 'onlineStore') {
+      serviceSpecificInfo = `Przykładowe adresy sklepów: ${validUrls.join(', ') || 'Brak'}
+Ilość produktów w sklepie: ${productCount || 'Brak'}
+Integracje: ${integrations || 'Brak'}`;
+    } else if (selectedService === 'webSystem') {
+      serviceSpecificInfo = `Cel systemu: ${systemPurpose || 'Brak'}
+Ilość użytkowników: ${userCount || 'Brak'}`;
+    } else if (selectedService === 'aiSolutions') {
+      serviceSpecificInfo = `Zastosowanie AI: ${aiUseCase || 'Brak'}
+Wymagania integracyjne: ${integrationRequirements || 'Brak'}`;
+    }
+
     // Prepare secure email content
     const emailBody = `Nowa wycena ze strony:
 
 Usługa: ${selectedService}
-Przykładowe adresy: ${validUrls.join(', ') || 'Brak'}
+${serviceSpecificInfo}
 Opis projektu: ${description}
 Imię i nazwisko: ${fullName}
 Email: ${email}
