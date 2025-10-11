@@ -321,7 +321,7 @@ export default function Home() {
                   <RevealGroup intervalMs={140}>
                     <div className="group relative">
                       <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 hover:border-blue-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-                        <div className="flex items-start space-x-4">
+                        <div className="flex items-center space-x-4">
                           <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-120 transition-transform duration-300 flex-shrink-0">
                             <svg
                               className="w-8 h-8 text-white"
@@ -356,7 +356,7 @@ export default function Home() {
                     {/* Cutting-Edge Technologies */}
                     <div className="group relative">
                       <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-8 hover:border-purple-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
-                        <div className="flex items-start space-x-4">
+                        <div className="flex items-center space-x-4">
                           <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                             <svg
                               className="w-8 h-8 text-white"
@@ -402,7 +402,7 @@ export default function Home() {
                   <RevealGroup intervalMs={140}>
                     <div className="group relative">
                       <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 backdrop-blur-sm border border-green-500/20 rounded-3xl p-8 hover:border-green-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20">
-                        <div className="flex items-start space-x-4">
+                        <div className="flex items-center space-x-4">
                           <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                             <svg
                               className="w-8 h-8 text-white"
@@ -438,7 +438,7 @@ export default function Home() {
                     {/* Full Post-Launch Support */}
                     <div className="group relative">
                       <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/20 rounded-3xl p-8 hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                        <div className="flex items-start space-x-4">
+                        <div className="flex items-center space-x-4">
                           <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                             <svg
                               className="w-8 h-8 text-white"
