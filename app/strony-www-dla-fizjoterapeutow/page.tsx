@@ -10,19 +10,18 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Strony www dla fizjoterapeutów | Sorien",
   description:
-    "Profesjonalne strony internetowe dla fizjoterapeutów z SEO, systemem rezerwacji wizyt i zarządzaniem pacjentami. Zwiększ liczbę pacjentów dzięki nowoczesnym rozwiązaniom IT.",
+    "Profesjonalne strony internetowe dla fizjoterapeutów, gabinetów rehabilitacji i klinik fizjoterapii. System rezerwacji wizyt, zarządzanie pacjentami, dokumentacja medyczna. Zwiększ liczbę pacjentów potrzebujących rehabilitacji.",
   openGraph: {
     title: "Strony www dla fizjoterapeutów | Sorien",
     description:
-      "Nowoczesne strony internetowe dla fizjoterapeutów z SEO, rezerwacją wizyt i systemami zarządzania gabinetem.",
+      "Nowoczesne strony internetowe dla fizjoterapeutów z SEO, rezerwacją wizyt, dokumentacją medyczną i systemami zarządzania gabinetem rehabilitacji.",
     url: "https://www.sorien.pl/strony-www-dla-fizjoterapeutow",
     siteName: "Sorien",
     locale: "pl_PL",
     type: "website",
   },
   alternates: {
-    canonical:
-      "https://www.sorien.pl/strony-www-dla-fizjoterapeutow",
+    canonical: "https://www.sorien.pl/strony-www-dla-fizjoterapeutow",
   },
 };
 
@@ -48,7 +47,7 @@ export default function Home() {
         addressCountry: "PL",
       },
       description:
-        "Tworzymy nowoczesne strony internetowe dla fizjoterapeutów z SEO, systemami rezerwacji wizyt i rozwiązaniami IT.",
+        "Tworzymy nowoczesne strony internetowe dla fizjoterapeutów, gabinetów rehabilitacji i klinik fizjoterapii z SEO, systemami rezerwacji wizyt, dokumentacją medyczną i rozwiązaniami IT.",
     },
   ];
   return (
@@ -73,8 +72,9 @@ export default function Home() {
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
                   Tworzymy nowoczesne i skuteczne strony internetowe dla
-                  fizjoterapeutów i gabinetów rehabilitacji – dopasowane do
-                  potrzeb pacjentów i celów marketingowych Twojej praktyki.
+                  fizjoterapeutów, gabinetów rehabilitacji i klinik fizjoterapii
+                  – dopasowane do potrzeb pacjentów potrzebujących
+                  rehabilitacji, terapii ruchowej i leczenia urazów.
                 </p>
                 <div className="flex justify-center sm:justify-start mt-8">
                   <Link
@@ -89,7 +89,7 @@ export default function Home() {
 
               {/* Right: Interactive Photo */}
               <InteractivePhoto
-                src="/profesjonalna-wizytówka-tworzenie-stron-www.png"
+                src="/strona-www-dla-fizjoterapeuty.png"
                 alt="Nowoczesna strona internetowa dla fizjoterapeuty"
                 width={1280}
                 height={853}
@@ -128,23 +128,26 @@ export default function Home() {
             <div className="max-w-7xl mx-auto text-white/90">
               <article className="space-y-10 leading-relaxed">
                 <h2 className="text-center text-2xl sm:text-4xl xl:text-5xl font-bold text-white">
-                  Pytania o strony www dla fizjoterapeutów
+                  Pytania o strony www dla fizjoterapeutów i gabinetów
+                  rehabilitacji
                 </h2>
 
                 {/* 1 */}
                 <div className="md:flex md:justify-start">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-blue-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Ile kosztuje strona internetowa dla fizjoterapeuty?
+                      Ile kosztuje strona internetowa dla gabinetu fizjoterapii?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
-                      Koszt stworzenia strony www dla fizjoterapeuty
+                      Koszt stworzenia strony www dla gabinetu fizjoterapii
                       zależy od funkcji i rozbudowania projektu. W Sorien
                       przygotowujemy zarówno proste strony wizytówki, jak i
-                      rozbudowane portale z systemem rezerwacji wizyt,
-                      cennikiem i blogiem rehabilitacyjnym. Cena zawsze jest dopasowana do
-                      potrzeb gabinetu, a inwestycja szybko się zwraca dzięki
-                      pozyskaniu nowych pacjentów.
+                      rozbudowane portale z systemem rezerwacji wizyt
+                      rehabilitacyjnych, dokumentacją medyczną, cennikiem
+                      terapii i blogiem o rehabilitacji. Cena zawsze jest
+                      dopasowana do potrzeb gabinetu rehabilitacji, a inwestycja
+                      szybko się zwraca dzięki pozyskaniu nowych pacjentów
+                      potrzebujących fizjoterapii.
                     </p>
                   </div>
                 </div>
@@ -153,15 +156,18 @@ export default function Home() {
                 <div className="md:flex md:justify-end">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-purple-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Jak zrobić stronę internetową dla fizjoterapeuty?
+                      Jak stworzyć stronę internetową dla kliniki fizjoterapii?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
-                      Profesjonalna strona dla fizjoterapeuty powinna być przejrzysta,
-                      responsywna i zoptymalizowana pod SEO. W Sorien tworzymy
-                      projekty, które prezentują ofertę gabinetu, specjalizacje
-                      oraz ułatwiają pacjentom zapis na wizytę. Dodatkowo dbamy
-                      o to, by strona była widoczna w Google na frazy typu
-                      &quot;fizjoterapeuta [miasto]&quot;.
+                      Profesjonalna strona dla kliniki fizjoterapii powinna być
+                      przejrzysta, responsywna i zoptymalizowana pod SEO. W
+                      Sorien tworzymy projekty, które prezentują ofertę gabinetu
+                      rehabilitacji, specjalizacje terapeutyczne oraz ułatwiają
+                      pacjentom zapis na konsultację fizjoterapeutyczną.
+                      Dodatkowo dbamy o to, by strona była widoczna w Google na
+                      frazy typu &quot;rehabilitacja [miasto]&quot;,
+                      &quot;fizjoterapeuta [miasto]&quot; czy &quot;terapia
+                      ruchowa [miasto]&quot;.
                     </p>
                   </div>
                 </div>
@@ -170,15 +176,17 @@ export default function Home() {
                 <div className="md:flex md:justify-start">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-green-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Dlaczego fizjoterapeuta potrzebuje strony www?
+                      Dlaczego gabinet rehabilitacji potrzebuje strony www?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
-                      Pacjenci najczęściej szukają nowego fizjoterapeuty w Google.
-                      Jeśli gabinet nie posiada dobrze wykonanej strony,
-                      istnieje duże ryzyko, że wybiorą konkurencję. Strony
+                      Pacjenci potrzebujący rehabilitacji najczęściej szukają
+                      gabinetu fizjoterapii w Google. Jeśli klinika
+                      rehabilitacji nie posiada profesjonalnej strony, istnieje
+                      duże ryzyko, że pacjenci wybiorą konkurencję. Strony
                       internetowe tworzone przez Sorien pełnią rolę nowoczesnej
-                      wizytówki – budują zaufanie, prezentują ofertę i
-                      umożliwiają szybki kontakt.
+                      wizytówki medycznej – budują zaufanie, prezentują
+                      specjalizacje terapeutyczne i umożliwiają szybki kontakt z
+                      gabinetem rehabilitacji.
                     </p>
                   </div>
                 </div>
@@ -187,15 +195,17 @@ export default function Home() {
                 <div className="md:flex md:justify-end">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-orange-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-orange-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Jakie strony internetowe dla fizjoterapeutów sprawdzają się
-                      najlepiej?
+                      Jakie strony internetowe dla gabinetów rehabilitacji
+                      sprawdzają się najlepiej?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
                       Najlepiej działają strony proste w obsłudze, które jasno
-                      prezentują usługi i zachęcają do kontaktu. Sorien tworzy
-                      strony internetowe dla fizjoterapeutów z rezerwacją wizyt online,
-                      formularzem kontaktowym, galerią zdjęć i blogiem rehabilitacyjnym, który
-                      dodatkowo wspiera pozycjonowanie w Google.
+                      prezentują usługi rehabilitacyjne i zachęcają do kontaktu.
+                      Sorien tworzy strony internetowe dla gabinetów
+                      fizjoterapii z rezerwacją wizyt rehabilitacyjnych online,
+                      formularzem kontaktowym, galerią zdjęć gabinetu i blogiem
+                      o rehabilitacji, który dodatkowo wspiera pozycjonowanie w
+                      Google na frazy medyczne.
                     </p>
                   </div>
                 </div>
@@ -204,16 +214,18 @@ export default function Home() {
                 <div className="md:flex md:justify-start">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-pink-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Czy strona www dla fizjoterapeuty pomaga
-                      zdobywać pacjentów?
+                      Czy strona www dla gabinetu fizjoterapii pomaga zdobywać
+                      pacjentów?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
                       Tak – nowoczesna strona www, stworzona z nami, jest
                       narzędziem marketingowym, które realnie zwiększa liczbę
-                      pacjentów. Dzięki odpowiedniemu SEO Twoja strona pojawia
-                      się wysoko w wynikach wyszukiwania na frazy takie jak
-                      &quot;fizjoterapeuta [miasto]&quot; czy „rehabilitacja
-                      [miasto]&quot;.
+                      pacjentów potrzebujących rehabilitacji. Dzięki
+                      odpowiedniemu SEO Twoja strona pojawia się wysoko w
+                      wynikach wyszukiwania na frazy takie jak
+                      &quot;rehabilitacja [miasto]&quot;, &quot;fizjoterapeuta
+                      [miasto]&quot;, &quot;terapia ruchowa [miasto]&quot; czy
+                      „leczenie urazów [miasto]&quot;.
                     </p>
                   </div>
                 </div>
@@ -226,13 +238,14 @@ export default function Home() {
           <section className="pt-12 md:pt-20 px-4 sm:px-8 lg:px-30">
             <div className="text-center mb-10 md:mb-16">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
-                Rozwiązania IT dla fizjoterapeutów
+                Rozwiązania IT dla gabinetów rehabilitacji i fizjoterapii
               </h2>
               <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg">
                 Chcesz wiedzieć w jaki jeszcze sposób razem z nami możesz
-                rozwinąć swój gabinet fizjoterapii? Oto kilka z naszych
-                najpopularniejszych rozwiązań IT, które pomogą Ci zwiększyć
-                liczbę pacjentów i usprawnić codzienną pracę.
+                rozwinąć swój gabinet fizjoterapii i klinikę rehabilitacji? Oto
+                kilka z naszych najpopularniejszych rozwiązań IT, które pomogą
+                Ci zwiększyć liczbę pacjentów potrzebujących rehabilitacji i
+                usprawnić codzienną pracę terapeutyczną.
               </p>
             </div>
           </section>
@@ -261,12 +274,13 @@ export default function Home() {
                       </svg>
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4">
-                      Systemy zarządzania
+                      Systemy zarządzania gabinetem rehabilitacji
                     </h3>
                     <p className="text-gray-300 text-lg">
-                      Nowoczesne systemy zarządzania gabinetem fizjoterapii, które
-                      usprawniają codzienną pracę i zwiększają efektywność
-                      Twojego zespołu.
+                      Nowoczesne systemy zarządzania gabinetem fizjoterapii i
+                      kliniką rehabilitacji, które usprawniają codzienną pracę
+                      terapeutyczną i zwiększają efektywność Twojego zespołu
+                      fizjoterapeutów.
                     </p>
                   </div>
                   <ul className="space-y-4">
@@ -279,16 +293,20 @@ export default function Home() {
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-gray-300">
-                        Zarządzanie grafikiem sesji terapeutycznych
+                        Zarządzanie grafikiem sesji rehabilitacyjnych
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-300">System rozliczeń i fakturowania</span>
+                      <span className="text-gray-300">
+                        System rozliczeń i fakturowania
+                      </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-300">Śledzenie postępów rehabilitacji</span>
+                      <span className="text-gray-300">
+                        Śledzenie postępów rehabilitacji
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -315,8 +333,9 @@ export default function Home() {
                       SEO i pozycjonowanie
                     </h3>
                     <p className="text-gray-300 text-lg">
-                      Zwiększ widoczność swojego gabinetu fizjoterapii w wyszukiwarkach i
-                      przyciągnij więcej pacjentów z Twojej okolicy.
+                      Zwiększ widoczność swojego gabinetu rehabilitacji w
+                      wyszukiwarkach i przyciągnij więcej pacjentów
+                      potrzebujących fizjoterapii z Twojej okolicy.
                     </p>
                   </div>
                   <ul className="space-y-4">
@@ -328,7 +347,9 @@ export default function Home() {
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-300">Blog rehabilitacyjny i poradnik</span>
+                      <span className="text-gray-300">
+                        Blog o rehabilitacji i poradnik medyczny
+                      </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
@@ -365,15 +386,16 @@ export default function Home() {
                       Automatyzacje
                     </h3>
                     <p className="text-gray-300 text-lg">
-                      Zautomatyzuj codzienne procesy i zaoszczędź czas, który
-                      możesz poświęcić na terapię z pacjentami.
+                      Zautomatyzuj codzienne procesy w gabinecie rehabilitacji i
+                      zaoszczędź czas, który możesz poświęcić na terapię
+                      rehabilitacyjną z pacjentami.
                     </p>
                   </div>
                   <ul className="space-y-4">
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-gray-300">
-                        Automatyczne przypomnienia o wizytach
+                        Automatyczne przypomnienia o wizytach rehabilitacyjnych
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
@@ -385,7 +407,7 @@ export default function Home() {
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-gray-300">
-                        Automatyczne emaile z ćwiczeniami domowymi
+                        Automatyczne emaile z ćwiczeniami rehabilitacyjnymi
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
@@ -408,12 +430,14 @@ export default function Home() {
                 {/* Left Column - Content */}
                 <div className="flex-1 max-w-2xl">
                   <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-                    Rozwijaj swój gabinet z naszą pomocą
+                    Rozwijaj swój gabinet rehabilitacji z naszą pomocą
                   </h2>
                   <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                    Dołącz do wielu gabinetów fizjoterapii, które już
-                    korzystają z naszych rozwiązań IT. Zwiększ liczbę pacjentów,
-                    zoptymalizuj procesy i rozwiń swój biznes.
+                    Dołącz do wielu gabinetów fizjoterapii i klinik
+                    rehabilitacji, które już korzystają z naszych rozwiązań IT.
+                    Zwiększ liczbę pacjentów potrzebujących rehabilitacji,
+                    zoptymalizuj procesy terapeutyczne i rozwiń swój gabinet
+                    fizjoterapii.
                   </p>
 
                   <div className="space-y-4 mb-8">
@@ -446,7 +470,7 @@ export default function Home() {
                         />
                       </svg>
                       <span className="text-base md:text-lg">
-                        Indywidualne podejście do każdego gabinetu fizjoterapii
+                        Indywidualne podejście do każdego gabinetu rehabilitacji
                       </span>
                     </div>
                     <div className="flex items-center text-gray-300">

@@ -34,7 +34,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Profesjonalna strona internetowa przyciąga nowych klientów i buduje zaufanie. Dzięki optymalizacji SEO i lokalnemu pozycjonowaniu, Twój biznes będzie łatwo znajdowany przez klientów w Twojej okolicy.",
+        "Profesjonalna strona internetowa przyciąga nowych klientów fitness i buduje zaufanie. Dzięki optymalizacji SEO i lokalnemu pozycjonowaniu, Twój biznes wellness będzie łatwo znajdowany przez klientów szukających trenera personalnego w Twojej okolicy.",
     },
     {
       id: "profesjonalny-wizerunek",
@@ -57,7 +57,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Nowoczesny design i wysokiej jakości treści budują profesjonalny wizerunek Twojego biznesu. Klienci z większym zaufaniem wybierają trenerów z elegancką stroną internetową.",
+        "Nowoczesny design i wysokiej jakości treści budują profesjonalny wizerunek Twojego biznesu fitness. Klienci z większym zaufaniem wybierają trenerów personalnych z elegancką stroną internetową, która prezentuje Twoje kwalifikacje i specjalizacje wellness.",
     },
     {
       id: "latwy-kontakt",
@@ -80,7 +80,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Intuicyjny system rezerwacji treningów online i łatwy kontakt zwiększają wygodę klientów. Możliwość umówienia treningu 24/7 i automatyczne przypomnienia SMS.",
+        "Intuicyjny system rezerwacji treningów personalnych online i łatwy kontakt zwiększają wygodę klientów fitness. Możliwość umówienia treningu personalnego 24/7 i automatyczne przypomnienia SMS o sesjach treningowych.",
     },
     {
       id: "szybkosc-responsywnosc",
@@ -103,7 +103,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Szybko ładowająca się strona internetowa, zoptymalizowana pod kątem wszystkich urządzeń, zapewnia doskonałe doświadczenie użytkownika na każdym urządzeniu.",
+        "Szybko ładowająca się strona internetowa, zoptymalizowana pod kątem wszystkich urządzeń, zapewnia doskonałe doświadczenie użytkownika. Szczególnie ważne dla klientów fitness, którzy często przeglądają strony na telefonach podczas treningów.",
     },
   ];
 
@@ -113,12 +113,13 @@ const VerticalTabLayout: React.FC = () => {
     <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30">
       <div className="text-center mb-10 md:mb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
-          Jak nasze strony www wspierają Twój biznes
+          Jak nasze strony www wspierają Twój biznes fitness
         </h2>
         <p className="text-gray-300 max-w-3xl mx-auto text-sm md:text-base">
-          Dzięki profesjonalnej witrynie internetowej Twój biznes może
-          skutecznie przyciągać nowych klientów, budować zaufanie i zwiększać
-          rozpoznawalność marki w lokalnej społeczności.
+          Dzięki profesjonalnej witrynie internetowej Twój biznes wellness może
+          skutecznie przyciągać nowych klientów fitness, budować zaufanie i zwiększać
+          rozpoznawalność marki w lokalnej społeczności. Strona pomoże Ci dotrzeć do osób
+          szukających trenera personalnego i usług fitness.
         </p>
       </div>
 

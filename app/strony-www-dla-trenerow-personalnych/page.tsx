@@ -10,19 +10,18 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Strony www dla trenerów personalnych | Sorien",
   description:
-    "Profesjonalne strony internetowe dla trenerów personalnych z SEO, systemem rezerwacji treningów i zarządzaniem klientami. Zwiększ liczbę klientów dzięki nowoczesnym rozwiązaniom IT.",
+    "Profesjonalne strony internetowe dla trenerów personalnych, instruktorów fitness i coachów wellness. System rezerwacji treningów, zarządzanie klientami, plany treningowe. Zwiększ liczbę klientów fitness dzięki nowoczesnym rozwiązaniom IT.",
   openGraph: {
     title: "Strony www dla trenerów personalnych | Sorien",
     description:
-      "Nowoczesne strony internetowe dla trenerów personalnych z SEO, rezerwacją treningów i systemami zarządzania klientami.",
+      "Nowoczesne strony internetowe dla trenerów personalnych z SEO, rezerwacją treningów, planami fitness i systemami zarządzania klientami.",
     url: "https://www.sorien.pl/strony-www-dla-trenerow-personalnych",
     siteName: "Sorien",
     locale: "pl_PL",
     type: "website",
   },
   alternates: {
-    canonical:
-      "https://www.sorien.pl/strony-www-dla-trenerow-personalnych",
+    canonical: "https://www.sorien.pl/strony-www-dla-trenerow-personalnych",
   },
 };
 
@@ -48,7 +47,7 @@ export default function Home() {
         addressCountry: "PL",
       },
       description:
-        "Tworzymy nowoczesne strony internetowe dla trenerów personalnych z SEO, systemami rezerwacji treningów i rozwiązaniami IT.",
+        "Tworzymy nowoczesne strony internetowe dla trenerów personalnych, instruktorów fitness i coachów wellness z SEO, systemami rezerwacji treningów, planami fitness i rozwiązaniami IT.",
     },
   ];
   return (
@@ -73,8 +72,9 @@ export default function Home() {
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
                   Tworzymy nowoczesne i skuteczne strony internetowe dla
-                  trenerów personalnych i instruktorów fitness – dopasowane do
-                  potrzeb klientów i celów marketingowych Twojego biznesu.
+                  trenerów personalnych, instruktorów fitness i coachów wellness
+                  – dopasowane do potrzeb klientów fitness i celów
+                  marketingowych Twojego biznesu wellness.
                 </p>
                 <div className="flex justify-center sm:justify-start mt-8">
                   <Link
@@ -128,7 +128,8 @@ export default function Home() {
             <div className="max-w-7xl mx-auto text-white/90">
               <article className="space-y-10 leading-relaxed">
                 <h2 className="text-center text-2xl sm:text-4xl xl:text-5xl font-bold text-white">
-                  Pytania o strony www dla trenerów personalnych
+                  Pytania o strony www dla trenerów personalnych i instruktorów
+                  fitness
                 </h2>
 
                 {/* 1 */}
@@ -141,10 +142,11 @@ export default function Home() {
                       Koszt stworzenia strony www dla trenera personalnego
                       zależy od funkcji i rozbudowania projektu. W Sorien
                       przygotowujemy zarówno proste strony wizytówki, jak i
-                      rozbudowane portale z systemem rezerwacji treningów,
-                      cennikiem i blogiem fitness. Cena zawsze jest dopasowana do
-                      potrzeb Twojego biznesu, a inwestycja szybko się zwraca dzięki
-                      pozyskaniu nowych klientów.
+                      rozbudowane portale z systemem rezerwacji treningów
+                      personalnych, cennikiem usług fitness i blogiem o
+                      treningach. Cena zawsze jest dopasowana do potrzeb Twojego
+                      biznesu wellness, a inwestycja szybko się zwraca dzięki
+                      pozyskaniu nowych klientów fitness.
                     </p>
                   </div>
                 </div>
@@ -153,15 +155,17 @@ export default function Home() {
                 <div className="md:flex md:justify-end">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-purple-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Jak zrobić stronę internetową dla trenera personalnego?
+                      Jak stworzyć stronę internetową dla instruktora fitness?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
-                      Profesjonalna strona dla trenera personalnego powinna być przejrzysta,
-                      responsywna i zoptymalizowana pod SEO. W Sorien tworzymy
-                      projekty, które prezentują Twoje usługi, doświadczenie
-                      oraz ułatwiają klientom zapis na trening. Dodatkowo dbamy
-                      o to, by strona była widoczna w Google na frazy typu
-                      &quot;trener personalny [miasto]&quot;.
+                      Profesjonalna strona dla instruktora fitness powinna być
+                      przejrzysta, responsywna i zoptymalizowana pod SEO. W
+                      Sorien tworzymy projekty, które prezentują Twoje usługi
+                      fitness, doświadczenie oraz ułatwiają klientom zapis na
+                      trening personalny. Dodatkowo dbamy o to, by strona była
+                      widoczna w Google na frazy typu &quot;trener personalny
+                      [miasto]&quot;, &quot;fitness [miasto]&quot; czy
+                      &quot;trening personalny [miasto]&quot;.
                     </p>
                   </div>
                 </div>
@@ -170,15 +174,16 @@ export default function Home() {
                 <div className="md:flex md:justify-start">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-green-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Dlaczego trener personalny potrzebuje strony www?
+                      Dlaczego instruktor fitness potrzebuje strony www?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
-                      Klienci najczęściej szukają nowego trenera personalnego w Google.
-                      Jeśli nie posiadasz dobrze wykonanej strony,
-                      istnieje duże ryzyko, że wybiorą konkurencję. Strony
-                      internetowe tworzone przez Sorien pełnią rolę nowoczesnej
-                      wizytówki – budują zaufanie, prezentują Twoje usługi i
-                      umożliwiają szybki kontakt.
+                      Klienci fitness najczęściej szukają nowego trenera
+                      personalnego w Google. Jeśli nie posiadasz profesjonalnej
+                      strony, istnieje duże ryzyko, że wybiorą konkurencję.
+                      Strony internetowe tworzone przez Sorien pełnią rolę
+                      nowoczesnej wizytówki fitness – budują zaufanie,
+                      prezentują Twoje usługi wellness i umożliwiają szybki
+                      kontakt z trenerem.
                     </p>
                   </div>
                 </div>
@@ -187,15 +192,17 @@ export default function Home() {
                 <div className="md:flex md:justify-end">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-orange-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-orange-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Jakie strony internetowe dla trenerów personalnych sprawdzają się
-                      najlepiej?
+                      Jakie strony internetowe dla trenerów personalnych
+                      sprawdzają się najlepiej?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
                       Najlepiej działają strony proste w obsłudze, które jasno
-                      prezentują usługi i zachęcają do kontaktu. Sorien tworzy
-                      strony internetowe dla trenerów z rezerwacją treningów online,
-                      formularzem kontaktowym, galerią zdjęć i blogiem fitness, który
-                      dodatkowo wspiera pozycjonowanie w Google.
+                      prezentują usługi fitness i zachęcają do kontaktu. Sorien
+                      tworzy strony internetowe dla trenerów z rezerwacją
+                      treningów personalnych online, formularzem kontaktowym,
+                      galerią zdjęć treningów i blogiem o fitness, który
+                      dodatkowo wspiera pozycjonowanie w Google na frazy
+                      wellness.
                     </p>
                   </div>
                 </div>
@@ -204,15 +211,17 @@ export default function Home() {
                 <div className="md:flex md:justify-start">
                   <div className="md:w-[92%] bg-white/5 border border-gray-700/50 rounded-xl p-6 hover:bg-white/10 hover:border-pink-400/50 hover:scale-[1.02] hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300 ease-out cursor-pointer">
                     <h3 className="font-semibold text-white text-base">
-                      Czy strona www dla trenera personalnego pomaga
-                      zdobywać klientów?
+                      Czy strona www dla trenera personalnego pomaga zdobywać
+                      klientów fitness?
                     </h3>
                     <p className="mt-3 text-gray-300 text-sm">
                       Tak – nowoczesna strona www, stworzona z nami, jest
                       narzędziem marketingowym, które realnie zwiększa liczbę
-                      klientów. Dzięki odpowiedniemu SEO Twoja strona pojawia
-                      się wysoko w wynikach wyszukiwania na frazy takie jak
-                      &quot;trener personalny [miasto]&quot; czy „fitness [miasto]&quot;.
+                      klientów fitness. Dzięki odpowiedniemu SEO Twoja strona
+                      pojawia się wysoko w wynikach wyszukiwania na frazy takie
+                      jak &quot;trener personalny [miasto]&quot;, &quot;fitness
+                      [miasto]&quot;, &quot;trening personalny [miasto]&quot;
+                      czy „wellness [miasto]&quot;.
                     </p>
                   </div>
                 </div>
@@ -225,13 +234,14 @@ export default function Home() {
           <section className="pt-12 md:pt-20 px-4 sm:px-8 lg:px-30">
             <div className="text-center mb-10 md:mb-16">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
-                Rozwiązania IT dla trenerów personalnych
+                Rozwiązania IT dla trenerów personalnych i instruktorów fitness
               </h2>
               <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg">
                 Chcesz wiedzieć w jaki jeszcze sposób razem z nami możesz
-                rozwinąć swój biznes jako trener personalny? Oto kilka z naszych
-                najpopularniejszych rozwiązań IT, które pomogą Ci zwiększyć
-                liczbę klientów i usprawnić codzienną pracę.
+                rozwinąć swój biznes jako trener personalny i instruktor
+                fitness? Oto kilka z naszych najpopularniejszych rozwiązań IT,
+                które pomogą Ci zwiększyć liczbę klientów fitness i usprawnić
+                codzienną pracę trenera.
               </p>
             </div>
           </section>
@@ -260,34 +270,38 @@ export default function Home() {
                       </svg>
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4">
-                      Systemy zarządzania
+                      Systemy zarządzania klientami fitness
                     </h3>
                     <p className="text-gray-300 text-lg">
-                      Nowoczesne systemy zarządzania klientami i treningami, które
-                      usprawniają codzienną pracę i zwiększają efektywność
-                      Twojego biznesu.
+                      Nowoczesne systemy zarządzania klientami fitness i
+                      treningami personalnymi, które usprawniają codzienną pracę
+                      trenera i zwiększają efektywność Twojego biznesu wellness.
                     </p>
                   </div>
                   <ul className="space-y-4">
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-gray-300">
-                        Baza danych klientów i ich postępów
+                        Baza danych klientów fitness i ich postępów treningowych
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-gray-300">
-                        Zarządzanie grafikiem treningów
+                        Zarządzanie grafikiem treningów personalnych
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-300">System płatności i fakturowania</span>
+                      <span className="text-gray-300">
+                        System płatności i fakturowania
+                      </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-300">Śledzenie postępów klientów</span>
+                      <span className="text-gray-300">
+                        Śledzenie postępów fitness klientów
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -314,8 +328,9 @@ export default function Home() {
                       SEO i pozycjonowanie
                     </h3>
                     <p className="text-gray-300 text-lg">
-                      Zwiększ widoczność swojego biznesu w wyszukiwarkach i
-                      przyciągnij więcej klientów z Twojej okolicy.
+                      Zwiększ widoczność swojego biznesu fitness w
+                      wyszukiwarkach i przyciągnij więcej klientów wellness z
+                      Twojej okolicy.
                     </p>
                   </div>
                   <ul className="space-y-4">
@@ -327,7 +342,9 @@ export default function Home() {
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-300">Blog fitness i poradnik</span>
+                      <span className="text-gray-300">
+                        Blog o fitness i poradnik wellness
+                      </span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
@@ -364,15 +381,16 @@ export default function Home() {
                       Automatyzacje
                     </h3>
                     <p className="text-gray-300 text-lg">
-                      Zautomatyzuj codzienne procesy i zaoszczędź czas, który
-                      możesz poświęcić na treningi z klientami.
+                      Zautomatyzuj codzienne procesy w biznesie fitness i
+                      zaoszczędź czas, który możesz poświęcić na treningi
+                      personalne z klientami.
                     </p>
                   </div>
                   <ul className="space-y-4">
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-gray-300">
-                        Automatyczne przypomnienia o treningach
+                        Automatyczne przypomnienia o treningach personalnych
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
@@ -384,7 +402,7 @@ export default function Home() {
                     <li className="flex items-start space-x-3">
                       <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-gray-300">
-                        Automatyczne emaile z planami treningowymi
+                        Automatyczne emaile z planami treningowymi fitness
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
@@ -407,12 +425,13 @@ export default function Home() {
                 {/* Left Column - Content */}
                 <div className="flex-1 max-w-2xl">
                   <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-                    Rozwijaj swój biznes z naszą pomocą
+                    Rozwijaj swój biznes fitness z naszą pomocą
                   </h2>
                   <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                    Dołącz do wielu trenerów personalnych, którzy już
-                    korzystają z naszych rozwiązań IT. Zwiększ liczbę klientów,
-                    zoptymalizuj procesy i rozwiń swój biznes.
+                    Dołącz do wielu trenerów personalnych i instruktorów
+                    fitness, którzy już korzystają z naszych rozwiązań IT.
+                    Zwiększ liczbę klientów fitness, zoptymalizuj procesy
+                    treningowe i rozwiń swój biznes wellness.
                   </p>
 
                   <div className="space-y-4 mb-8">
@@ -445,7 +464,7 @@ export default function Home() {
                         />
                       </svg>
                       <span className="text-base md:text-lg">
-                        Indywidualne podejście do każdego trenera
+                        Indywidualne podejście do każdego trenera personalnego
                       </span>
                     </div>
                     <div className="flex items-center text-gray-300">

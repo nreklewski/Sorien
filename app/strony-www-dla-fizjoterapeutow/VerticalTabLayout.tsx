@@ -34,7 +34,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Profesjonalna strona internetowa przyciąga nowych pacjentów potrzebujących rehabilitacji i buduje zaufanie. Dzięki optymalizacji SEO i lokalnemu pozycjonowaniu, Twój gabinet fizjoterapii będzie łatwo znajdowany przez osoby szukające pomocy terapeutycznej w Twojej okolicy.",
+        "Profesjonalna strona internetowa przyciąga nowych pacjentów potrzebujących rehabilitacji i terapii ruchowej. Dzięki optymalizacji SEO i lokalnemu pozycjonowaniu, Twój gabinet fizjoterapii będzie łatwo znajdowany przez osoby szukające pomocy terapeutycznej, leczenia urazów i rehabilitacji w Twojej okolicy.",
     },
     {
       id: "profesjonalny-wizerunek",
@@ -57,7 +57,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Nowoczesny design i wysokiej jakości treści budują profesjonalny wizerunek Twojego gabinetu fizjoterapii. Pacjenci z większym zaufaniem wybierają gabinety z elegancką stroną internetową, która prezentuje Twoje kwalifikacje i specjalizacje.",
+        "Nowoczesny design i wysokiej jakości treści budują profesjonalny wizerunek Twojego gabinetu rehabilitacji. Pacjenci z większym zaufaniem wybierają gabinety fizjoterapii z elegancką stroną internetową, która prezentuje Twoje kwalifikacje medyczne i specjalizacje terapeutyczne.",
     },
     {
       id: "latwy-kontakt",
@@ -80,7 +80,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Intuicyjny system rezerwacji wizyt online i łatwy kontakt z gabinetem zwiększają wygodę pacjentów. Możliwość umówienia konsultacji fizjoterapeutycznej 24/7, automatyczne przypomnienia SMS i formularze wstępnej ankiety medycznej.",
+        "Intuicyjny system rezerwacji wizyt rehabilitacyjnych online i łatwy kontakt z gabinetem zwiększają wygodę pacjentów. Możliwość umówienia konsultacji fizjoterapeutycznej 24/7, automatyczne przypomnienia SMS o wizytach rehabilitacyjnych i formularze wstępnej ankiety medycznej.",
     },
     {
       id: "szybkosc-responsywnosc",
@@ -103,7 +103,7 @@ const VerticalTabLayout: React.FC = () => {
         </svg>
       ),
       description:
-        "Szybko ładowająca się strona internetowa, zoptymalizowana pod kątem wszystkich urządzeń, zapewnia doskonałe doświadczenie użytkownika. Ważne dla pacjentów, którzy mogą mieć ograniczenia ruchowe i potrzebują łatwego dostępu do informacji.",
+        "Szybko ładowająca się strona internetowa, zoptymalizowana pod kątem wszystkich urządzeń, zapewnia doskonałe doświadczenie użytkownika. Szczególnie ważne dla pacjentów rehabilitacji, którzy mogą mieć ograniczenia ruchowe i potrzebują łatwego dostępu do informacji o gabinecie fizjoterapii.",
     },
   ];
 
@@ -113,13 +113,13 @@ const VerticalTabLayout: React.FC = () => {
     <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30">
       <div className="text-center mb-10 md:mb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
-          Jak nasze strony www wspierają Twój gabinet fizjoterapii
+          Jak nasze strony www wspierają Twój gabinet rehabilitacji
         </h2>
         <p className="text-gray-300 max-w-3xl mx-auto text-sm md:text-base">
-          Dzięki profesjonalnej witrynie internetowej Twój gabinet fizjoterapii może
+          Dzięki profesjonalnej witrynie internetowej Twój gabinet fizjoterapii i klinika rehabilitacji może
           skutecznie przyciągać nowych pacjentów, budować zaufanie i zwiększać
           rozpoznawalność marki w lokalnej społeczności. Strona pomoże Ci dotrzeć do osób
-          potrzebujących rehabilitacji i terapii ruchowej.
+          potrzebujących rehabilitacji, terapii ruchowej i leczenia urazów.
         </p>
       </div>
 
