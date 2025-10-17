@@ -13,7 +13,12 @@ const services = [
   { key: "aiSolutions", label: "Rozwiązania AI" },
 ];
 
-type ServiceKey = "onlineStore" | "webSystem" | "businessCard" | "aiSolutions" | "";
+type ServiceKey =
+  | "onlineStore"
+  | "webSystem"
+  | "businessCard"
+  | "aiSolutions"
+  | "";
 
 type FormData = {
   selectedService: ServiceKey;
@@ -260,12 +265,14 @@ export default function WycenaForm() {
       data.append("selectedService", formData.selectedService);
       data.append("description", formData.description);
       formData.files.forEach((file) => data.append("files", file));
-      
+
       // Add service-specific fields
       if (formData.selectedService === "businessCard") {
         formData.exampleUrls.forEach((url) => data.append("exampleUrls", url));
       } else if (formData.selectedService === "onlineStore") {
-        formData.storeExampleUrls.forEach((url) => data.append("exampleUrls", url));
+        formData.storeExampleUrls.forEach((url) =>
+          data.append("exampleUrls", url)
+        );
         data.append("productCount", formData.productCount);
         data.append("integrations", formData.integrations);
       } else if (formData.selectedService === "webSystem") {
@@ -273,9 +280,12 @@ export default function WycenaForm() {
         data.append("userCount", formData.userCount);
       } else if (formData.selectedService === "aiSolutions") {
         data.append("aiUseCase", formData.aiUseCase);
-        data.append("integrationRequirements", formData.integrationRequirements);
+        data.append(
+          "integrationRequirements",
+          formData.integrationRequirements
+        );
       }
-      
+
       data.append("fullName", formData.fullName);
       data.append("email", formData.email);
       data.append("phone", formData.phone);
@@ -308,8 +318,13 @@ export default function WycenaForm() {
     if (step === 1) {
       return (
         <div className="w-full max-w-7xl mx-auto p-4 sm:p-6 flex flex-col items-center">
-          <div className="mb-8 text-center" style={{ animation: 'fadeInUp 0.8s ease-out' }}>
-            <div className="text-sm text-gray-400 mb-2 transition-all duration-300">Krok 1/3</div>
+          <div
+            className="mb-8 text-center"
+            style={{ animation: "fadeInUp 0.8s ease-out" }}
+          >
+            <div className="text-sm text-gray-400 mb-2 transition-all duration-300">
+              Krok 1/3
+            </div>
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 transition-all duration-500 hover:scale-105">
               Wybierz usługę
             </h1>
@@ -332,8 +347,11 @@ export default function WycenaForm() {
                 `}
                 style={{
                   animationDelay: `${index * 150}ms`,
-                  animation: formData.selectedService === service.key ? 'bounceIn 0.6s ease-out' : 'fadeInUp 0.8s ease-out forwards',
-                  opacity: formData.selectedService === service.key ? 1 : 0
+                  animation:
+                    formData.selectedService === service.key
+                      ? "bounceIn 0.6s ease-out"
+                      : "fadeInUp 0.8s ease-out forwards",
+                  opacity: formData.selectedService === service.key ? 1 : 0,
                 }}
               >
                 <div className="mb-3 mt-0 text-2xl md:text-2xl lg:text-3xl font-bold text-white">
@@ -347,16 +365,28 @@ export default function WycenaForm() {
                     </div>
                     <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Nowoczesny wygląd
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Nowoczesny wygląd
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Idealna pod SEO
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Idealna pod SEO
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> W pełni responsywna
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        W pełni responsywna
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Integracja z social media
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Integracja z social media
                       </li>
                     </ul>
                   </>
@@ -369,16 +399,28 @@ export default function WycenaForm() {
                     </div>
                     <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Intuicyjny koszyk
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Intuicyjny koszyk
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Bezpieczne płatności
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Bezpieczne płatności
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Zarządzanie produktami
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Zarządzanie produktami
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Integracje z dostawami
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Integracje z dostawami
                       </li>
                     </ul>
                   </>
@@ -390,16 +432,28 @@ export default function WycenaForm() {
                     </div>
                     <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Automatyzacja zadań
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Automatyzacja zadań
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Dopasowane do firmy
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Dopasowane do firmy
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Bezpieczny dostęp
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Bezpieczny dostęp
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Raporty i analizy
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Raporty i analizy
                       </li>
                     </ul>
                   </>
@@ -407,20 +461,33 @@ export default function WycenaForm() {
                 {service.key === "aiSolutions" && (
                   <>
                     <div className="text-xs sm:text-sm md:text-md lg:text-base text-gray-300 mb-8">
-                      Inteligentne rozwiązania AI dostosowane do potrzeb Twojej firmy.
+                      Inteligentne rozwiązania AI dostosowane do potrzeb Twojej
+                      firmy.
                     </div>
                     <ul className="feature-list text-xs sm:text-sm md:text-md lg:text-base text-gray-200 flex flex-col gap-2 mt-2">
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Automatyzacja procesów
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Automatyzacja procesów
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Analiza danych
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Analiza danych
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Chatboty i asystenci
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Chatboty i asystenci
                       </li>
                       <li className="flex items-center gap-2 transition-all duration-300 hover:translate-x-1">
-                        <span className="transition-all duration-300 text-violet-400 font-bold">✓</span> Integracja z systemami
+                        <span className="transition-all duration-300 text-violet-400 font-bold">
+                          ✓
+                        </span>{" "}
+                        Integracja z systemami
                       </li>
                     </ul>
                   </>
@@ -433,10 +500,14 @@ export default function WycenaForm() {
             disabled={!formData.selectedService}
             onClick={handleNext}
             style={{
-              animation: formData.selectedService ? 'slideInFromLeft 0.6s ease-out 0.3s both' : 'none'
+              animation: formData.selectedService
+                ? "slideInFromLeft 0.6s ease-out 0.3s both"
+                : "none",
             }}
           >
-            <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">Dalej</span>
+            <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">
+              Dalej
+            </span>
             <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </div>
@@ -476,7 +547,9 @@ export default function WycenaForm() {
                       className="flex-1 bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:ring-2 focus:ring-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
                       placeholder="https://przyklad.pl"
                       value={url}
-                      onChange={(e) => handleExampleUrlChange(idx, e.target.value)}
+                      onChange={(e) =>
+                        handleExampleUrlChange(idx, e.target.value)
+                      }
                     />
                     {formData.exampleUrls.length > 1 && (
                       <button
@@ -484,7 +557,9 @@ export default function WycenaForm() {
                         className="px-3 py-2 rounded bg-red-600 text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30 hover:bg-red-500 active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-500/50 relative overflow-hidden group"
                         onClick={() => handleRemoveExampleUrl(idx)}
                       >
-                        <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Usuń</span>
+                        <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">
+                          Usuń
+                        </span>
                         <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </button>
                     )}
@@ -495,7 +570,9 @@ export default function WycenaForm() {
                   className="mt-1 px-4 py-2 rounded bg-violet-700 text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-2 focus:ring-violet-500/50 relative overflow-hidden group"
                   onClick={handleAddExampleUrl}
                 >
-                  <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Dodaj kolejny przykład</span>
+                  <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">
+                    Dodaj kolejny przykład
+                  </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
               </div>
@@ -516,7 +593,9 @@ export default function WycenaForm() {
                       className="flex-1 bg-transparent px-0 py-2 border-0 border-b-2 border-b-gray-400 focus:border-b-violet-500 focus:ring-2 focus:ring-violet-500 focus:outline-none transition-all text-white placeholder-gray-400"
                       placeholder="https://sklep-przyklad.pl"
                       value={url}
-                      onChange={(e) => handleStoreExampleUrlChange(idx, e.target.value)}
+                      onChange={(e) =>
+                        handleStoreExampleUrlChange(idx, e.target.value)
+                      }
                     />
                     {formData.storeExampleUrls.length > 1 && (
                       <button
@@ -524,7 +603,9 @@ export default function WycenaForm() {
                         className="px-3 py-2 rounded bg-red-600 text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500/30 hover:bg-red-500 active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-500/50 relative overflow-hidden group"
                         onClick={() => handleRemoveStoreExampleUrl(idx)}
                       >
-                        <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Usuń</span>
+                        <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">
+                          Usuń
+                        </span>
                         <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </button>
                     )}
@@ -535,7 +616,9 @@ export default function WycenaForm() {
                   className="mt-1 px-4 py-2 rounded bg-violet-700 text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-2 focus:ring-violet-500/50 relative overflow-hidden group"
                   onClick={handleAddStoreExampleUrl}
                 >
-                  <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Dodaj kolejny przykład</span>
+                  <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">
+                    Dodaj kolejny przykład
+                  </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
               </div>
@@ -702,7 +785,9 @@ export default function WycenaForm() {
                 htmlFor="file-upload"
                 className="px-4 py-2 rounded bg-violet-700 text-white font-semibold cursor-pointer shadow transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-2 focus:ring-violet-500/50 relative overflow-hidden group"
               >
-                <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">Wybierz pliki</span>
+                <span className="relative z-10 transition-all duration-300 group-hover:translate-x-0.5">
+                  Wybierz pliki
+                </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </label>
               <span className="text-gray-300 text-sm">
@@ -737,14 +822,18 @@ export default function WycenaForm() {
               className="px-8 py-3 rounded-full bg-gray-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-gray-500/30 hover:bg-gray-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-500/50 relative overflow-hidden group"
               onClick={handleBack}
             >
-              <span className="relative z-10 transition-all duration-300 group-hover:-translate-x-1">Wróć</span>
+              <span className="relative z-10 transition-all duration-300 group-hover:-translate-x-1">
+                Wróć
+              </span>
               <div className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             <button
               type="submit"
               className="px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-violet-500/50 relative overflow-hidden group"
             >
-              <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">Dalej</span>
+              <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">
+                Dalej
+              </span>
               <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </div>
@@ -999,27 +1088,29 @@ export default function WycenaForm() {
                     umowy, artykuł 6 ust. 1 lit. a RODO, tj. Państwa zgoda,
                     artykuł 6 ust. 1 lit. f, tj. prawnie uzasadniony interes
                     administratora – chęć odpowiedzi na Państwa pytania i
-                    wątpliwości. Dane osobowe będą przetwarzane przez okres
-                    niezbędny do realizacji celu przetwarzania określonego w
-                    ust. 3 powyżej, tj. do zawarcia umowy, przedstawienia oferty
-                    handlowej, udzielenia odpowiedzi na Państwa pytania lub
-                    wątpliwości i mogą być przechowywane do upływu okresu
-                    realizacji umowy i przedawnienia roszczeń z umowy. Osoba,
-                    której dane osobowe są przetwarzane ma prawo dostępu do
-                    danych, ich sprostowania, usunięcia, ograniczenia
-                    przetwarzania, wniesienia sprzeciwu wobec przetwarzania oraz
-                    prawo do przenoszenia danych osobowych, z zastrzeżeniem, że
-                    prawo do przenoszenia danych osobowych dotyczy wyłącznie
-                    danych przetwarzanych w sposób wyłącznie zautomatyzowany.
-                    Osoba, której dane osobowe są przetwarzane na podstawie
-                    zgody, ma prawo do jej odwołania w każdym czasie, bez
-                    uszczerbku dla przetwarzania danych osobowych przed
-                    odwołaniem zgody. Osoba, której dane osobowe są przetwarzane
-                    ma prawo wniesienia skargi do właściwego organu nadzorczego.
-                    Podanie danych osobowych jest dobrowolne, jednak brak ich
-                    podania spowoduje niemożność realizacji umowy, podjęcia
-                    czynności przed zawarciem umowy, przedstawienia oferty
-                    handlowej, odpowiedzi na pytania lub wątpliwości.
+                    wątpliwości.Formularz może tymczasowo przetwarzać adres IP w
+                    celach bezpieczeństwa i ochrony przed nadużyciami. Dane
+                    osobowe będą przetwarzane przez okres niezbędny do
+                    realizacji celu przetwarzania określonego w ust. 3 powyżej,
+                    tj. do zawarcia umowy, przedstawienia oferty handlowej,
+                    udzielenia odpowiedzi na Państwa pytania lub wątpliwości i
+                    mogą być przechowywane do upływu okresu realizacji umowy i
+                    przedawnienia roszczeń z umowy. Osoba, której dane osobowe
+                    są przetwarzane ma prawo dostępu do danych, ich
+                    sprostowania, usunięcia, ograniczenia przetwarzania,
+                    wniesienia sprzeciwu wobec przetwarzania oraz prawo do
+                    przenoszenia danych osobowych, z zastrzeżeniem, że prawo do
+                    przenoszenia danych osobowych dotyczy wyłącznie danych
+                    przetwarzanych w sposób wyłącznie zautomatyzowany. Osoba,
+                    której dane osobowe są przetwarzane na podstawie zgody, ma
+                    prawo do jej odwołania w każdym czasie, bez uszczerbku dla
+                    przetwarzania danych osobowych przed odwołaniem zgody.
+                    Osoba, której dane osobowe są przetwarzane ma prawo
+                    wniesienia skargi do właściwego organu nadzorczego. Podanie
+                    danych osobowych jest dobrowolne, jednak brak ich podania
+                    spowoduje niemożność realizacji umowy, podjęcia czynności
+                    przed zawarciem umowy, przedstawienia oferty handlowej,
+                    odpowiedzi na pytania lub wątpliwości.
                   </div>
                 </div>
               </div>
@@ -1037,7 +1128,9 @@ export default function WycenaForm() {
                 className="px-8 py-3 rounded-full bg-gray-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-gray-500/30 hover:bg-gray-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-500/50 relative overflow-hidden group"
                 onClick={handleBack}
               >
-                <span className="relative z-10 transition-all duration-300 group-hover:-translate-x-1">Wróć</span>
+                <span className="relative z-10 transition-all duration-300 group-hover:-translate-x-1">
+                  Wróć
+                </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <button
@@ -1046,7 +1139,7 @@ export default function WycenaForm() {
                 disabled={submitting}
               >
                 <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">
-                  {submitting ? 'Wysyłanie...' : 'Wyślij'}
+                  {submitting ? "Wysyłanie..." : "Wyślij"}
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
@@ -1069,7 +1162,9 @@ export default function WycenaForm() {
               href="/"
               className="mt-4 inline-block px-8 py-3 rounded-full bg-violet-700 text-white font-bold text-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-violet-500/30 hover:bg-violet-600 active:scale-95 focus:outline-none focus:ring-4 focus:ring-violet-500/50 relative overflow-hidden group"
             >
-              <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">Wróć do strony głównej</span>
+              <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">
+                Wróć do strony głównej
+              </span>
               <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
           </div>
@@ -1093,7 +1188,7 @@ export default function WycenaForm() {
             transform: translateY(0);
           }
         }
-        
+
         @keyframes slideInFromLeft {
           from {
             opacity: 0;
@@ -1104,7 +1199,7 @@ export default function WycenaForm() {
             transform: translateX(0);
           }
         }
-        
+
         @keyframes bounceIn {
           0% {
             opacity: 0;
@@ -1122,23 +1217,23 @@ export default function WycenaForm() {
             transform: scale(1);
           }
         }
-        
+
         .service-card {
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+
         .service-card:hover {
           transform: translateY(-8px) scale(1.02);
         }
-        
+
         .service-card:active {
           transform: translateY(-4px) scale(0.98);
         }
-        
+
         .feature-list {
           transition: all 0.3s ease-in-out;
         }
-        
+
         .service-card:hover .feature-list {
           transform: translateY(-2px);
         }
