@@ -5,6 +5,9 @@ import { Metadata } from "next";
 import Script from "next/script";
 import Reveal from "./components/Reveal";
 import RevealGroup from "./components/RevealGroup";
+import trustImage from "./blog/budowanie-zaufania-strona-www/Projektowanie stron internetowych budujących zaufanie – realistyczny przykład nowoczesnego UI.png";
+import pricingImage from "./blog/rozbierznosc-cen-stron-www/Różnice w cenach stron internetowych – porównanie tanich i profesjonalnych projektów.png";
+import aiImage from "./blog/AI-bez-ogromnych-kosztow/Małe firmy korzystające z AI – realistyczne wykorzystanie sztucznej inteligencji w biznesie.png";
 
 export const metadata: Metadata = {
   title: "Sorien – Nowoczesne rozwiązania IT dla firm",
@@ -478,213 +481,231 @@ export default function Home() {
 
         {/* Our Process Section */}
         <Reveal>
-          <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#0d0c10] to-[#101010]">
-            <div className="text-center mb-10 md:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
-                Nasz proces
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-                Sprawdzona metodologia, która gwarantuje realizację projektu na
-                czas, w budżecie i powyżej oczekiwań.
-              </p>
+          <section className="py-14 md:py-20 px-4 sm:px-8 lg:px-30 bg-gradient-to-b from-[#0d0c10] to-[#101010] relative overflow-hidden">
+            {/* Decorative lines on sides */}
+            <div className="hidden lg:block absolute inset-0 pointer-events-none">
+              {/* Left side lines - 3 lines */}
+              <div className="absolute top-0 left-[13%] w-px h-full bg-gradient-to-b from-transparent via-blue-900/30 to-transparent transform rotate-4"></div>
+              <div className="absolute top-0 left-[11%] w-px h-full bg-gradient-to-b from-transparent via-purple-800/25 to-transparent transform -rotate-60"></div>
+              <div className="absolute top-0 left-[12%] w-px h-full bg-gradient-to-b from-transparent via-purple-700/25 to-transparent transform rotate-20"></div>
+              <div className="absolute top-0 left-[16%] w-px h-full bg-gradient-to-b from-transparent via-purple-900/20 to-transparent transform rotate-17"></div>
+              <div className="absolute top-0 left-[22%] w-px h-full bg-gradient-to-b from-transparent via-purple-600/20 to-transparent transform rotate-31"></div>
+
+              {/* Right side lines - 4 lines */}
+              <div className="absolute top-0 right-[13%] w-px h-full bg-gradient-to-b from-transparent via-blue-900/30 to-transparent transform rotate-51"></div>
+              <div className="absolute top-0 right-[11%] w-px h-full bg-gradient-to-b from-transparent via-purple-800/25 to-transparent transform -rotate-25"></div>
+              <div className="absolute top-0 right-[15%] w-px h-full bg-gradient-to-b from-transparent via-purple-700/25 to-transparent transform rotate-5"></div>
+              <div className="absolute top-0 right-[16%] w-px h-full bg-gradient-to-b from-transparent via-blue-800/20 to-transparent transform rotate-30"></div>
             </div>
-            <div className="relative max-w-4xl mx-auto">
-              {/* Vertical line with glow */}
-              <div className="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 transform -translate-x-1/2 z-0 shadow-[0_0_24px_8px_rgba(55,48,163,0.3)]"></div>
-              <div className="flex flex-col gap-20 relative z-10">
-                {/* Step 1 */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
-                  <div className="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1 flex justify-end">
-                    <div className="inline-block bg-gradient-to-br from-blue-900/40 to-purple-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
-                      <div className="flex items-center justify-end mb-2">
-                        {/* Icon: Magnifying glass */}
-                        <svg
-                          className="w-7 h-7 text-blue-400 mr-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <circle cx="11" cy="11" r="8" strokeWidth="2" />
-                          <line
-                            x1="21"
-                            y1="21"
-                            x2="16.65"
-                            y2="16.65"
-                            strokeWidth="2"
-                          />
-                        </svg>
-                        <h3 className="text-lg font-semibold text-white">
-                          Analiza potrzeb
-                        </h3>
-                      </div>
-                      <p className="text-gray-300 text-sm">
-                        Analizujemy potrzeby, cele i grupę docelową, by
-                        opracować skuteczną strategię.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center md:w-1/12 justify-center order-1 md:order-2 relative">
-                    {/* Timeline dot with pulse */}
-                    <div className="relative z-10">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-30"></span>
-                      </div>
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
-                        1
-                      </div>
-                    </div>
-                    {/* Connecting line */}
-                    <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
-                  </div>
-                  <div className="md:w-1/2 order-3"></div>
-                </div>
-                {/* Step 2 */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
-                  <div className="md:w-1/2 order-1"></div>
-                  <div className="flex flex-col items-center md:w-1/12 justify-center order-2 relative">
-                    {/* Timeline dot with pulse */}
-                    <div className="relative z-10">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-900 opacity-30"></span>
-                      </div>
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
-                        2
+
+            <div className="relative z-10">
+              <div className="text-center mb-10 md:mb-16">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 md:mb-4 text-white">
+                  Nasz proces
+                </h2>
+                <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+                  Sprawdzona metodologia, która gwarantuje realizację projektu
+                  na czas, w budżecie i powyżej oczekiwań.
+                </p>
+              </div>
+              <div className="relative max-w-4xl mx-auto">
+                {/* Vertical line with glow */}
+                <div className="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 transform -translate-x-1/2 z-0 shadow-[0_0_24px_8px_rgba(55,48,163,0.3)]"></div>
+                <div className="flex flex-col gap-20 relative z-10">
+                  {/* Step 1 */}
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+                    <div className="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1 flex justify-end">
+                      <div className="inline-block bg-gradient-to-br from-blue-900/40 to-purple-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                        <div className="flex items-center justify-end mb-2">
+                          {/* Icon: Magnifying glass */}
+                          <svg
+                            className="w-7 h-7 text-blue-400 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <circle cx="11" cy="11" r="8" strokeWidth="2" />
+                            <line
+                              x1="21"
+                              y1="21"
+                              x2="16.65"
+                              y2="16.65"
+                              strokeWidth="2"
+                            />
+                          </svg>
+                          <h3 className="text-lg font-semibold text-white">
+                            Analiza potrzeb
+                          </h3>
+                        </div>
+                        <p className="text-gray-300 text-sm">
+                          Analizujemy potrzeby, cele i grupę docelową, by
+                          opracować skuteczną strategię.
+                        </p>
                       </div>
                     </div>
-                    {/* Connecting line */}
-                    <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
-                  </div>
-                  <div className="md:w-1/2 md:pl-8 md:text-left order-3 flex justify-start">
-                    <div className="inline-block bg-gradient-to-br from-purple-900/40 to-pink-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
-                      <div className="flex items-center mb-2">
-                        {/* Icon: Pencil/ruler */}
-                        <svg
-                          className="w-7 h-7 text-pink-400 mr-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            d="M16.862 3.487a2.5 2.5 0 013.535 3.535L7.5 19.92l-4 1 1-4L16.862 3.487z"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                        <h3 className="text-lg font-semibold text-white">
-                          Projektowanie
-                        </h3>
+                    <div className="flex flex-col items-center md:w-1/12 justify-center order-1 md:order-2 relative">
+                      {/* Timeline dot with pulse */}
+                      <div className="relative z-10">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-30"></span>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                          1
+                        </div>
                       </div>
-                      <p className="text-gray-300 text-sm">
-                        Nasi projektanci tworzą intuicyjne, piękne interfejsy
-                        zgodne z Twoją marką i oczekiwaniami użytkowników.
-                      </p>
+                      {/* Connecting line */}
+                      <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
                     </div>
+                    <div className="md:w-1/2 order-3"></div>
                   </div>
-                </div>
-                {/* Step 3 */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
-                  <div className="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1 flex justify-end">
-                    <div className="inline-block bg-gradient-to-br from-blue-900/40 to-green-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
-                      <div className="flex items-center justify-end mb-2">
-                        {/* Icon: Code */}
-                        <svg
-                          className="w-7 h-7 text-green-400 mr-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <polyline
-                            points="16 18 22 12 16 6"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <polyline
-                            points="8 6 2 12 8 18"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                        <h3 className="text-lg font-semibold text-white">
-                          Programowanie
-                        </h3>
+                  {/* Step 2 */}
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+                    <div className="md:w-1/2 order-1"></div>
+                    <div className="flex flex-col items-center md:w-1/12 justify-center order-2 relative">
+                      {/* Timeline dot with pulse */}
+                      <div className="relative z-10">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-900 opacity-30"></span>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                          2
+                        </div>
                       </div>
-                      <p className="text-gray-300 text-sm">
-                        Nasi programiści realizują Twoją wizję, korzystając z
-                        najnowszych technologii i skutecznych praktyk.
-                      </p>
+                      {/* Connecting line */}
+                      <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
                     </div>
-                  </div>
-                  <div className="flex flex-col items-center md:w-1/12 justify-center order-1 md:order-2 relative">
-                    {/* Timeline dot with pulse */}
-                    <div className="relative z-10">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-30"></span>
-                      </div>
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
-                        3
-                      </div>
-                    </div>
-                    {/* Connecting line */}
-                    <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
-                  </div>
-                  <div className="md:w-1/2 order-3"></div>
-                </div>
-                {/* Step 4 */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
-                  <div className="md:w-1/2 order-1"></div>
-                  <div className="flex flex-col items-center md:w-1/12 justify-center order-2 relative">
-                    {/* Timeline dot with pulse */}
-                    <div className="relative z-10">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-900 opacity-30"></span>
-                      </div>
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
-                        4
+                    <div className="md:w-1/2 md:pl-8 md:text-left order-3 flex justify-start">
+                      <div className="inline-block bg-gradient-to-br from-purple-900/40 to-pink-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                        <div className="flex items-center mb-2">
+                          {/* Icon: Pencil/ruler */}
+                          <svg
+                            className="w-7 h-7 text-pink-400 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <path
+                              d="M16.862 3.487a2.5 2.5 0 013.535 3.535L7.5 19.92l-4 1 1-4L16.862 3.487z"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <h3 className="text-lg font-semibold text-white">
+                            Projektowanie
+                          </h3>
+                        </div>
+                        <p className="text-gray-300 text-sm">
+                          Nasi projektanci tworzą intuicyjne, piękne interfejsy
+                          zgodne z Twoją marką i oczekiwaniami użytkowników.
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div className="md:w-1/2 md:pl-8 md:text-left order-3 flex justify-start">
-                    <div className="inline-block bg-gradient-to-br from-cyan-900/40 to-blue-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
-                      <div className="flex items-center mb-2">
-                        {/* Icon: Rocket */}
-                        <svg
-                          className="w-7 h-7 text-cyan-400 mr-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            d="M5 13l4 4L19 7"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <path
-                            d="M15 7h4v4"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                        <h3 className="text-lg font-semibold text-white">
-                          Wdrożenie
-                        </h3>
+                  {/* Step 3 */}
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+                    <div className="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1 flex justify-end">
+                      <div className="inline-block bg-gradient-to-br from-blue-900/40 to-green-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                        <div className="flex items-center justify-end mb-2">
+                          {/* Icon: Code */}
+                          <svg
+                            className="w-7 h-7 text-green-400 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <polyline
+                              points="16 18 22 12 16 6"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <polyline
+                              points="8 6 2 12 8 18"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <h3 className="text-lg font-semibold text-white">
+                            Programowanie
+                          </h3>
+                        </div>
+                        <p className="text-gray-300 text-sm">
+                          Nasi programiści realizują Twoją wizję, korzystając z
+                          najnowszych technologii i skutecznych praktyk.
+                        </p>
                       </div>
-                      <p className="text-gray-300 text-sm">
-                        Wdrażamy rozwiązanie z pełnym testowaniem i zapewniamy
-                        wsparcie oraz pomoc w utrzymaniu.
-                      </p>
+                    </div>
+                    <div className="flex flex-col items-center md:w-1/12 justify-center order-1 md:order-2 relative">
+                      {/* Timeline dot with pulse */}
+                      <div className="relative z-10">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-30"></span>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                          3
+                        </div>
+                      </div>
+                      {/* Connecting line */}
+                      <div className="hidden md:block w-1 flex-1 bg-gradient-to-b from-blue-900 via-blue-700 to-purple-900 mx-auto"></div>
+                    </div>
+                    <div className="md:w-1/2 order-3"></div>
+                  </div>
+                  {/* Step 4 */}
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between group">
+                    <div className="md:w-1/2 order-1"></div>
+                    <div className="flex flex-col items-center md:w-1/12 justify-center order-2 relative">
+                      {/* Timeline dot with pulse */}
+                      <div className="relative z-10">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-900 opacity-30"></span>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-r from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-2xl font-bold text-white border-4 border-[#151515] shadow-lg">
+                          4
+                        </div>
+                      </div>
+                    </div>
+                    <div className="md:w-1/2 md:pl-8 md:text-left order-3 flex justify-start">
+                      <div className="inline-block bg-gradient-to-br from-cyan-900/40 to-blue-900/40 rounded-2xl shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                        <div className="flex items-center mb-2">
+                          {/* Icon: Rocket */}
+                          <svg
+                            className="w-7 h-7 text-cyan-400 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <path
+                              d="M5 13l4 4L19 7"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <path
+                              d="M15 7h4v4"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <h3 className="text-lg font-semibold text-white">
+                            Wdrożenie
+                          </h3>
+                        </div>
+                        <p className="text-gray-300 text-sm">
+                          Wdrażamy rozwiązanie z pełnym testowaniem i zapewniamy
+                          wsparcie oraz pomoc w utrzymaniu.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -876,6 +897,167 @@ export default function Home() {
                       className="w-full h-auto rounded-2xl "
                     />
                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </Reveal>
+
+        {/* Blog Section */}
+        <Reveal>
+          <section className="py-16 md:py-24 bg-gradient-to-b from-[#0f0d0d] to-[#0a0a0a] relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              {/* Blog Cards Section */}
+              <div className="relative">
+                {/* Header with "Blog" title and "Czytaj więcej" link */}
+                <div className="flex justify-between items-center mb-8 md:mb-12">
+                  <h2 className="font-sora text-white text-xl md:text-2xl lg:text-3xl font-semibold">
+                    Nasz Blog
+                  </h2>
+                  <Link
+                    href="/blog"
+                    className="text-white/80 hover:text-white font-semibold text-base md:text-lg transition-all duration-300 hover:translate-x-1 flex items-center gap-2 group"
+                  >
+                    <span>Czytaj więcej</span>
+                    <svg
+                      className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+
+                {/* Blog Cards Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                  {/* Blog Card 1 - Budowanie zaufania */}
+                  <Link
+                    href="/blog/budowanie-zaufania-strona-www"
+                    className="group"
+                  >
+                    <div className="rounded-2xl bg-transparent border border-transparent group-hover:bg-gray-800/50 group-hover:border-gray-700 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-purple-500/20 overflow-hidden">
+                      <div className="relative aspect-video w-full overflow-hidden rounded-t-2xl mb-4">
+                        <Image
+                          src={trustImage}
+                          alt="Jak projektować strony, które budują zaufanie już w pierwszych 5 sekundach"
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
+                      <div className="px-1 pb-6">
+                        <h3 className="font-sora text-base md:text-lg font-semibold text-white group-hover:text-purple-300 transition-colors duration-300 text-left mb-3">
+                          Jak projektować strony, które budują zaufanie już w
+                          pierwszych 5 sekundach
+                        </h3>
+                        <div className="flex justify-start">
+                          <svg
+                            className="w-7 h-7 text-white/80 group-hover:text-purple-300 group-hover:translate-x-1 transition-all duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Blog Card 2 - Rozbieżność cen */}
+                  <Link
+                    href="/blog/rozbierznosc-cen-stron-www"
+                    className="group"
+                  >
+                    <div className="rounded-2xl bg-transparent border border-transparent group-hover:bg-gray-800/50 group-hover:border-gray-700 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-purple-500/20 overflow-hidden">
+                      <div className="relative aspect-video w-full overflow-hidden rounded-t-2xl mb-4">
+                        <Image
+                          src={pricingImage}
+                          alt="Dlaczego ceny stron internetowych tak bardzo się różnią i dlaczego warto zainwestować więcej"
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
+                      <div className="px-1 pb-6">
+                        <h3 className="font-sora text-base md:text-lg font-semibold text-white group-hover:text-purple-300 transition-colors duration-300 text-left mb-3">
+                          Dlaczego ceny stron internetowych tak bardzo się
+                          różnią i dlaczego warto zainwestować więcej
+                        </h3>
+                        <div className="flex justify-start">
+                          <svg
+                            className="w-7 h-7 text-white/80 group-hover:text-purple-300 group-hover:translate-x-1 transition-all duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Blog Card 3 - AI bez kosztów */}
+                  <Link href="/blog/AI-bez-ogromnych-kosztow" className="group">
+                    <div className="rounded-2xl bg-transparent border border-transparent group-hover:bg-gray-800/50 group-hover:border-gray-700 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-purple-500/20 overflow-hidden">
+                      <div className="relative aspect-video w-full overflow-hidden rounded-t-2xl mb-4">
+                        <Image
+                          src={aiImage}
+                          alt="Jak małe firmy mogą wykorzystać sztuczną inteligencję bez ogromnych budżetów"
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
+                      <div className="px-1 pb-6">
+                        <h3 className="font-sora text-base md:text-lg font-semibold text-white group-hover:text-purple-300 transition-colors duration-300 text-left mb-3">
+                          Jak małe firmy mogą wykorzystać sztuczną inteligencję
+                          bez ogromnych budżetów
+                        </h3>
+                        <div className="flex justify-start">
+                          <svg
+                            className="w-7 h-7 text-white/80 group-hover:text-purple-300 group-hover:translate-x-1 transition-all duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

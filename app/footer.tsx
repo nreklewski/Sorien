@@ -130,49 +130,56 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Na skróty</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <Link href="strony-www-dla-gabinetu-stomatologicznego">
+                <Link href="/blog">
+                  <p className="hover:text-white transition-colors">
+                    Nasz blog
+                  </p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/strony-www-dla-gabinetu-stomatologicznego">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla stomatologów
                   </p>
                 </Link>
               </li>
               <li>
-                <Link href="strony-www-dla-branzy-beauty">
+                <Link href="/strony-www-dla-branzy-beauty">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla branży beauty
                   </p>
                 </Link>
               </li>
               <li>
-                <Link href="strony-www-dla-restauracji">
+                <Link href="/strony-www-dla-restauracji">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla restauracji
                   </p>
                 </Link>
               </li>
               <li>
-                <Link href="strony-www-dla-prawnikow">
+                <Link href="/trony-www-dla-prawnikow">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla prawników
                   </p>
                 </Link>
               </li>
               <li>
-                <Link href="strony-www-dla-architektow">
+                <Link href="/strony-www-dla-architektow">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla architektów
                   </p>
                 </Link>
               </li>
               <li>
-                <Link href="strony-www-dla-trenerow-personalnych">
+                <Link href="/strony-www-dla-trenerow-personalnych">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla trenerów
                   </p>
                 </Link>
               </li>
               <li>
-                <Link href="strony-www-dla-fizjoterapeutow">
+                <Link href="/strony-www-dla-fizjoterapeutow">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla fizjoterapeutów
                   </p>
@@ -223,6 +230,24 @@ const Footer = () => {
                 >
                   <title id="tiktokTitle">TikTok</title>
                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                </svg>
+              </Link>
+
+              <Link
+                href="https://www.facebook.com/profile.php?id=61581944505854"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Link do Facebook"
+                target="_blank"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-labelledby="facebookTitle"
+                >
+                  <title id="facebookTitle">Facebook</title>
+                  <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.82v-9.294H9.692V11.41h3.128V8.708c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.764v2.31h3.587l-.467 3.296h-3.12V24h6.116C23.406 24 24 23.407 24 22.674V1.326C24 .593 23.406 0 22.675 0z" />
                 </svg>
               </Link>
             </div>
