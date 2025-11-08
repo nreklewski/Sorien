@@ -96,7 +96,7 @@ export default function Home() {
                 </h2>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Wiele małych firm, szukając sposobu na obecność w internecie,
-                  wybiera najtańszą ofertę: „strona internetowa za 500 zł". Na
+                  wybiera najtańszą ofertę: &quot;strona internetowa za 500 zł&quot;. Na
                   pierwszy rzut oka to dobra okazja – jednak w praktyce tania
                   strona często przynosi więcej strat niż korzyści.
                 </p>
@@ -121,8 +121,8 @@ export default function Home() {
                   kosztami
                 </h2>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                  Tania strona to najczęściej gotowy szablon lub tzw. „page
-                  builder" bez indywidualnego podejścia do firmy.
+                  Tania strona to najczęściej gotowy szablon lub tzw. &quot;page
+                  builder&quot; bez indywidualnego podejścia do firmy.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Choć wizualnie może wyglądać poprawnie, zwykle brakuje jej
@@ -268,7 +268,7 @@ export default function Home() {
                 </h2>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Jednym z naszych klientów była lokalna firma usługowa, która
-                  działała na stronie typu „one-page" kupionej za kilkaset
+                  działała na stronie typu &quot;one-page&quot; kupionej za kilkaset
                   złotych.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
@@ -321,7 +321,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   To pokazuje, że profesjonalny projekt strony to realna
-                  inwestycja w rozwój firmy, a nie tylko „wizytówka w sieci".
+                  inwestycja w rozwój firmy, a nie tylko &quot;wizytówka w sieci&quot;.
                 </p>
               </div>
             </Reveal>

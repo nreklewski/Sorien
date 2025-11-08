@@ -100,7 +100,7 @@ export default function Home() {
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Na pierwszy rzut oka różnice są ogromne i mogą wprowadzać w
-                  błąd: przecież „strona to strona, prawda?" – myślimy.
+                  błąd: przecież &quot;strona to strona, prawda?&quot; – myślimy.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   W rzeczywistości cena odzwierciedla wartość, jakość wykonania

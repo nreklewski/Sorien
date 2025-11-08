@@ -100,7 +100,7 @@ export default function Home() {
                   Dlatego projektowanie stron internetowych, które wzbudzają zaufanie od pierwszego wrażenia, jest kluczowe dla pozyskiwania klientów online.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                  W Sorien mówimy o tym jako o zasadzie „5-sekundowego zaufania" – połączeniu estetyki, przejrzystości i wiarygodności marki.
+                  W Sorien mówimy o tym jako o zasadzie &quot;5-sekundowego zaufania&quot; – połączeniu estetyki, przejrzystości i wiarygodności marki.
                 </p>
               </div>
             </Reveal>
@@ -177,7 +177,7 @@ export default function Home() {
                       <strong className="text-white">Przykład:</strong>
                     </p>
                     <p className="text-gray-300 text-base md:text-lg mt-2">
-                      „Tworzymy strony internetowe, które przyciągają klientów i budują zaufanie Twojej marki."
+                      &quot;Tworzymy strony internetowe, które przyciągają klientów i budują zaufanie Twojej marki.&quot;
                     </p>
                   </div>
                 </div>
@@ -225,7 +225,7 @@ export default function Home() {
                     <li>przemyślana architektura treści.</li>
                   </ul>
                   <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                    W Sorien stosujemy zasadę „clean-first design" – najpierw przejrzystość, potem efekty wizualne.
+                    W Sorien stosujemy zasadę &quot;clean-first design&quot; – najpierw przejrzystość, potem efekty wizualne.
                   </p>
                 </div>
 
@@ -263,8 +263,8 @@ export default function Home() {
                     Wezwania do działania powinny być naturalne i zrozumiałe, np.:
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-gray-300 text-base md:text-lg ml-4">
-                    <li>„Umów bezpłatną konsultację" lub</li>
-                    <li>„Poznaj nasze realizacje".</li>
+                    <li>&quot;Umów bezpłatną konsultację&quot; lub</li>
+                    <li>&quot;Poznaj nasze realizacje&quot;.</li>
                   </ul>
                   <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                     Dobrze zaprojektowane CTA prowadzi użytkownika przez stronę w sposób, który buduje relację, a nie wywiera presję.
