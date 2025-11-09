@@ -16,8 +16,7 @@ export default function BlogCTA() {
               <p className="text-base md:text-xl text-gray-300 mb-8 leading-relaxed text-center md:text-left">
                 W ciągu 24 godzin odkryj, jak nasze personalizowane
                 oprogramowanie może wynieść Twój biznes na wyższy poziom i
-                zostawić konkurencję w tyle — wraz z szybką, bezpłatną
-                wyceną.
+                zostawić konkurencję w tyle — wraz z szybką, bezpłatną wyceną.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -100,8 +99,3 @@ export default function BlogCTA() {
     </Reveal>
   );
 }
-
-
-
-
-

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 import Reveal from "../../components/Reveal";
 import BlogHero from "../components/BlogHero";
 import BlogArticleContent from "../components/BlogArticleContent";
@@ -96,9 +97,10 @@ export default function Home() {
                 </h2>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Wiele małych firm, szukając sposobu na obecność w internecie,
-                  wybiera najtańszą ofertę: &quot;strona internetowa za 500 zł&quot;. Na
-                  pierwszy rzut oka to dobra okazja – jednak w praktyce tania
-                  strona często przynosi więcej strat niż korzyści.
+                  wybiera najtańszą ofertę: &quot;strona internetowa za 500
+                  zł&quot;. Na pierwszy rzut oka to dobra okazja – jednak w
+                  praktyce tania strona często przynosi więcej strat niż
+                  korzyści.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Brak optymalizacji, wolne ładowanie, błędy w responsywności
@@ -108,7 +110,15 @@ export default function Home() {
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   W Sorien od lat obserwujemy różnice między tanimi stronami, a
                   profesjonalnymi projektami tworzonymi z myślą o konwersji, SEO
-                  i UX. Poniżej przedstawiamy konkretne przykłady.
+                  i UX. Poniżej przedstawiamy konkretne przykłady. Jeśli chcesz
+                  dowiedzieć się więcej o naszym podejściu do{" "}
+                  <Link
+                    href="/strony-internetowe"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    tworzenia stron internetowych
+                  </Link>
+                  , zapraszamy do kontaktu.
                 </p>
               </div>
             </Reveal>
@@ -268,8 +278,8 @@ export default function Home() {
                 </h2>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Jednym z naszych klientów była lokalna firma usługowa, która
-                  działała na stronie typu &quot;one-page&quot; kupionej za kilkaset
-                  złotych.
+                  działała na stronie typu &quot;one-page&quot; kupionej za
+                  kilkaset złotych.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Strona była nieresponsywna, bez optymalizacji SEO i bez
@@ -321,7 +331,16 @@ export default function Home() {
                 </div>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   To pokazuje, że profesjonalny projekt strony to realna
-                  inwestycja w rozwój firmy, a nie tylko &quot;wizytówka w sieci&quot;.
+                  inwestycja w rozwój firmy, a nie tylko &quot;wizytówka w
+                  sieci&quot;. Chcesz otrzymać wycenę profesjonalnej strony?
+                  Skorzystaj z naszego{" "}
+                  <Link
+                    href="/wycena"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    formularza wyceny
+                  </Link>
+                  .
                 </p>
               </div>
             </Reveal>

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 import Reveal from "../../components/Reveal";
 import BlogHero from "../components/BlogHero";
 import BlogArticleContent from "../components/BlogArticleContent";
@@ -114,7 +115,15 @@ export default function Home() {
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Wybór odpowiedniego rozwiązania nie jest więc wyłącznie
                   kwestią kosztu – to decyzja strategiczna dla rozwoju biznesu
-                  online.
+                  online. W Sorien pomagamy wybrać najlepszą technologię dla
+                  Twojej{" "}
+                  <Link
+                    href="/strony-internetowe"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    strony internetowej
+                  </Link>
+                  , dopasowaną do potrzeb i budżetu.
                 </p>
               </div>
             </Reveal>
@@ -212,9 +221,15 @@ export default function Home() {
                 <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 md:p-6 my-6">
                   <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                     <strong className="text-white">Podsumowanie:</strong>{" "}
-                    WordPress jest idealny dla małych firm z ograniczonym
-                    budżetem i prostymi wymaganiami, ale może być problematyczny
-                    przy rozbudowanych projektach.
+                    WordPress jest idealny dla małych firm np.{" "}
+                    <Link
+                      href="/strony-www-dla-gabinetu-stomatologicznego"
+                      className="text-purple-400 hover:text-purple-300 underline"
+                    >
+                      gabinetów stomatologicznych
+                    </Link>
+                    , z ograniczonym budżetem i prostymi wymaganiami, ale może
+                    być problematyczny przy rozbudowanych projektach.
                   </p>
                 </div>
               </div>
@@ -441,7 +456,15 @@ export default function Home() {
                   To właśnie doświadczenie, dbałość o UX, SEO, bezpieczeństwo i
                   integracje decyduje o tym, czy strona będzie efektywnie
                   przyciągać klientów i wspierać rozwój firmy. Dlatego wybierz
-                  dobrze – wybierz Sorien :).
+                  dobrze – wybierz Sorien :). Jeśli chcesz otrzymać wycenę
+                  projektu, skorzystaj z naszego{" "}
+                  <Link
+                    href="/wycena"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    formularza wyceny
+                  </Link>
+                  .
                 </p>
               </div>
             </Reveal>

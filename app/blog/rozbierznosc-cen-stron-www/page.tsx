@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 import Reveal from "../../components/Reveal";
 import BlogHero from "../components/BlogHero";
 import BlogArticleContent from "../components/BlogArticleContent";
@@ -100,7 +101,8 @@ export default function Home() {
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Na pierwszy rzut oka różnice są ogromne i mogą wprowadzać w
-                  błąd: przecież &quot;strona to strona, prawda?&quot; – myślimy.
+                  błąd: przecież &quot;strona to strona, prawda?&quot; –
+                  myślimy.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   W rzeczywistości cena odzwierciedla wartość, jakość wykonania
@@ -110,7 +112,15 @@ export default function Home() {
                   Większość użytkowników ocenia markę właśnie po stronie
                   internetowej – jej wygląd, funkcjonalność i szybkość
                   działania. Tania strona może sprawiać wrażenie amatorskiej i
-                  zniechęcać klientów, zanim ci zdążą przeczytać ofertę.
+                  zniechęcać klientów, zanim ci zdążą przeczytać ofertę. W
+                  Sorien tworzymy profesjonalne{" "}
+                  <Link
+                    href="/strony-internetowe"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    strony internetowe
+                  </Link>
+                  , które budują zaufanie i przyciągają klientów.
                 </p>
               </div>
             </Reveal>
@@ -348,7 +358,15 @@ export default function Home() {
                 </ul>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Nie sprzedajemy gotowych szablonów – każdy projekt jest szyty
-                  na miarę, z uwzględnieniem celów i budżetu klienta.
+                  na miarę, z uwzględnieniem celów i budżetu klienta. Chcesz
+                  otrzymać indywidualną wycenę? Wypełnij nasz{" "}
+                  <Link
+                    href="/wycena"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    formularz wyceny
+                  </Link>
+                  .
                 </p>
               </div>
             </Reveal>

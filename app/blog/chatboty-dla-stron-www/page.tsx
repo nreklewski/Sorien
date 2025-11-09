@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 import Reveal from "../../components/Reveal";
 import BlogHero from "../components/BlogHero";
 import BlogArticleContent from "../components/BlogArticleContent";
@@ -110,7 +111,15 @@ export default function Home() {
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Dla małych firm, które nie mają zespołu do obsługi klienta
                   24/7, chatbot może stać się tańszą i bardziej efektywną
-                  alternatywą.
+                  alternatywą. W Sorien pomagamy wdrożyć chatboty jako część
+                  naszych{" "}
+                  <Link
+                    href="/rozwiazania-ai-dla-firm"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    rozwiązań AI dla firm
+                  </Link>
+                  , które zwiększają konwersję i poprawiają obsługę klienta.
                 </p>
               </div>
             </Reveal>
@@ -328,7 +337,15 @@ export default function Home() {
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Chatbot nie zastępuje człowieka w 100%, ale ułatwia procesy,
                   pozwala szybciej reagować i buduje wizerunek nowoczesnej
-                  firmy.
+                  firmy. Jeśli chcesz dowiedzieć się, jak chatboty mogą wspierać
+                  Twoją stronę internetową,{" "}
+                  <Link
+                    href="/wycena"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    skontaktuj się z nami
+                  </Link>{" "}
+                  .
                 </p>
               </div>
             </Reveal>

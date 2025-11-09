@@ -5,7 +5,9 @@ interface BlogArticleContentProps {
   children: ReactNode;
 }
 
-export default function BlogArticleContent({ children }: BlogArticleContentProps) {
+export default function BlogArticleContent({
+  children,
+}: BlogArticleContentProps) {
   return (
     <section className="relative mt-20 md:mt-24 mb-16 md:mb-24 overflow-hidden">
       <BlogDecorativeLines />
@@ -15,8 +17,3 @@ export default function BlogArticleContent({ children }: BlogArticleContentProps
     </section>
   );
 }
-
-
-
-
-

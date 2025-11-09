@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 import Reveal from "../../components/Reveal";
 import BlogHero from "../components/BlogHero";
 import BlogArticleContent from "../components/BlogArticleContent";
@@ -106,7 +107,14 @@ export default function Home() {
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   W Sorien pomagamy firmom wykorzystać praktyczne rozwiązania
                   AI, które są tanie, szybkie we wdrożeniu i dają realne efekty
-                  w krótkim czasie.
+                  w krótkim czasie. Jeśli chcesz dowiedzieć się więcej o naszych{" "}
+                  <Link
+                    href="/rozwiazania-ai-dla-firm"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    rozwiązaniach AI dla firm
+                  </Link>
+                  , zapraszamy do kontaktu.
                 </p>
               </div>
             </Reveal>
@@ -360,7 +368,21 @@ export default function Home() {
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Dzięki temu nawet mała firma może wprowadzić AI krok po kroku,
                   zaczynając od prostych funkcji, a kończąc na pełnej
-                  automatyzacji procesów.
+                  automatyzacji procesów. W Sorien oferujemy kompleksowe{" "}
+                  <Link
+                    href="/systemy-firmowe"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    systemy firmowe
+                  </Link>
+                  , które mogą być zintegrowane z{" "}
+                  <Link
+                    href="/rozwiazania-ai-dla-firm"
+                    className="text-purple-400 hover:text-purple-300 underline"
+                  >
+                    rozwiązaniami AI
+                  </Link>
+                  ,.
                 </p>
               </div>
             </Reveal>
