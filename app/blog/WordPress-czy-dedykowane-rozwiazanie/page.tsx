@@ -71,12 +71,10 @@ export default function Home() {
         {/* Article Content Section */}
         <BlogArticleContent>
           {/* Title */}
-          <Reveal>
-            <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-              WordPress czy dedykowane rozwiązanie? Jak wybrać technologię dla
-              swojej strony
-            </h1>
-          </Reveal>
+          <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
+            WordPress czy dedykowane rozwiązanie? Jak wybrać technologię dla
+            swojej strony
+          </h1>
 
           {/* Subtitle/Introduction */}
           <Reveal>

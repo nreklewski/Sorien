@@ -70,12 +70,10 @@ export default function Home() {
         {/* Article Content Section */}
         <BlogArticleContent>
           {/* Title */}
-          <Reveal>
-            <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-              Czym różni się tania strona od profesjonalnego projektu – case
-              study na przykładzie małych firm
-            </h1>
-          </Reveal>
+          <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
+            Czym różni się tania strona od profesjonalnego projektu – case study
+            na przykładzie małych firm
+          </h1>
 
           {/* Subtitle/Introduction */}
           <Reveal>
