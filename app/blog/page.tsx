@@ -96,7 +96,7 @@ const blogPosts = [
 
 export default function Home() {
   return (
-    <div className="text-white min-h-screen bg-gradient-to-b from-[#0f0d0d] to-[#0a0a0a]">
+    <div className="text-white min-h-screen">
       {/* Header Section */}
       <Reveal>
         <section className="pt-16 md:pt-26 pb-17 md:pb-25 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
