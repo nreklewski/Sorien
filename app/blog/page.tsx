@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
-import Reveal from "../components/Reveal";
-import RevealGroup from "../components/RevealGroup";
 import BlogDecorativeLines from "./components/BlogDecorativeLines";
 import aiImage from "./AI-bez-ogromnych-kosztow/Małe firmy korzystające z AI – realistyczne wykorzystanie sztucznej inteligencji w biznesie.png";
 import trustImage from "./budowanie-zaufania-strona-www/Projektowanie stron internetowych budujących zaufanie – realistyczny przykład nowoczesnego UI.png";

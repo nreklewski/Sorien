@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/systemy-firmowe", text: "Systemy Wewnętrzne" },
   { href: "/strony-internetowe", text: "Strony Internetowe" },
   { href: "/rozwiazania-ai-dla-firm", text: "Rozwiązania AI" },
+  { href: "/blog", text: "Blog" },
 ];
 
 const NavBar = () => {
