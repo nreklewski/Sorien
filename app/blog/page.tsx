@@ -98,101 +98,92 @@ export default function Home() {
   return (
     <div className="text-white min-h-screen">
       {/* Header Section */}
-      <Reveal>
-        <section className="pt-16 md:pt-26 pb-17 md:pb-25 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-          <div className="max-w-7xl mx-auto relative z-10">
-            <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 md:gap-8">
-              {/* Left side - Main text */}
-              <div className="flex-1 relative z-10">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight">
-                  Dowiedz się jeszcze
-                  <br />
-                  więcej
-                </h1>
-              </div>
+      <section className="pt-16 md:pt-26 pb-17 md:pb-25 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 md:gap-8">
+            {/* Left side - Main text */}
+            <div className="flex-1 relative z-10">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight">
+                Dowiedz się jeszcze
+                <br />
+                więcej
+              </h1>
+            </div>
 
-              {/* Right side - Large decorative text */}
-              <div className="absolute right-0 top-1/2 md:top-auto md:bottom-0 -translate-y-1/2 md:translate-y-0 z-[-1] pointer-events-none">
-                <span className="text-[120px] md:text-[180px] lg:text-[240px] xl:text-[280px] font-thin text-gray-800/30 md:text-gray-800/40 leading-none select-none tracking-[0.1em] md:tracking-[0.15em] lg:tracking-[0.2em]">
-                  więcej
-                </span>
-              </div>
+            {/* Right side - Large decorative text */}
+            <div className="absolute right-0 top-1/2 md:top-auto md:bottom-0 -translate-y-1/2 md:translate-y-0 z-[-1] pointer-events-none">
+              <span className="text-[120px] md:text-[180px] lg:text-[240px] xl:text-[280px] font-thin text-gray-800/30 md:text-gray-800/40 leading-none select-none tracking-[0.1em] md:tracking-[0.15em] lg:tracking-[0.2em]">
+                więcej
+              </span>
             </div>
           </div>
-        </section>
-      </Reveal>
+        </div>
+      </section>
 
-      <Reveal>
-        <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 relative overflow-hidden">
-          <BlogDecorativeLines />
+      <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 relative overflow-hidden">
+        <BlogDecorativeLines />
 
-          <div className="max-w-5xl mx-auto relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
-              <RevealGroup intervalMs={100}>
-                {blogPosts.map((post, index) => {
-                  // Staggered layout - left column (even index) starts at top, right column (odd index) always starts 120px lower (only on md+ screens)
-                  const isRightColumn = index % 2 === 1;
-                  const staggerOffset = isRightColumn ? "md:mt-[120px]" : "";
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
+            {blogPosts.map((post, index) => {
+              // Staggered layout - left column (even index) starts at top, right column (odd index) always starts 120px lower (only on md+ screens)
+              const isRightColumn = index % 2 === 1;
+              const staggerOffset = isRightColumn ? "md:mt-[120px]" : "";
 
-                  return (
-                    <div
-                      key={post.id}
-                      className={`${staggerOffset} self-start`}
-                    >
-                      <Link href={post.href} className="group block">
-                        <div className="rounded-2xl bg-transparent border border-transparent group-hover:bg-gray-800/50 group-hover:border-gray-700 transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-purple-500/20 overflow-hidden flex flex-col">
-                          {/* Image - Square, smaller, left-aligned */}
-                          <div className="relative w-full overflow-hidden aspect-square mb-3 max-w-sm rounded-xl">
-                            <Image
-                              src={post.image}
-                              alt={post.title}
-                              fill
-                              className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
-                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              return (
+                <div key={post.id} className={`${staggerOffset} self-start`}>
+                  <Link href={post.href} className="group block">
+                    <div className="rounded-2xl bg-transparent border border-transparent group-hover:bg-gray-800/50 group-hover:border-gray-700 transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-purple-500/20 overflow-hidden flex flex-col">
+                      {/* Image - Square, smaller, left-aligned */}
+                      <div className="relative w-full overflow-hidden aspect-square mb-3 max-w-sm rounded-xl">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
+
+                      {/* Content */}
+                      <div className="px-3 pb-3 flex flex-col">
+                        {/* Title */}
+                        <h3 className="font-sora text-base md:text-lg lg:text-xl font-bold text-white group-hover:text-purple-300 transition-colors duration-300 text-left mb-2">
+                          {post.title}
+                        </h3>
+
+                        {/* Excerpt */}
+                        <p className="text-gray-400 text-sm leading-relaxed mb-3">
+                          {post.excerpt}
+                        </p>
+
+                        {/* Arrow */}
+                        <div className="flex justify-start">
+                          <svg
+                            className="w-7 h-7 text-purple-800 group-hover:text-purple-700 group-hover:translate-x-1 transition-all duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
                             />
-                          </div>
-
-                          {/* Content */}
-                          <div className="px-3 pb-3 flex flex-col">
-                            {/* Title */}
-                            <h3 className="font-sora text-base md:text-lg lg:text-xl font-bold text-white group-hover:text-purple-300 transition-colors duration-300 text-left mb-2">
-                              {post.title}
-                            </h3>
-
-                            {/* Excerpt */}
-                            <p className="text-gray-400 text-sm leading-relaxed mb-3">
-                              {post.excerpt}
-                            </p>
-
-                            {/* Arrow */}
-                            <div className="flex justify-start">
-                              <svg
-                                className="w-7 h-7 text-purple-800 group-hover:text-purple-700 group-hover:translate-x-1 transition-all duration-300"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                                focusable="false"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                />
-                              </svg>
-                            </div>
-                          </div>
+                          </svg>
                         </div>
-                      </Link>
+                      </div>
                     </div>
-                  );
-                })}
-              </RevealGroup>
-            </div>
+                  </Link>
+                </div>
+              );
+            })}
           </div>
-        </section>
-      </Reveal>
+        </div>
+      </section>
     </div>
   );
 }
