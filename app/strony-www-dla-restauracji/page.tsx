@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony www dla restauracji | Sorien",
+  title: "Strony www dla restauracji | Menu online",
   description:
-    "Profesjonalne strony internetowe dla restauracji, pizzerii i lokali gastronomicznych z systemami rezerwacji online, menu cyfrowym i integracjami z dostawcami. Zwiększ liczbę gości dzięki nowoczesnym rozwiązaniom IT.",
+    "Strony www dla restauracji z menu online, rezerwacją i integracjami. Zwiększ liczbę gości o 40-60%. Darmowa wycena. | Sorien",
   openGraph: {
-    title: "Strony www dla restauracji | Sorien",
+    title: "Strony www dla restauracji | Menu online",
     description:
       "Nowoczesne strony internetowe dla restauracji z systemami rezerwacji, menu online i integracjami z platformami dostawczymi.",
     url: "https://www.sorien.pl/strony-www-dla-restauracji",
@@ -49,6 +49,52 @@ export default function Home() {
       description:
         "Tworzymy nowoczesne strony internetowe dla restauracji z SEO, systemami rezerwacji online i rozwiązaniami IT.",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Ile kosztuje profesjonalna strona internetowa dla restauracji?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Inwestycja w stronę internetową dla restauracji zależy od zakresu funkcjonalności i poziomu zaawansowania. W Sorien oferujemy elastyczne pakiety - od podstawowych stron z menu po kompleksowe platformy z systemami rezerwacji, zamówień online i integracjami z dostawcami. Każdy projekt jest indywidualnie wyceniany, a zwrot z inwestycji następuje szybko dzięki zwiększonej liczbie gości.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Jakie funkcje powinna mieć nowoczesna strona restauracji?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Współczesna strona restauracji musi być w pełni responsywna, szybka i zoptymalizowana pod kątem wyszukiwarek. W Sorien projektujemy strony z interaktywnym menu, systemem rezerwacji, galerią zdjęć potraw oraz integracjami z platformami dostawczymi. Dodatkowo implementujemy narzędzia do pozycjonowania lokalnego, aby restauracja była łatwo znajdowana przez potencjalnych gości.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Czy warto inwestować w stronę www dla małej restauracji?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutnie tak! Nawet małe restauracje mogą znacząco zwiększyć swoją bazę klientów dzięki profesjonalnej stronie internetowej. W Sorien tworzymy strony dostosowane do budżetu i potrzeb każdej restauracji. Dzięki lokalnemu SEO i optymalizacji mobilnej, Twoja strona będzie skutecznie przyciągać gości z okolicy i budować rozpoznawalność marki.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Jak długo trwa proces tworzenia strony internetowej dla lokalu gastronomicznego?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Czas realizacji projektu zależy od jego złożoności i zakresu funkcjonalności. Standardowe strony z menu realizujemy w Sorien w ciągu 2-3 tygodni, podczas gdy bardziej zaawansowane platformy z systemami rezerwacji i integracjami mogą wymagać 4-6 tygodni. Zawsze informujemy o dokładnym harmonogramie na początku współpracy i dotrzymujemy ustalonych terminów.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Czy strona internetowa rzeczywiście pomoże mi pozyskać nowych gości?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tak, to potwierdzone! Nasze strony internetowe dla branży gastronomicznej są projektowane z myślą o konwersji i pozyskiwaniu gości. Dzięki zaawansowanemu SEO, optymalizacji pod kątem wyszukiwarek lokalnych i intuicyjnym interfejsom, nasi klienci regularnie raportują wzrost liczby rezerwacji o 40-60% w ciągu pierwszych miesięcy po uruchomieniu strony.",
+          },
+        },
+      ],
+    },
   ];
   return (
     <>
@@ -65,17 +111,13 @@ export default function Home() {
               {/* Left: Text */}
               <div>
                 <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white">
-                  Nowoczesne strony www dla{" "}
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                    restauracji
-                  </span>{" "}
-                  i lokali gastronomicznych
+                  Profesjonalne strony internetowe dla restauracji i lokali
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
-                  Tworzymy nowoczesne strony www dla restauracji i lokali
+                  Tworzymy nowoczesne <Link href="/strony-internetowe" className="text-orange-400 hover:text-orange-300 underline">strony www</Link> dla restauracji i lokali
                   gastronomicznych. Pomagają one zwiększyć liczbę gości,
                   usprawnić obsługę i zoptymalizować codzienne operacje w Twojej
-                  restauracji.
+                  restauracji. Dla bardziej zaawansowanych potrzeb oferujemy również <Link href="/systemy-firmowe" className="text-orange-400 hover:text-orange-300 underline">systemy firmowe</Link> do zarządzania restauracją.
                 </p>
                 <div className="mt-8 flex justify-center sm:justify-start">
                   <Link
@@ -91,7 +133,7 @@ export default function Home() {
               {/* Right: Interactive Photo */}
               <InteractivePhoto
                 src="/strona-www-dla-restauracji-i-lokali-gastronomicznych.png"
-                alt="Nowoczesna strona internetowa dla restauracji"
+                alt="Profesjonalna strona internetowa dla restauracji z menu online i systemem rezerwacji - realizacja Sorien"
                 width={1280}
                 height={853}
                 priority
@@ -488,7 +530,7 @@ export default function Home() {
                   <div className="w-full max-w-xl lg:w-full">
                     <Image
                       src="/Sorien-Rozwiazania-IT-dla-firm.png"
-                      alt="Rozwiązania IT dla firm - Sorien"
+                      alt="Sorien - kompleksowe rozwiązania IT dla restauracji: strony www, systemy zarządzania i automatyzacja"
                       width={1600}
                       height={900}
                       quality={90}

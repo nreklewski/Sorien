@@ -98,7 +98,7 @@ export default function Home() {
           >
             <Image
               src="/sorien-tworzenie-stron-internetowych.png"
-              alt="sorien tworzenie stron www"
+              alt="Sorien - profesjonalne tworzenie stron internetowych z optymalnym SEO i nowoczesnym designem"
               width={400}
               height={400}
               quality={90}
@@ -106,7 +106,7 @@ export default function Home() {
             />
             <Image
               src="/Rozwiązania-IT-dla-firm.png"
-              alt="sorien tworzenie stron www – ekran włączony"
+              alt="Sorien - nowoczesne rozwiązania IT dla firm: strony internetowe, systemy firmowe i rozwiązania AI"
               width={400}
               height={400}
               quality={90}
@@ -214,7 +214,7 @@ export default function Home() {
                       trwałe wrażenie dzięki przemyślanemu designowi.
                     </p>
                     <Link
-                      href="/systemy-firmowe"
+                      href="/strony-internetowe"
                       className="mt-4 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white text-base font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 focus:ring-purple-700 focus:ring-opacity-50 group-hover:translate-y-[-4px] group-hover:scale-105 transition-all duration-500 delay-200"
                     >
                       Dowiedz się więcej
@@ -283,7 +283,7 @@ export default function Home() {
                       Twoją firmę na tle konkurencji.
                     </p>
                     <Link
-                      href="/systemy-firmowe"
+                      href="/rozwiazania-ai-dla-firm"
                       className="mt-4 inline-block px-5 py-2 rounded-full border border-gray-600 bg-gray-900 text-white text-base font-medium shadow-md hover:bg-gray-800 hover:border-purple-500 hover:text-purple-300 focus:ring-purple-700 focus:ring-opacity-50 group-hover:translate-y-[-4px] group-hover:scale-105 transition-all duration-500 delay-200"
                     >
                       Dowiedz się więcej
@@ -734,7 +734,7 @@ export default function Home() {
                     <div className="aspect-[5/4] flex items-center justify-center relative">
                       <Image
                         src="/profesjonalna-wizytówka-tworzenie-stron-www.png"
-                        alt="Strony internetowe wizytówki"
+                        alt="Profesjonalne strony internetowe wizytówki z optymalnym SEO - przykładowa realizacja Sorien"
                         fill
                         className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
                         style={{ zIndex: 1 }}
@@ -759,7 +759,7 @@ export default function Home() {
                     <div className="aspect-[5/4] flex items-center justify-center relative">
                       <Image
                         src="/sklepy-internetowe-profesjonalne-projekcty-e-commerce.png"
-                        alt="Tworzenie sklepów internetowych"
+                        alt="Nowoczesne sklepy internetowe e-commerce z profesjonalnym designem - realizacja Sorien"
                         fill
                         className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
                         style={{ zIndex: 1 }}
@@ -784,7 +784,7 @@ export default function Home() {
                     <div className="aspect-[5/4] flex items-center justify-center relative">
                       <Image
                         src="/systemy-dla-firm-profesjonalna-agencja.png"
-                        alt="Tworzenie systemów firmowych"
+                        alt="Dedykowane systemy firmowe i aplikacje webowe - przykładowa realizacja Sorien"
                         fill
                         className="object-cover w-full h-full blur-[2px] group-hover:blur-[1px] transition duration-300"
                         style={{ zIndex: 1 }}

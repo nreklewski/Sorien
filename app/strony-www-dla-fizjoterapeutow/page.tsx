@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony www dla fizjoterapeutów | Sorien",
+  title: "Strony dla fizjoterapeutów | Rehabilitacja",
   description:
-    "Profesjonalne strony internetowe dla fizjoterapeutów, gabinetów rehabilitacji i klinik fizjoterapii. System rezerwacji wizyt, zarządzanie pacjentami, dokumentacja medyczna. Zwiększ liczbę pacjentów potrzebujących rehabilitacji.",
+    "Strony dla fizjoterapeutów z rezerwacją wizyt i SEO. Zwiększ liczbę pacjentów. Profesjonalne rozwiązania IT dla gabinetów rehabilitacji. | Sorien",
   openGraph: {
-    title: "Strony www dla fizjoterapeutów | Sorien",
+    title: "Strony dla fizjoterapeutów | Rehabilitacja",
     description:
       "Nowoczesne strony internetowe dla fizjoterapeutów z SEO, rezerwacją wizyt, dokumentacją medyczną i systemami zarządzania gabinetem rehabilitacji.",
     url: "https://www.sorien.pl/strony-www-dla-fizjoterapeutow",
@@ -65,10 +65,7 @@ export default function Home() {
               {/* Left: Text */}
               <div>
                 <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white">
-                  Strony www dla{" "}
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                    fizjoterapeutów
-                  </span>
+                  Profesjonalne strony internetowe dla fizjoterapeutów i gabinetów
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
                   Tworzymy nowoczesne i skuteczne strony internetowe dla
@@ -90,7 +87,7 @@ export default function Home() {
               {/* Right: Interactive Photo */}
               <InteractivePhoto
                 src="/strona-www-dla-fizjoterapeuty.png"
-                alt="Nowoczesna strona internetowa dla fizjoterapeuty"
+                alt="Profesjonalna strona internetowa dla fizjoterapeutów z rezerwacją wizyt i SEO - realizacja Sorien"
                 width={1280}
                 height={853}
                 priority

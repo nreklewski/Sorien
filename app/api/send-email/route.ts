@@ -139,8 +139,8 @@ export async function POST(req: NextRequest) {
     const aiUseCase = sanitizeInput(formData.get('aiUseCase') as string, 500);
     const integrationRequirements = sanitizeInput(formData.get('integrationRequirements') as string, 500);
 
-    // Validate required fields
-    if (!selectedService || !description || !fullName || !email || !phone) {
+    // Validate required fields (only Step 3 fields are required)
+    if (!selectedService || !fullName || !email || !phone) {
       return NextResponse.json(
         { success: false, error: 'Missing required fields' }, 
         { status: 400 }

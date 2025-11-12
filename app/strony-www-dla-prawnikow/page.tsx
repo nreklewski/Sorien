@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony www dla prawników i kancelarii | Sorien",
+  title: "Strony www dla prawników | Kancelarie prawne",
   description:
-    "Profesjonalne strony internetowe dla prawników i kancelarii prawnych z SEO, systemami zarządzania sprawami i automatyczną obsługą klientów. Zwiększ liczbę klientów dzięki nowoczesnym rozwiązaniom IT.",
+    "Profesjonalne strony dla prawników i kancelarii z SEO, systemami zarządzania sprawami. Zwiększ liczbę klientów. | Sorien",
   openGraph: {
-    title: "Strony www dla prawników i kancelarii | Sorien",
+    title: "Strony www dla prawników | Kancelarie prawne",
     description:
       "Nowoczesne strony internetowe dla prawników z SEO, systemami zarządzania sprawami i profesjonalnym wizerunkiem.",
     url: "https://www.sorien.pl/strony-www-dla-prawników",
@@ -49,6 +49,52 @@ export default function Home() {
       description:
         "Tworzymy profesjonalne strony internetowe dla prawników i kancelarii z SEO, systemami zarządzania sprawami i rozwiązaniami IT.",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Ile kosztuje strona internetowa dla kancelarii prawnej?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Koszt stworzenia strony www dla kancelarii prawnej zależy od funkcji i rozbudowania projektu. W Sorien przygotowujemy zarówno proste strony wizytówki, jak i rozbudowane portale z systemem zarządzania sprawami, kalendarzem konsultacji i blogiem prawniczym. Cena zawsze jest dopasowana do potrzeb kancelarii, a inwestycja szybko się zwraca dzięki pozyskaniu nowych klientów.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Jak stworzyć profesjonalną stronę dla kancelarii prawnej?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Profesjonalna strona dla prawnika powinna budować zaufanie, prezentować specjalizacje i być zoptymalizowana pod SEO. W Sorien tworzymy projekty, które prezentują ofertę kancelarii, zespół prawników oraz ułatwiają klientom umówienie konsultacji. Dodatkowo dbamy o to, by strona była widoczna w Google na frazy typu \"prawnik [miasto]\" czy \"adwokat [specjalizacja]\".",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Dlaczego prawnik potrzebuje strony internetowej?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Klienci najczęściej szukają pomocy prawnej w Google. Jeśli kancelaria nie posiada profesjonalnej strony, istnieje duże ryzyko, że wybiorą konkurencję. Strony internetowe tworzone przez Sorien pełnią rolę nowoczesnej wizytówki – budują zaufanie, prezentują kompetencje i umożliwiają łatwy kontakt z klientami.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Jakie funkcje powinna mieć strona kancelarii prawnej?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Najlepiej działają strony, które budują zaufanie i profesjonalizm, prezentują specjalizacje i zachęcają do kontaktu. Sorien tworzy strony internetowe dla prawników z kalendarzem konsultacji, formularzem kontaktowym, portfolio spraw i blogiem prawniczym, który dodatkowo wspiera pozycjonowanie w Google.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Czy strona www pomaga kancelarii zdobywać nowych klientów?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tak – profesjonalna strona www, stworzona z nami, jest narzędziem marketingowym, które realnie zwiększa liczbę klientów. Dzięki odpowiedniemu SEO Twoja strona pojawia się wysoko w wynikach wyszukiwania na frazy takie jak \"prawnik [miasto]\", \"adwokat [specjalizacja]\" czy \"kancelaria prawna [miasto]\".",
+          },
+        },
+      ],
+    },
   ];
   return (
     <>
@@ -65,16 +111,12 @@ export default function Home() {
               {/* Left: Text */}
               <div>
                 <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white">
-                  Strony www dla{" "}
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                    prawników
-                  </span>{" "}
-                  i kancelarii prawnych
+                  Nowoczesne strony internetowe dla prawników i kancelarii
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
-                  Tworzymy profesjonalne i skuteczne strony internetowe dla
+                  Tworzymy profesjonalne i skuteczne <Link href="/strony-internetowe" className="text-blue-400 hover:text-blue-300 underline">strony internetowe</Link> dla
                   prawników i kancelarii prawnych – dopasowane do potrzeb
-                  klientów i celów marketingowych Twojej praktyki.
+                  klientów i celów marketingowych Twojej praktyki. Dla większych kancelarii oferujemy również <Link href="/systemy-firmowe" className="text-blue-400 hover:text-blue-300 underline">systemy firmowe</Link> do zarządzania sprawami.
                 </p>
                 <div className="flex justify-center sm:justify-start mt-8">
                   <Link
@@ -90,7 +132,7 @@ export default function Home() {
               {/* Right: Interactive Photo */}
               <InteractivePhoto
                 src="/strona-www-dla-prawnikow-i-kancelari.png"
-                alt="Profesjonalna strona internetowa dla kancelarii prawnej"
+                alt="Profesjonalna strona internetowa dla kancelarii prawnej z SEO i systemem zarządzania sprawami - Sorien"
                 width={1280}
                 height={853}
                 priority

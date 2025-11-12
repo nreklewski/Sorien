@@ -11,12 +11,12 @@ import pricingImage from "./Różnice w cenach stron internetowych – porównan
 
 export const metadata: Metadata = {
   title:
-    "Dlaczego ceny stron internetowych tak bardzo się różnią | Sorien Blog",
+    "Dlaczego ceny stron www się różnią | Porównanie",
   description:
     "Dowiedz się, dlaczego ceny stron internetowych są różne i dlaczego inwestycja w profesjonalny projekt zwraca się szybciej niż tania strona. Porady ekspertów Sorien.",
   openGraph: {
     title:
-      "Dlaczego ceny stron internetowych tak bardzo się różnią | Sorien Blog",
+      "Dlaczego ceny stron www się różnią | Porównanie",
     description:
       "Dowiedz się, dlaczego ceny stron internetowych są różne i dlaczego inwestycja w profesjonalny projekt zwraca się szybciej niż tania strona. Porady ekspertów Sorien.",
     url: "https://www.sorien.pl/blog/rozbierznosc-cen-stron-www",
@@ -71,8 +71,7 @@ export default function Home() {
         <BlogArticleContent>
           {/* Title */}
           <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-            Dlaczego ceny stron internetowych tak bardzo się różnią i dlaczego
-            warto zainwestować więcej
+            Dlaczego ceny stron internetowych tak bardzo się różnią
           </h1>
 
           {/* Subtitle/Introduction */}

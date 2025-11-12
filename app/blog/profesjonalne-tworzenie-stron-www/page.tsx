@@ -11,12 +11,12 @@ import comparisonImage from "./Porównanie taniej strony internetowej i profesjo
 
 export const metadata: Metadata = {
   title:
-    "Czym różni się tania strona od profesjonalnego projektu | Sorien Blog",
+    "Tania vs profesjonalna strona | Porównanie",
   description:
     "Poznaj różnice między tanią stroną a profesjonalnym projektem. Sprawdź, dlaczego inwestycja w stronę internetową zaprojektowaną przez ekspertów Sorien przekłada się na wyniki Twojego biznesu.",
   openGraph: {
     title:
-      "Czym różni się tania strona od profesjonalnego projektu | Sorien Blog",
+      "Tania vs profesjonalna strona | Porównanie",
     description:
       "Poznaj różnice między tanią stroną a profesjonalnym projektem. Sprawdź, dlaczego inwestycja w stronę internetową zaprojektowaną przez ekspertów Sorien przekłada się na wyniki Twojego biznesu.",
     url: "https://www.sorien.pl/blog/profesjonalne-tworzenie-stron-www",
@@ -71,8 +71,7 @@ export default function Home() {
         <BlogArticleContent>
           {/* Title */}
           <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-            Czym różni się tania strona od profesjonalnego projektu – case study
-            na przykładzie małych firm
+            Czym różni się tania strona od profesjonalnego projektu
           </h1>
 
           {/* Subtitle/Introduction */}

@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony www dla trenerów personalnych | Sorien",
+  title: "Strony dla trenerów personalnych | Fitness",
   description:
-    "Profesjonalne strony internetowe dla trenerów personalnych, instruktorów fitness i coachów wellness. System rezerwacji treningów, zarządzanie klientami, plany treningowe. Zwiększ liczbę klientów fitness dzięki nowoczesnym rozwiązaniom IT.",
+    "Strony dla trenerów personalnych z rezerwacją treningów i SEO. Zwiększ liczbę klientów. Profesjonalne strony dla instruktorów fitness. | Sorien",
   openGraph: {
-    title: "Strony www dla trenerów personalnych | Sorien",
+    title: "Strony dla trenerów personalnych | Fitness",
     description:
       "Nowoczesne strony internetowe dla trenerów personalnych z SEO, rezerwacją treningów, planami fitness i systemami zarządzania klientami.",
     url: "https://www.sorien.pl/strony-www-dla-trenerow-personalnych",
@@ -65,10 +65,7 @@ export default function Home() {
               {/* Left: Text */}
               <div>
                 <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white">
-                  Strony www dla{" "}
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                    trenerów personalnych
-                  </span>
+                  Profesjonalne strony internetowe dla trenerów personalnych
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
                   Tworzymy nowoczesne i skuteczne strony internetowe dla
@@ -90,7 +87,7 @@ export default function Home() {
               {/* Right: Interactive Photo */}
               <InteractivePhoto
                 src="/profesjonalna-wizytówka-tworzenie-stron-www.png"
-                alt="Nowoczesna strona internetowa dla trenera personalnego"
+                alt="Profesjonalna strona internetowa dla trenerów personalnych z rezerwacją treningów i SEO - Sorien"
                 width={1280}
                 height={853}
                 priority

@@ -10,11 +10,11 @@ import pricingImage from "./rozbierznosc-cen-stron-www/Różnice w cenach stron 
 import wordpressImage from "./WordPress-czy-dedykowane-rozwiazanie/WordPress vs dedykowane rozwiązanie – realistyczne porównanie technologii stron internetowych.png";
 
 export const metadata: Metadata = {
-  title: "Blog | Sorien – Wiedza i porady o tworzeniu stron internetowych",
+  title: "Blog o stronach www i SEO | Porady ekspertów",
   description:
-    "Odkryj wartościowe artykuły o tworzeniu stron internetowych, systemach firmowych, SEO i nowoczesnych rozwiązaniach IT. Eksperckie porady od zespołu Sorien.",
+    "Blog o tworzeniu stron www, SEO i rozwiązaniach IT. Eksperckie porady, case studies i praktyczne wskazówki od zespołu Sorien. Czytaj więcej.",
   openGraph: {
-    title: "Blog | Sorien – Wiedza i porady o tworzeniu stron internetowych",
+    title: "Blog o stronach www i SEO | Porady ekspertów",
     description:
       "Odkryj wartościowe artykuły o tworzeniu stron internetowych, systemach firmowych, SEO i nowoczesnych rozwiązaniach IT. Eksperckie porady od zespołu Sorien.",
     url: "https://www.sorien.pl/blog",
@@ -102,15 +102,13 @@ export default function Home() {
             {/* Left side - Main text */}
             <div className="flex-1 relative z-10">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight">
-                Dowiedz się jeszcze
-                <br />
-                więcej
+                Dowiedz się jeszcze <br /> więcej
               </h1>
             </div>
 
             {/* Right side - Large decorative text */}
             <div className="absolute right-0 top-1/2 md:top-auto md:bottom-0 -translate-y-1/2 md:translate-y-0 z-[-1] pointer-events-none">
-              <span className="text-[120px] md:text-[180px] lg:text-[240px] xl:text-[280px] font-thin text-gray-800/30 md:text-gray-800/40 leading-none select-none tracking-[0.1em] md:tracking-[0.15em] lg:tracking-[0.2em]">
+              <span className="text-[120px] md:text-[180px] lg:text-[240px] font-thin text-gray-800/30 md:text-gray-800/40 leading-none select-none tracking-[0.1em] md:tracking-[0.15em] lg:tracking-[0.2em]">
                 więcej
               </span>
             </div>

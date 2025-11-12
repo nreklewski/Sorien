@@ -11,12 +11,12 @@ import aiImage from "./Małe firmy korzystające z AI – realistyczne wykorzyst
 
 export const metadata: Metadata = {
   title:
-    "Jak małe firmy mogą wykorzystać AI bez ogromnych budżetów | Sorien Blog",
+    "AI dla małych firm | Sztuczna inteligencja",
   description:
     "Dowiedz się, jak małe firmy mogą wdrożyć sztuczną inteligencję (AI) w codziennym biznesie bez dużych kosztów. Praktyczne przykłady, narzędzia i wskazówki od ekspertów Sorien.",
   openGraph: {
     title:
-      "Jak małe firmy mogą wykorzystać AI bez ogromnych budżetów | Sorien Blog",
+      "AI dla małych firm | Sztuczna inteligencja",
     description:
       "Dowiedz się, jak małe firmy mogą wdrożyć sztuczną inteligencję (AI) w codziennym biznesie bez dużych kosztów. Praktyczne przykłady, narzędzia i wskazówki od ekspertów Sorien.",
     url: "https://www.sorien.pl/blog/AI-bez-ogromnych-kosztow",
@@ -71,8 +71,7 @@ export default function Home() {
         <BlogArticleContent>
           {/* Title */}
           <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-            Jak małe firmy mogą wykorzystać sztuczną inteligencję bez ogromnych
-            budżetów
+            Jak małe firmy mogą wykorzystać AI bez dużych kosztów
           </h1>
 
           {/* Subtitle/Introduction */}

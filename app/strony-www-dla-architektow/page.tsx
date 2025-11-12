@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony www dla architektów i pracowni architektonicznych | Sorien",
+  title: "Strony dla architektów | Portfolio online",
   description:
-    "Projektujemy strony internetowe dla architektów: portfolio realizacji, pozyskiwanie zapytań, SEO lokalne i szybkie działanie. Pomagamy wyróżnić Twoją pracownię.",
+    "Strony dla architektów z portfolio online i SEO. Pozyskiwanie zapytań, prezentacja realizacji. Profesjonalne strony dla pracowni architektonicznych. | Sorien",
   openGraph: {
-    title: "Strony www dla architektów i pracowni architektonicznych | Sorien",
+    title: "Strony dla architektów | Portfolio online",
     description:
       "Nowoczesne strony dla architektów z rozbudowanym portfolio, studiami przypadków i optymalizacją pod zapytania klientów.",
     url: "https://www.sorien.pl/strony-www-dla-architektow",
@@ -65,10 +65,7 @@ export default function Home() {
               {/* Left: Text */}
               <div>
                 <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white">
-                  Strony www dla{" "}
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                    architektów
-                  </span>
+                  Nowoczesne strony internetowe dla architektów i pracowni
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
                   Budujemy strony internetowe, które prezentują Twoje portfolio,
@@ -90,7 +87,7 @@ export default function Home() {
               {/* Right: Interactive Photo */}
               <InteractivePhoto
                 src="/strony-www-dla-architektow.png"
-                alt="Strona internetowa dla architekta – prezentacja portfolio"
+                alt="Profesjonalna strona internetowa dla architektów z portfolio online i SEO - realizacja Sorien"
                 width={1280}
                 height={853}
                 priority

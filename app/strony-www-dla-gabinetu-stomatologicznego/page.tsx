@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony www dla gabinetów stomatologicznych | Sorien",
+  title: "Strony dla dentystów | Gabinety stomatologiczne",
   description:
-    "Profesjonalne strony internetowe dla gabinetów stomatologicznych z SEO, automatyczną rejestracją online i systemami zarządzania. Zwiększ liczbę pacjentów dzięki nowoczesnym rozwiązaniom IT.",
+    "Strony dla dentystów z rejestracją online i SEO. Zwiększ liczbę pacjentów. Profesjonalne strony dla gabinetów stomatologicznych. | Sorien",
   openGraph: {
-    title: "Strony www dla gabinetów stomatologicznych | Sorien",
+    title: "Strony dla dentystów | Gabinety stomatologiczne",
     description:
       "Nowoczesne strony internetowe dla dentystów z SEO, automatyczną rejestracją i systemami zarządzania gabinetem.",
     url: "https://www.sorien.pl/strony-www-dla-gabinetu-stomatologicznego",
@@ -66,10 +66,7 @@ export default function Home() {
               {/* Left: Text */}
               <div>
                 <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white">
-                  Strony www dla gabinetów{" "}
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                    stomatologicznych
-                  </span>
+                  Nowoczesne strony internetowe dla dentystów i gabinetów
                 </h1>
                 <p className="text-center sm:text-left mt-6 text-base sm:text-lg text-white/80 max-w-prose">
                   Tworzymy nowoczesne i skuteczne strony internetowe dla
@@ -90,7 +87,7 @@ export default function Home() {
               {/* Right: Interactive Photo */}
               <InteractivePhoto
                 src="/strona-www-dla-gabinetu-dentystycznyego.png"
-                alt="Nowoczesna strona internetowa dla gabinetu stomatologicznego"
+                alt="Profesjonalna strona internetowa dla gabinetu stomatologicznego z rejestracją online i SEO - Sorien"
                 width={1280}
                 height={853}
                 priority

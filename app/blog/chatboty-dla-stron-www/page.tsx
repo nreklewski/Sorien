@@ -10,11 +10,11 @@ import BlogRelatedArticles from "../components/BlogRelatedArticles";
 import chatbotImage from "./Chatbot na stronie internetowej – realistyczna wizualizacja interakcji AI z użytkownikiem.png";
 
 export const metadata: Metadata = {
-  title: "Chatbot na stronie internetowej – czy to się opłaca? | Sorien Blog",
+  title: "Chatbot na stronie www - czy się opłaca?",
   description:
     "Dowiedz się, czy chatbot na stronie internetowej to opłacalna inwestycja dla Twojej firmy. Sprawdź zalety, koszty i przykłady zastosowań od ekspertów Sorien.",
   openGraph: {
-    title: "Chatbot na stronie internetowej – czy to się opłaca? | Sorien Blog",
+    title: "Chatbot na stronie www - czy się opłaca?",
     description:
       "Dowiedz się, czy chatbot na stronie internetowej to opłacalna inwestycja dla Twojej firmy. Sprawdź zalety, koszty i przykłady zastosowań od ekspertów Sorien.",
     url: "https://www.sorien.pl/blog/chatboty-dla-stron-www",
@@ -68,7 +68,7 @@ export default function Home() {
         <BlogArticleContent>
           {/* Title */}
           <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-            Chatbot na stronie internetowej – czy to się opłaca?
+            Czy chatbot na stronie internetowej się opłaca?
           </h1>
 
           {/* Subtitle/Introduction */}

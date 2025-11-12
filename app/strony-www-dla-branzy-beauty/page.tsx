@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Strony www dla branży beauty | Sorien",
+  title: "Strony dla salonów kosmetycznych | Beauty",
   description:
-    "Profesjonalne strony internetowe dla salonów kosmetycznych, fryzjerskich i gabinetów beauty z SEO, rezerwacją online i systemami zarządzania. Zwiększ liczbę klientów dzięki nowoczesnym rozwiązaniom IT.",
+    "Strony dla salonów kosmetycznych z rezerwacją online i SEO. Zwiększ liczbę klientów. Profesjonalne strony dla branży beauty. | Sorien",
   openGraph: {
-    title: "Strony www dla branży beauty | Sorien",
+    title: "Strony dla salonów kosmetycznych | Beauty",
     description:
       "Nowoczesne strony internetowe dla salonów beauty z SEO, rezerwacją online i systemami zarządzania salonem.",
     url: "https://www.sorien.pl/strony-www-dla-branzy-beauty",
@@ -65,10 +65,7 @@ export default function Home() {
               {/* Left: Text */}
               <div>
                 <h1 className="font-sora text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold mb-10 md:mb-6 lg:mb-12 text-white">
-                  Strony www dla salonów{" "}
-                  <span className="bg-gradient-to-r from-pink-400 to-purple-600 bg-clip-text text-transparent">
-                    kosmetycznych
-                  </span>
+                  Profesjonalne strony internetowe dla salonów kosmetycznych
                 </h1>
                 <p className="text-center sm:text-left sm:flex mt-6 text-base sm:text-lg text-white/80 max-w-prose">
                   Specjalizujemy się w tworzeniu zaawansowanych platform
@@ -90,7 +87,7 @@ export default function Home() {
               {/* Right: Interactive Photo */}
               <InteractivePhoto
                 src="/strona-www-dla-salonu-kosmetycznego.png"
-                alt="Nowoczesna strona internetowa dla salonu beauty"
+                alt="Profesjonalna strona internetowa dla salonu kosmetycznego z rezerwacją online i SEO - realizacja Sorien"
                 width={1280}
                 height={853}
                 priority

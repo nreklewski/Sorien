@@ -158,7 +158,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/trony-www-dla-prawnikow">
+                <Link href="/strony-www-dla-prawnikow">
                   <p className="hover:text-white transition-colors">
                     Strony internetowe dla prawników
                   </p>

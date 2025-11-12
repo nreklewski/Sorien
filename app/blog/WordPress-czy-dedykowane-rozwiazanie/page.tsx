@@ -11,12 +11,12 @@ import wordpressImage from "./WordPress vs dedykowane rozwiązanie – realistyc
 
 export const metadata: Metadata = {
   title:
-    "WordPress czy dedykowane rozwiązanie? Jak wybrać technologię | Sorien Blog",
+    "WordPress vs dedykowane | Co wybrać?",
   description:
     "Zastanawiasz się, czy lepiej wybrać WordPress czy dedykowane rozwiązanie dla swojej strony internetowej? Dowiedz się, jakie są różnice, zalety i wady każdego podejścia oraz jak wybrać technologię idealną dla Twojej firmy.",
   openGraph: {
     title:
-      "WordPress czy dedykowane rozwiązanie? Jak wybrać technologię | Sorien Blog",
+      "WordPress vs dedykowane | Co wybrać?",
     description:
       "Zastanawiasz się, czy lepiej wybrać WordPress czy dedykowane rozwiązanie dla swojej strony internetowej? Dowiedz się, jakie są różnice, zalety i wady każdego podejścia oraz jak wybrać technologię idealną dla Twojej firmy.",
     url: "https://www.sorien.pl/blog/WordPress-czy-dedykowane-rozwiazanie",
@@ -72,8 +72,7 @@ export default function Home() {
         <BlogArticleContent>
           {/* Title */}
           <h1 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-            WordPress czy dedykowane rozwiązanie? Jak wybrać technologię dla
-            swojej strony
+            WordPress czy dedykowane rozwiązanie - co wybrać?
           </h1>
 
           {/* Subtitle/Introduction */}
